@@ -1,0 +1,87 @@
+body {
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+	}
+
+.outer {
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(background.jpg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  }
+
+.header {
+  border-top: 1px solid red;
+  width: 705px;
+  margin-left: 159px;
+  margin-right: 160px;
+  }
+
+.navigation {
+  float: left;
+  font-family: Arial,sans-serif;
+  font-size: 10pt;
+  }
+
+.contact {
+  text-align: right;
+  font-family: Arial,sans-serif;
+  font-size: 10pt;
+  }
+
+.content {
+  padding: 10px;
+  font-family: Arial,sans-serif;
+  font-size: 11pt;
+  text-align: justify;  
+  width: 705px;
+  margin-left: 159px;
+  margin-right: 160px;
+}
+
+.entry {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.dateEntry {
+  margin-bottom: 0em;
+  margin-top: 0em;
+}
+
+p {
+    margin-bottom: 1em;
+    margin-top: 0em;
+}
+
+.heading {
+	margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 14pt;
+}
+
+a:link, a:visited {
+  color: #fde700;
+  text-decoration: none;
+}
+
+a:active, a:hover {
+  text-decoration: underline;
+}
+
+a.here {
+  color: white;
+  text-decoration: underline;
+}
+
+.buttonFloat {
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.keylineEntry {
+  border: 1px solid red;
+}
