@@ -11,10 +11,10 @@ More advanced customization is available through CSS classes within this documen
   --background-color: black;
 
 /* set the color of all text and typically some borders*/
-  --primary-color: rgba(255, 255, 255, 255);
+  --primary-color: rgba(255, 0, 0, 255);
 
 /* sets the background color of buttons and other borders */
---secondary-color: rgb(102, 102, 102);
+--secondary-color: rgb(0, 102, 0);
 
 /* sets the color of things that appear temporarily */
   --transient-color: orange;
@@ -33,7 +33,7 @@ More advanced customization is available through CSS classes within this documen
 
 /*styles the code font*/
 .code-font {
-	  font-family: 'Helvetica';
+	  font-family: 'monospace';
 	  font-size: 1em;
     text-shadow: 0 0 10px #333333;
 	  }
