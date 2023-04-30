@@ -35,7 +35,7 @@ body {
   padding: 10px;
   font-family: Arial,sans-serif;
   font-size: 11pt;
-  text-align: justify;  
+  text-align: justify;
   width: 705px;
   margin-left: 159px;
   margin-right: 160px;
@@ -44,6 +44,8 @@ body {
 .entry {
   margin-bottom: 1em;
   margin-top: 1em;
+	padding: 1em;
+	border: 1px solid white;
 }
 
 .dateEntry {
