@@ -13,6 +13,7 @@ This is a list (in progress, still quite incomplete) of every game I can remembe
 - *Scrabble* (board game; 1948)
 - *Risk* (board game; 1957)
 - *Diplomacy* (board game; 1959)
+- *Uno* (card game; 1971)
 - *Dungeons and Dragons* (TTRPG; 1974)
 - *Zaxxon* (C64; Jan 1982)
 - *Grobot* (Coco 2; 1983)
