@@ -3,9 +3,23 @@ layout: layout.njk
 title: David Ogborn
 ---
 
-<p>Interests: improvisation, audio, generative art/music/design, live coding, game design and studies, network music, computing and networking as an artistic medium, artist programmers and artist programming, free and open source software, laptop orchestras and audiovisual ensembles, DIY, sound studies, software studies, alternative grading, functional programming, programming language design, computational play, real-time strategy (RTS) games, game sound, sound synthesis, web audio, graphics programming, nostalgic computation, etc</p>
+Welcome to my web garden! I'm an artist programmer and researcher, based at the southwest corner of Lake Ontario (at McMaster University and Cootes Paradise, near Hamilton, about 60 km south of Toronto). I work as a Professor in [McMaster's Department of Communication Studies and Media Arts](https://csma.humanities.mcmaster.ca), where I coordinate the [Networked Imagination Laboratory (NIL)](https://nil.mcmaster.ca), and teach in our undergraduate and graduate programs.
 
-<p>Short Bio: David Ogborn (aka dktr0) is an artist programmer and interdisciplinary researcher, based at the southwest corner of Lake Ontario, and devoted to the pursuit of improvisation and play in computational settings. Specific passions include making new programming languages, collaborative platforms, electronic music, sound and media art, and video games, often but not always with others. He is an Associate Professor in <a href="https://csma.humanities.mcmaster.ca">McMaster University’s Department of Communication Studies and Media Arts</a>, where he coordinates the <a href="https://nil.mcmaster.ca">Networked Imagination Laboratory (NIL)</a>, and teaches in the <a href="https://csma.humanities.mcmaster.ca/undergraduate-programs/media-arts-program/">undergraduate Media Arts program</a>, the <a href="https://csma.humanities.mcmaster.ca/graduate-programs/ma-in-communication-and-new-media/">MA in Communication and New Media</a>, and the <a href="https://csma.humanities.mcmaster.ca/graduate-programs/phd-program-in-communication-new-media-and-cultural-studies/">PhD in Communication, New Media, and Cultural Studies.</a></p>
+Here are some of my interests: improvisation, audio, generative art/music/design, live coding, game design and studies, network music, computing and networking as an artistic medium, artist programmers and artist programming, free and open source software, laptop orchestras and audiovisual ensembles, DIY, sound studies, software studies, alternative grading, functional programming, programming language design, computational play, real-time strategy (RTS) games, game sound, sound synthesis, web audio, graphics programming, nostalgic computation, etc
+
+Here are some quick links to the projects I think people are perhaps most likely to be looking for:
+
+- [Punctual (audiovisual live coding language)](https://dktr0.github.io/Punctual)
+- [LocoMotion (live coding language for dance, choreography, 3D avatars)](https://dktr0.github.io/LocoMotion)
+- [Estuary (browser-based collaborative live coding platform)](https://estuary.mcmaster.ca)
+- [Cybernetic Orchestra (open, live coding laptop orchestra)](https://nil.mcmaster.ca/cybOrch.html)
+- [MEDIAART 3L03 Game Design course](/game-design-course/outline/index.html)
+
+And here are some links to other materials I am collecting as this web garden takes shape:
+
+- [List of every game I've ever played](/games/index.html)
+
+Below this paragraph are some more detailed entries for various projects I've been involved with over the past 15 years or so. This material was part of the portfolio I submitted when I went up for promotion to Full Professor not too long ago, and I plan to move it around, move it elsewhere, as I develop this website more as a digital garden and less of an academic portfolio.
 
 <h1 id="projects">Projects</h1>
 
@@ -34,7 +48,7 @@ title: David Ogborn
 </div>
 
 <div class="entry">
-<p><em>estuary</em> (zero-installation, browser-based collaborative live coding platform):</p>
+<p><em>estuary</em> (browser-based collaborative live coding platform):</p>
 <p>Created as the primary outcome of two SSHRC grants, and the focus of ongoing development, Estuary is a zero-installation, web-based collaborative platform for audiovisual live coding, with a dual emphasis on supporting multiple live coding programming languages (in increasingly modular ways) and on enabling networked ensembles (whether across the same room, or around the world).</p>
 <ul>
 <li><a href="https://estuary.mcmaster.ca">try it live on the flagship server at McMaster University</a></li>
