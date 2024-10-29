@@ -18,6 +18,9 @@ Here are some quick links to the projects I think people are perhaps most likely
 And here are some links to other materials I am collecting as this web garden takes shape:
 
 - [List of every game I've ever played](/games/index.html)
+- ["An interpretation of *Total Annihilation*" (paper presented at Canadian Game Studies Association 2023)](/total-annihilation-interpretation/index.html)
+- ["Computer Music as Inter/Anti/Non-Disciplinary Research" (keynote presented to interdisciplinary doctoral program at the University of Saskatchewan, 14 April 2023)](/computer-music-inter-anti-non-disciplinary/index.html)
+- ["Ideas about "New Media (Studies)"" (speaking notes in CNMCS PhD pro-seminar, 15 Nov 2022-)](/new-media/index.html)
 
 Below this paragraph are some more detailed entries for various projects I've been involved with over the past 15 years or so. This material was part of the portfolio I submitted when I went up for promotion to Full Professor not too long ago, and I plan to move it around, move it elsewhere, as I develop this website more as a digital garden and less of an academic portfolio.
 
