@@ -3,7 +3,7 @@ layout: layout.njk
 title: David Ogborn
 ---
 
-Welcome to my web garden! I'm an artist programmer and researcher, based at the southwest corner of Lake Ontario (at McMaster University and Cootes Paradise, near Hamilton, about 60 km south of Toronto). I work as a Professor in [McMaster's Department of Communication Studies and Media Arts](https://csma.humanities.mcmaster.ca), where I coordinate the [Networked Imagination Laboratory (NIL)](https://nil.mcmaster.ca), and teach in our undergraduate and graduate programs.
+Welcome to my web garden! I'm an artist programmer and researcher, based at the southwest corner of Lake Ontario (Cootes Paradise, near Hamilton, about 60 km south of Toronto). I work as a Professor in [McMaster University's Department of Communication Studies and Media Arts](https://csma.humanities.mcmaster.ca), where I coordinate the [Networked Imagination Laboratory (NIL)](https://nil.mcmaster.ca), and teach in our undergraduate and graduate programs.
 
 Here are some of my interests: improvisation, audio, generative art/music/design, live coding, game design and studies, network music, computing and networking as an artistic medium, artist programmers and artist programming, free and open source software, open culture, laptop orchestras and audiovisual ensembles, DIY, sound studies, software studies, alternative grading, functional programming, programming language design, computational play, real-time strategy (RTS) games, media arts in relation to fascism/anti-fascism, game sound, sound synthesis, web audio, graphics programming, nostalgic computation, gardening, hiking, snowboarding, backcountry camping, maps, seed-saving, etc
 
