@@ -31,6 +31,8 @@ At this point, I think it will help to briefly position myself in a few ways. I 
 
 2007-9 was a period of great disruption in my personal and professional life, an end to many relationships (and a beginning of new ones). For a long time thereafter I have followed an impulse to disavow the things I was engaged with “before the break”. In the ideas that follow, I notice that I am bringing together recent concerns with those of earlier parts of my life. 
 
+## Ideas
+
 1. The “new” in new media is a perennial, unceasing and ideological framing of art movements (and not only art movements) – that is to say, it is always rather “old”. New Media should remind us of “New Music” (1910s onwards) for which Theodor Adorno was an early and acutely, continuously critical observer (for example, in the early-ish Philosophy of New Music (1949)): a central argument was that such “new music” incorporated the political world into itself unconsciously, but thus all the more “effectively”, fundamentally and inescapably, even (and especially) when claimed to be about nothing but “new” music. We might also pay attention to the ways that claim of the “new” enters into any given work (even when the word “new” or “new media” is not used). 
 
 2. That argument that new media (art) cannot avoid a relationship to political choices and consequences was also made memorably by Adorno’s penpal, Walter Benjamin in the 1936 essay “The Work of Art in the Age of Mechanical Reproduction”. The final moments of that essay pose a binary choice between an “aestheticization of politics [that would serve fascism]” and a “politicization of aesthetics”. What happens if we think of contemporary new media texts in terms of this provocative binary?  
