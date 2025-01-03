@@ -89,6 +89,7 @@ This is a list (in progress, still quite incomplete) of every game I can remembe
 - *Call of Duty: Black Ops 4* (PS5; 12 Oct 2018)
 - *Super Smash Bros. Ultimate* (Switch; 7 Dec 2018)
 - *A Short Hike* (PC; 30 Jul 2019)
+- *Cat Quest II* (PS5; 19 Sep 2019)
 - *Before I Forget* (PC; 16 Jul 2020)
 - *Astro's Playroom* (PS5; 12 Nov 2020)
 - *Far Cry 6* (PS5; 7 Oct 2021)

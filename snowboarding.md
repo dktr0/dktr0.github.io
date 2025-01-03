@@ -34,7 +34,7 @@ In the Wikipedia history of snowboarding, after the watermark of the 1977 foundi
 
 ## Other Resources
 
-Wikipedia maintains [an entry about snowboarding](https://en.wikipedia.org/wiki/Snowboarding), as well as [an extensive list of snowboarding video games (together with a separate list of snowboarding games for mobile platforms)](https://en.wikipedia.org/wiki/List_of_snowboarding_video_games).
+Wikipedia maintains [an entry about snowboarding](https://en.wikipedia.org/wiki/Snowboarding), as well as [an extensive list of snowboarding video games (together with a separate list of snowboarding games for mobile platforms)](https://en.wikipedia.org/wiki/List_of_snowboarding_video_games) - at the time of writing the combined lists have 104 entries in total.
 
 The bibliography of this article has lots of scholarly references (and some grey literature, including a book or two) to follow up that speak to snowboarding's history: https://www.tandfonline.com/doi/full/10.1080/02614367.2012.685334#d1e597
 
