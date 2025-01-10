@@ -10,6 +10,14 @@ The 5 areas of technical practice we’ll explore in this course are 3D assets, 
 The 3 levels of technical achievement involve different levels of guidance (from me) and independence and responsibility (from you). For level 1, I’ll provide detailed step-by-step instructions for how to achieve it in each area of technical practice. For level 2, I’ll provide somewhat less detailed instructions (sometimes mostly in the form of comments on a template project that demonstrates the concepts). For level 3, I’ll provide only indications of some possible starting points, suggestions, and concepts to focus on. If you intend to explore and achieve level 3 in an area of technical practice, please discuss it with me as soon as you start working on this, so that we can aim at a shared understanding of the direction you are going in. Note also that to achieve level 2 you also need to demonstrate level 1, and that to achieve level 3 you also need to demonstrate levels 2 and 1. Here are zoomed out descriptions of the expectations for each level in each technical area (links to further details for levels 1 and 2 to be provided soon!):
 
 <div class="entry">
+Mechanics
+
+- [level 1: collisions as triggers (maze transitions, collecting objects, scores)](../mechanics-1/index.html)
+- level 2: objects that move (projectiles, moving terrain, following)
+- level 3: branching paths, co-evolving states (or something else ambitious)
+</div>
+
+<div class="entry">
 3D Assets
 
 - level 1: textured 3D models of real-world objects with collision shapes</li>
@@ -33,13 +41,6 @@ Sound
 - level 3: adaptive sound tracks (or something else ambitious)
 </div>
 
-<div class="entry">
-Mechanics
-
-- level 1: collisions as triggers (maze transitions, collecting objects, scores)
-- level 2: objects that move (projectiles, moving terrain, following)
-- level 3: branching paths, co-evolving states (or something else ambitious)
-</div>
 
 <div class="entry">
 Camera and Control
