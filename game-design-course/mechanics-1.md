@@ -29,6 +29,8 @@ The overall shape of what we'll do is as follows, with more detailed instruction
 - F. Add an exit/transition mechanic to that simple game world
 - G. Scale up to a small playable game by making the world larger, more collectables, etc
 
+And here is [a complete example of level 1 mechanics as a Godot 4.3 project folder](../mechanics-1.zip)
+
 ## A. Launch Godot and create a new project
 
 When you first launch Godot, you'll be greeted by its "Project Manager", an interface that where new projects can be created, existing previously-loaded projects reloaded (from the main panel in the middle), and existing not-previously-loaded projects loaded for the first time (called Import).
