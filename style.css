@@ -25,7 +25,15 @@ body {
   font-size: 10pt;
   }
 
+.name {
+  float: left;
+  text-align: left;
+  font-family: Arial,sans-serif;
+  font-size: 10pt;
+  }
+  
 .contact {
+  float: right;
   text-align: right;
   font-family: Arial,sans-serif;
   font-size: 10pt;
