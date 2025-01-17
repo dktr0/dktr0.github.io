@@ -102,7 +102,7 @@ On the right, in the normal 3D view, it will be in Texture Paint mode. At the to
 
 At this point, you can paint directly on the object in the 3D view by clicking and dragging. You can change the brush “algorithm” in the Blend property that appears in the Tool tab (top tab) of the Properties view in the bottom right of Blender’s interface. You can change the radius, strength, and color of the brush as well. 
 
-It’s sometimes very useful to be able to ensure that texture painting only happens on a specific face or faces of the object. To do this, tab into edit mode, select the face or faces you want to paint on. Switch back to Texture Paint mode and right next to the menu where you picked Texture Paint mode there is a little button that if you hover over it says “Paint Mask”. If you enable this, painting will only happen on the faces you selected in Edit mode a moment before.X 
+It’s sometimes very useful to be able to ensure that texture painting only happens on a specific face or faces of the object. To do this, tab into edit mode, select the face or faces you want to paint on. Switch back to Texture Paint mode and right next to the menu where you picked Texture Paint mode there is a little button that if you hover over it says “Paint Mask”. If you enable this, painting will only happen on the faces you selected in Edit mode a moment before.
 
 Also: if you want to grab a colour you’ve already applied to an image to use it for something else, you can press Shift-X while hovering over some part of the object, to change the colour to one sampled from below where your cursor is hovering.
 
@@ -128,4 +128,4 @@ IMPORTANT note about adjusting the size and position of collision shapes: Don’
 
 ## What to submit
 
-To demonstrate successful completion of the level 1 3D assets technical area, create a well-shaped asset in Blender that is modeled on one or more images of a real-world object and which requires you to use all of the modeling techniques discussed below, AND incorporate that asset (with an effective collision shape, e.g. so that a player avatar can’t walk through it, can jump on it maybe, etc) into a genuinely playable Godot game project.
+To demonstrate successful completion of the level 1 3D assets technical area, create a well-shaped asset in Blender that is modeled on one or more images of a real-world object and which requires you to use all or most of the modeling techniques discussed above, AND incorporate that asset (with an effective collision shape, e.g. so that a player avatar can’t walk through it, can jump on it maybe, etc) into a genuinely playable Godot game project.

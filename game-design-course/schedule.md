@@ -3,7 +3,7 @@ layout: layout.njk
 title: "MEDIAART 3L03: Schedule"
 ---
 
-# Schedule
+# [MEDIAART 3L03](../outline/index.html): Schedule
 
 Weeks 1-6 (10 Jan – 14 Feb): During the first six weeks, each meeting will start in TSH-203 with a presentation by me (Dr. 0) on <a href="../games-and-texts/index.html">selected games and texts</a>, as well as a second presentation orienting the group to practical work with Godot and Blender. Around half-way through each meeting, we’ll move to the Media Arts Wing to work together on the <a href="../technical-practice/index.html">five areas of technical practice</a>, as well as on the <a href="../individual-game/index.html">individual game project</a>. 
 
@@ -23,4 +23,4 @@ Week 12 (4 Apr): in-class, on-campus showcase of beta version of <a href="../col
 
 Portfolio documenting individual contributions to <a href="../collective-game/index.html">collective game project</a> due Fri 11 Apr by 10 PM on Avenue 
 
-Sat 12 April: present final version of collective game project at a href="https://levelupshowcase.com/"></a>Level Up Showcase</a> in Toronto (attendance optional but strongly recommended!)
+Sat 12 April: present final version of collective game project at [Level Up Showcase](https://levelupshowcase.com/) in Toronto (attendance optional but strongly recommended!)
