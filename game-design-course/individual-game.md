@@ -1,9 +1,9 @@
 ---
 layout: layout.njk
-title: "MEDIAART 3L03: Individual Game"
+title: "MEDIAART 3L03: Individual Game Project"
 ---
 
-*Individual Game*
+# Individual Game
 
 The individual game project is a complete tiny game, created with Godot and Blender, submitted by Fri 14 Feb at 10 PM and shared with the entire class during our in-person individual project showcase during our normal meeting time on Fri 28 Feb. I encourage you to consider making a game that explores the environmental/ecological gaming focus we’ll be developing, but this is just a suggestion (feel free to make the game you want to make). To receive credit for meeting the basic expectation of the course, each individual game project must: 
 

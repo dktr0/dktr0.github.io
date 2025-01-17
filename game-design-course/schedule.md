@@ -3,7 +3,7 @@ layout: layout.njk
 title: "MEDIAART 3L03: Schedule"
 ---
 
-*Schedule*
+# Schedule
 
 Weeks 1-6 (10 Jan – 14 Feb): During the first six weeks, each meeting will start in TSH-203 with a presentation by me (Dr. 0) on <a href="../games-and-texts/index.html">selected games and texts</a>, as well as a second presentation orienting the group to practical work with Godot and Blender. Around half-way through each meeting, we’ll move to the Media Arts Wing to work together on the <a href="../technical-practice/index.html">five areas of technical practice</a>, as well as on the <a href="../individual-game/index.html">individual game project</a>. 
 

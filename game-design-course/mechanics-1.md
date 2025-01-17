@@ -7,7 +7,7 @@ title: "MEDIAART 3L03: Mechanics 1, Collisions as triggers"
 
 ## Introduction and Overview
 
-Level 1 of the Mechanics area of technical practice involves making things happen when an object in the game world comes into "contact" or "collides" with another object in the game world. There is an infinite number of applications of this simple idea; the example focused on here involves a player avatar colliding with objects that are collected to increase a score, and also to restart the game or transition to another level.
+Level 1 of the Mechanics [area of technical practice](../technical-practice/index.html) involves making things happen when an object in the game world comes into "contact" or "collides" with another object in the game world. There is an infinite number of applications of this simple idea; the example focused on here involves a player avatar colliding with objects that are collected to increase a score, and also to restart the game or transition to another level.
 
 This is also a great way to introduce ourselves to some very common types of nodes in Godot (these instructions are oriented to Godot 4.3, by the way). We'll see 5 types of node used in these instructions.
 

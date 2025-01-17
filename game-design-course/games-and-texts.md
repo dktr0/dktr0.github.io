@@ -3,7 +3,7 @@ layout: layout.njk
 title: "MEDIAART 3L03: Games and Texts"
 ---
 
-*Games*
+# Games
 
 Here are some of the games that are most likely to be discussed during the first six weeks of the course: 
 
@@ -21,7 +21,7 @@ Here are some of the games that are most likely to be discussed during the first
 
 *Before I Forget* (2020, 3-Fold Games)
 
-*Texts*
+# Texts
 
 Here are some of the texts that are either likely to be discussed during the first six weeks of the course, or have strongly influenced the evolution of this course in some or other way:  
 
