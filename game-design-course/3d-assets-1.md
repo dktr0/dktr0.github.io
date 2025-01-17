@@ -28,17 +28,25 @@ The overall shape of what we’ll do is as follows, with more detailed instructi
 
 Find a reference image to work with. A straightforward front profile is best. If you have something that has multiple profiles, that’s useful too. 
 
-Launch blender, 
+Launch blender, and hide the default cube by clicking on the little eye icon in the Outliner at the top right for the cube. 
 
-Hide the default cube by clicking on the little eye icon in the Outliner at the top right for the cube. 
+<img src="../blender-outliner-default-cube.png" alt="A close-up of Blender's Outliner panel, focused on the default cube, with the eye icon to show/hide the object visible to the right"/>
 
-Switch to a front orthographic view using either the numpad or the View menu (numpad 5 to switch to orthographic, numpad 1 to switch to front) 
+Switch to a front orthographic view using either the numpad or the View menu (numpad 5 to switch to orthographic, numpad 1 to switch to front). (Later, you can switch back to perspective view either by pressing numpad 5 again, selecting perspective view from the View menu, or just by rotating the view). 
 
 Add the image to the scene with the Add menu or Shift-A – Add: Image: Reference. 
 
-Move and size the image by selecting it (left-clicking), press S and move the mouse to resize the image, and left click again to confirm (or press ESC to cancel). To move the image, press G and then move the mouse. Alternately press G and then Z to constrain the movement to Blender’s Z (vertical) axis, or G and then X to constrain the movement to Blender’s X (left-right) axis. You want the thing you are modeling to be standing on the red line (the X Y plane), centred on the Z axis,gz and for it to be the appropriate size in metres. 
+Move and size the image by selecting it (left-clicking), press S and move the mouse to resize the image, and left click again to confirm (or press ESC to cancel). To move the image, press G and then move the mouse. Alternately press G and then Z to constrain the movement to Blender’s Z (vertical) axis, or G and then X to constrain the movement to Blender’s X (left-right) axis. You want the thing you are modeling to be standing on the red line (the X Y plane), centred on the Z axis,gz and for it to be the appropriate size in metres.
+
+<img src="../godot-plush-as-reference-image.png" alt="CC0 Godot plushy image as a reference image in Blender, sized to less than a metre, centred on X axis, and standing on XY plane">
 
 Finally we need to “pack” the image into the Blender file so that if we move the blender file somewhere else, it still has the data for the reference image. To do this click on the red image icon in the outliner. That will open the object Data tab in the Properties inspector below (bottom right of blender). Towards the bottom of that interface where the original file path appears there is a button on the left that if you hover over it says it is the pack button. Press that and then save your Blender project as a .blend file somewhere easy to find.
+
+<img src="../red-image-icon-in-outliner.png" alt="Closeup of Blender's Outliner panel showing the red icon that can be clicked to display properties of a reference image">
+
+<div>-</div>
+
+<img src="../location-of-pack-button-for-reference-image.png" alt="Closeup of bottom part of Blender's properties panel for a reference, pack button is on the left">
 
 ## B. Adding and positioning simple objects 
 
@@ -51,6 +59,8 @@ This is also a good chance to experiment with Blender’s view controls. With th
 Objects can be rotated by selecting them and pressing R, sized by selecting them and pressing S, and moved by selecting them and pressing G (for grab). All of these manipulations can be constrained to happen along one axis if you press R G or S and then either X Y or Z immediately after. 
 
 Notice how it says Object in the top left of the 3D view. We will use other modes for the 3D view in some of the sections below. This is an important key part of understanding what is happening as you use blender. 
+
+<img src="../close-up-of-mode-selection-menu.png" alt="Closeup of Blender's mode selection menu, with Object Mode currently selected">
 
 In the sections to come, we’ll explore some basic techniques in an abstract way, before returning to apply them to the object you are trying to model. So if you’ve done some careful work selecting and positioning objects and reference images, you might want to save that using Blender’s save function from the file menu, so that you can start from scratch as you first explore the sections to come, then return to your work in progress when you are ready. 
 
