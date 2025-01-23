@@ -159,5 +159,5 @@ Save the scene and test the game again. If you have enough points, and you hit t
 
 ## Scale up to a small playable game by making the world larger, more collectables, etc
 
-The final step is just to do more of the above, scale it up into being an interesting tiny game! When you've done that and are happy with it, compress the whole ZIP folder and feel free to submit it as a weekly submission that would demonstrate the achievement of level 1 in the mechanics area of technical practice.
+The final step is just to do more of the above, scale it up into being an interesting tiny game! When you've done that and are happy with it, compress the whole ZIP folder (i.e. the working, complete project folder of your Godot project - not just a part of that folder and not any kind of exported executabvle) and feel free to submit it as a weekly submission that would demonstrate the achievement of level 1 in the mechanics area of technical practice. To meet expectations for level 1, the game needs to be genuinely *playable* so make sure that you play test your submission and resolve any obvious, larger issues that might make the game "not really playable".
 
