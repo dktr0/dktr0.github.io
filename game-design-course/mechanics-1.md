@@ -88,10 +88,10 @@ Focus on the Area3D. In the Node tab next to the Inspector, select the Signals s
 
 ```
 func _on_area_3d_area_entered(area: Area3D) -> void:
-    if(area.is_in_group("Collectable")):
-    	score = score + 1;
-        print("hit collectable, new score = " + str(score));
-    	area.queue_free();
+	if(area.is_in_group("Collectable")):
+		score = score + 1;
+		print("hit collectable, new score = " + str(score));
+		area.queue_free();
 ```
 
 And also replace the top part of the script so that it looks like this, and the "score" variable referenced in the above example actually exists: 
@@ -141,16 +141,16 @@ Now replace the previous ...area_entered... function/method in the Player script
 
 ```
 func _on_area_3d_area_entered(area: Area3D) -> void:
-    if(area.is_in_group("Collectable")):
-        score = score + 1;
-    	print("hit collectable, new score = " + str(score));
-    	area.queue_free();
-    elif(area.is_in_group("Transition")):
-    	if(score<2):
-            print("not enough points yet");
-    	else:
-            print("yay you win!");
-            get_tree().change_scene_to_file("res://game.tscn")
+	if(area.is_in_group("Collectable")):
+		score = score + 1;
+		print("hit collectable, new score = " + str(score));
+		area.queue_free();
+	elif(area.is_in_group("Transition")):
+		if(score<2):
+			print("not enough points yet");
+		else:
+			print("yay you win!");
+			get_tree().change_scene_to_file("res://game.tscn")
 ```
 
 Save the scene and test the game again. If you have enough points, and you hit the transition object, the scene/game should reload.

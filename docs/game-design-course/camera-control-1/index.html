@@ -58,7 +58,7 @@ we won't actually use the up and down directions in this model, but games tend t
 
 	# Handle jump.
 	if Input.is_action_just_pressed(&quot;jump&quot;) and is_on_floor():
-		velocity.y = JUMP_VELOCITY;
+	velocity.y = JUMP_VELOCITY;
 
 	var input_dir = Input.get_vector(&quot;left&quot;, &quot;right&quot;, &quot;up&quot;, &quot;down&quot;);
 	var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized();

@@ -73,10 +73,10 @@ Since we've already done a similar procedure in step B above, the first part of 
 <p>Last part of setting up our player controller is getting the Area3D to &quot;call&quot; into our Player script when something bumps into it (i.e. a collectable object). Here goes...</p>
 <p>Focus on the Area3D. In the Node tab next to the Inspector, select the Signals sub-tab. The top signal under Area3D in that pane is named &quot;area_entered&quot;. Double-click on that, and the &quot;Connect a Signal to a Method&quot; dialog pops up. It will suggest connecting the signal to a method in your player script, and it's default suggestion is good for now, so press connect. It will take you to the Player script and add a default/empty version of the _on_area_3d_area_entered function/method. Replace that with the following (note that the indentation with tabs is very important and must be followed exactly!):</p>
 <pre><code>func _on_area_3d_area_entered(area: Area3D) -&gt; void:
-    if(area.is_in_group(&quot;Collectable&quot;)):
-    	score = score + 1;
-        print(&quot;hit collectable, new score = &quot; + str(score));
-    	area.queue_free();
+	if(area.is_in_group(&quot;Collectable&quot;)):
+		score = score + 1;
+		print(&quot;hit collectable, new score = &quot; + str(score));
+		area.queue_free();
 </code></pre>
 <p>And also replace the top part of the script so that it looks like this, and the &quot;score&quot; variable referenced in the above example actually exists:</p>
 <pre><code>extends CharacterBody3D
@@ -104,16 +104,16 @@ const JUMP_VELOCITY = 4.5
 <p>Since there's only going to be one of these in the level, let's add it directly instead of making an independent scene. With your game.tscn open, add a new Area3D as a child of the &quot;Game&quot; node and rename it &quot;Transition&quot;. Give it a CollisionShape (with a BoxShape3D resource) child, and a MeshInstance3D child, with a differently coloured BoxMesh, like before). Add the &quot;Transition&quot; node to a new Group that you create called &quot;Transition&quot;. Position the Transition node somewhere meaningful in the game world.</p>
 <p>Now replace the previous ...area_entered... function/method in the Player script with this one:</p>
 <pre><code>func _on_area_3d_area_entered(area: Area3D) -&gt; void:
-    if(area.is_in_group(&quot;Collectable&quot;)):
-        score = score + 1;
-    	print(&quot;hit collectable, new score = &quot; + str(score));
-    	area.queue_free();
-    elif(area.is_in_group(&quot;Transition&quot;)):
-    	if(score&lt;2):
-            print(&quot;not enough points yet&quot;);
-    	else:
-            print(&quot;yay you win!&quot;);
-            get_tree().change_scene_to_file(&quot;res://game.tscn&quot;)
+	if(area.is_in_group(&quot;Collectable&quot;)):
+		score = score + 1;
+		print(&quot;hit collectable, new score = &quot; + str(score));
+		area.queue_free();
+	elif(area.is_in_group(&quot;Transition&quot;)):
+		if(score&lt;2):
+			print(&quot;not enough points yet&quot;);
+		else:
+			print(&quot;yay you win!&quot;);
+			get_tree().change_scene_to_file(&quot;res://game.tscn&quot;)
 </code></pre>
 <p>Save the scene and test the game again. If you have enough points, and you hit the transition object, the scene/game should reload.</p>
 <p>(Note: if you had multiple levels and you wanted hitting the transition to jump to the next one, you can edit the &quot;path&quot; provided to the change_scene_to_file function in the script example above to point to the scene file for the next level instead. Note: If there was two or more such transitions, you'd need to use a different player controller and script for each level, in the way things have been structured in these tutorial instructions; an even better way would be to add a variable to represent which level the player is in and use that to determine which new level is loaded. Let's talk about that if you're interested!)</p>

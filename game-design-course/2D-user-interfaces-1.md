@@ -50,7 +50,7 @@ To help understand how this works, as a first step, let's make it that when the 
 
 ```
 func _on_start_game_button_pressed():
-    print("you pressed the button");
+	print("you pressed the button");
 ```
 
 Test that by running the current scene. When you click on the button with the mouse, you should be able to see the message from your print statement/call appear in Godot's Output window (near the bottom). If so, that's great - you've verified that your button works and that when it is pressed a specific function from your script is being called (made to run/execute).
@@ -59,8 +59,8 @@ What we really want to do, though, is have Godot shift to playing a completely d
 
 ```
 func _on_start_game_button_pressed():
-    print("you pressed the button");
-    get_tree().change_scene_to_file("res://game.tscn");
+	print("you pressed the button");
+	get_tree().change_scene_to_file("res://game.tscn");
 ```
 
 Test it out by running the current scene (the UI one) and clicking the button. You (as the player) should be taken to whatever game.tscn is when the button is clicked (i.e. an empty scene if you just made an empty game.tscn, your actual game if you already had a working main game scene).
@@ -84,12 +84,12 @@ Next we'll set up some code in our UI script that does something if the user has
 ```
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-    if Input.is_action_just_pressed("fullscreen"):
-        var m = get_window().mode;
-        if m == Window.MODE_WINDOWED:
-            get_window().mode = Window.MODE_FULLSCREEN;
-        else:
-            get_window().mode = Window.MODE_WINDOWED;
+	if Input.is_action_just_pressed("fullscreen"):
+		var m = get_window().mode;
+		if m == Window.MODE_WINDOWED:
+			get_window().mode = Window.MODE_FULLSCREEN;
+		else:
+			get_window().mode = Window.MODE_WINDOWED;
 ```
 
 Do the exact same in a script attached to the top node of your actual game scene as well. That way, in both scenes - the title and the actual game - every frame of rendering Godot will check if the action from the input map was pressed and if so it will toggle the full-screen mode. Test your UI in full-screen by launching the game and pressing the keyboard short-cut you set up (in both the title page and the actual game). Note that our individual and collective games in this course should work in both full-screen and in a reasonable selection of different not-full-screened sizes, so get used to testing full-screen and not full-screen!
@@ -107,7 +107,7 @@ Now add a script to the root node (the "Overlay") node, and add a new function t
 
 ```
 func setScore(x):
-    $Score.text = str(x);
+	$Score.text = str(x);
 ```
 
 You can test it by changing the _ready function in the Overlay script to call the new function you made and set it to some different value than what you had already:
@@ -115,7 +115,7 @@ You can test it by changing the _ready function in the Overlay script to call th
 ```
 # Called when the node enters the scene tree for the first time.
 func _ready():
-    setScore(1977);
+	setScore(1977);
 ```
 Test it out. Whatever you had earlier for the score should be replaced by what the function call is asking it to display instead.
 
@@ -124,7 +124,7 @@ Note that the way we've defined the setScore function it will work even if we do
 ```
 # Called when the node enters the scene tree for the first time.
 func _ready():
-    setScore("test");
+	setScore("test");
 ```
 
 Add the overlay scene to the game by instancing the overlay.tscn scene as a child node of the actual game's main node. When you run the actual game scene, you should see the overlay wherever you put it.
@@ -137,17 +137,17 @@ $"/root/Game/Overlay".setScore(....); # note the .... is a placeholder!
 As an example here's the Player script from the level 1 Mechanics instructions, altered so that as the player collects objects the score is increased:
 ```
 func _on_area_3d_area_entered(area: Area3D) -> void:
-    if(area.is_in_group("Collectable")):
-        score = score + 1;
-    	print("hit collectable, new score = " + str(score));
-	$"/root/Game/Overlay".setScore(score);
-    	area.queue_free();
-    elif(area.is_in_group("Transition")):
-    	if(score<2):
-            print("not enough points yet");
-    	else:
-            print("yay you win!");
-            get_tree().change_scene_to_file("res://game.tscn")
+	if(area.is_in_group("Collectable")):
+		score = score + 1;
+		print("hit collectable, new score = " + str(score));
+		$"/root/Game/Overlay".setScore(score); # this is the new line
+		area.queue_free();
+	elif(area.is_in_group("Transition")):
+		if(score<2):
+			print("not enough points yet");
+		else:
+			print("yay you win!");
+			get_tree().change_scene_to_file("res://game.tscn")
 ```
 
 Note: If you have an empty main game, you can't actually meaningfully incorporate the setting of the score meaningfully. If you've been working in an empty/test Godot project, now is the time to go back and do this stuff "for real" (or, I guess, in a completely new main game that you make too, whatever works.)

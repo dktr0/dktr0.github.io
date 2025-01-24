@@ -51,13 +51,13 @@
 <p>Now let's connect the signal that the button issues when pressed, to a new function in that script. Focus on the button in the scene panel, and then in the Node panel (next to the inspector) bring up the Signals sub-panel. Under &quot;BaseButton&quot; you'll notice a signal for &quot;pressed()&quot; (amidst lots of other signals that could be used to &quot;capture&quot; other events that happen pertinent to this node - it's useful to take amoment to look at all of them briefly just to get a sense of it all). Click to connect the &quot;pressed()&quot; signal - Godot will suggest a name for a new function it will create in your script. The defaults should all be good, so go ahead and click Connect.</p>
 <p>To help understand how this works, as a first step, let's make it that when the player presses the button, a message gets printed to the console. Replace the &quot;pass&quot; statement in the new function that was created (the one that respond to the button press) with a print statement. The final result might look something like this (the name of the function will be a little bit different if you named your button differently):</p>
 <pre><code>func _on_start_game_button_pressed():
-    print(&quot;you pressed the button&quot;);
+	print(&quot;you pressed the button&quot;);
 </code></pre>
 <p>Test that by running the current scene. When you click on the button with the mouse, you should be able to see the message from your print statement/call appear in Godot's Output window (near the bottom). If so, that's great - you've verified that your button works and that when it is pressed a specific function from your script is being called (made to run/execute).</p>
 <p>What we really want to do, though, is have Godot shift to playing a completely different scene when the player presses the button. If you aren't working in an existing game project, make a new empty 3D scene (i.e. with a Node3D root node), rename it Game, and save it as game.tscn, then close it. If you're working in an existing project, you probably already have a main game scene saved in your project. Back in the script for the UI scene, let's add an instruction (similar to the one that appears in the exit/transition section of the Mechanics 1 instruction) to change Godot's overall scene to a new specific scene file. After adding the instruction, the function that responds to the button press would like something like this (change game.tscn to correspond to whatever your actual game scene is called if you already had one):</p>
 <pre><code>func _on_start_game_button_pressed():
-    print(&quot;you pressed the button&quot;);
-    get_tree().change_scene_to_file(&quot;res://game.tscn&quot;);
+	print(&quot;you pressed the button&quot;);
+	get_tree().change_scene_to_file(&quot;res://game.tscn&quot;);
 </code></pre>
 <p>Test it out by running the current scene (the UI one) and clicking the button. You (as the player) should be taken to whatever game.tscn is when the button is clicked (i.e. an empty scene if you just made an empty game.tscn, your actual game if you already had a working main game scene).</p>
 <p>Since this is a title page, it would make sense for it to be the first scene that is experienced by the player when the game is launched. This can be selected in Project Settings (from the Project menu) under Application: Run. There you'll see an entry for Main Scene and clicking on the button to the very right of that will let you choose any .tscn (scene) file in your project as the first scene when the game launches. So, pick your title UI scene as the project's main scene.</p>
@@ -70,12 +70,12 @@
 <p>Next we'll set up some code in our UI script that does something if the user has just pressed our &quot;fullscreen&quot; action. Replace _process function in UI script with the following (as always, check carefully to make sure the code is indented correctly, with real tabs and not spaces, which often gets scrambled during copy-paste from the web):</p>
 <pre><code># Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-    if Input.is_action_just_pressed(&quot;fullscreen&quot;):
-        var m = get_window().mode;
-        if m == Window.MODE_WINDOWED:
-            get_window().mode = Window.MODE_FULLSCREEN;
-        else:
-            get_window().mode = Window.MODE_WINDOWED;
+	if Input.is_action_just_pressed(&quot;fullscreen&quot;):
+		var m = get_window().mode;
+		if m == Window.MODE_WINDOWED:
+			get_window().mode = Window.MODE_FULLSCREEN;
+		else:
+			get_window().mode = Window.MODE_WINDOWED;
 </code></pre>
 <p>Do the exact same in a script attached to the top node of your actual game scene as well. That way, in both scenes - the title and the actual game - every frame of rendering Godot will check if the action from the input map was pressed and if so it will toggle the full-screen mode. Test your UI in full-screen by launching the game and pressing the keyboard short-cut you set up (in both the title page and the actual game). Note that our individual and collective games in this course should work in both full-screen and in a reasonable selection of different not-full-screened sizes, so get used to testing full-screen and not full-screen!</p>
 <h2>D. Adding a 2D UI overlay to a 3D game</h2>
@@ -85,18 +85,18 @@ func _process(delta):
 and then selecting a suitable Anchors Preset directly below that (or you can use custom anchors too like we did with the button above, whatever works).</p>
 <p>Now add a script to the root node (the &quot;Overlay&quot;) node, and add a new function to that which can be used by other scripts whenever what is displayed in the score (or whatever) overlay needs to change:</p>
 <pre><code>func setScore(x):
-    $Score.text = str(x);
+	$Score.text = str(x);
 </code></pre>
 <p>You can test it by changing the _ready function in the Overlay script to call the new function you made and set it to some different value than what you had already:</p>
 <pre><code># Called when the node enters the scene tree for the first time.
 func _ready():
-    setScore(1977);
+	setScore(1977);
 </code></pre>
 <p>Test it out. Whatever you had earlier for the score should be replaced by what the function call is asking it to display instead.</p>
 <p>Note that the way we've defined the setScore function it will work even if we don't give it a number. The str function converts whatever it is given into text - so if we give it a number it becomes text, if we give it text it becomes (well, stays) text. For example:</p>
 <pre><code># Called when the node enters the scene tree for the first time.
 func _ready():
-    setScore(&quot;test&quot;);
+	setScore(&quot;test&quot;);
 </code></pre>
 <p>Add the overlay scene to the game by instancing the overlay.tscn scene as a child node of the actual game's main node. When you run the actual game scene, you should see the overlay wherever you put it.</p>
 <p>Now whenever your actual game changes a score, count, etc, you can display that by calling the setScore function of the overlay scene you just created. Exactly how this looks depends on what your nodes are called and how they are arranged in a hierarchy. If your top level node is called &quot;Game&quot; and you have the &quot;Overlay&quot; as a child of that then calling the setScore function in the overlay scene would look something like:</p>
@@ -104,17 +104,17 @@ func _ready():
 </code></pre>
 <p>As an example here's the Player script from the level 1 Mechanics instructions, altered so that as the player collects objects the score is increased:</p>
 <pre><code>func _on_area_3d_area_entered(area: Area3D) -&gt; void:
-    if(area.is_in_group(&quot;Collectable&quot;)):
-        score = score + 1;
-    	print(&quot;hit collectable, new score = &quot; + str(score));
-	$&quot;/root/Game/Overlay&quot;.setScore(score);
-    	area.queue_free();
-    elif(area.is_in_group(&quot;Transition&quot;)):
-    	if(score&lt;2):
-            print(&quot;not enough points yet&quot;);
-    	else:
-            print(&quot;yay you win!&quot;);
-            get_tree().change_scene_to_file(&quot;res://game.tscn&quot;)
+	if(area.is_in_group(&quot;Collectable&quot;)):
+		score = score + 1;
+		print(&quot;hit collectable, new score = &quot; + str(score));
+		$&quot;/root/Game/Overlay&quot;.setScore(score); # this is the new line
+		area.queue_free();
+	elif(area.is_in_group(&quot;Transition&quot;)):
+		if(score&lt;2):
+			print(&quot;not enough points yet&quot;);
+		else:
+			print(&quot;yay you win!&quot;);
+			get_tree().change_scene_to_file(&quot;res://game.tscn&quot;)
 </code></pre>
 <p>Note: If you have an empty main game, you can't actually meaningfully incorporate the setting of the score meaningfully. If you've been working in an empty/test Godot project, now is the time to go back and do this stuff &quot;for real&quot; (or, I guess, in a completely new main game that you make too, whatever works.)</p>
 <h2>E. Incorporate these techniques in an actual small game</h2>
