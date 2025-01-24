@@ -36,7 +36,7 @@ Mechanics
 <div class="entry">
 Sound
 
-- level 1: triggered sound effects and positional ambient sounds
+- [level 1: triggered sound effects and positional ambient sounds](../sound-1/index.html)
 - level 2: sound banks with random/generative variation
 - level 3: adaptive sound tracks (or something else ambitious)
 </div>
