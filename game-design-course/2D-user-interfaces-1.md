@@ -79,7 +79,7 @@ This is a good chance to start to work with Godot's Input Map, which assigns nam
 
 We'll add an "Action" to the Input map for our keyboard shortcut. In Project: Project Settings: Input Map, enable "Show Built-In Actions". Then, where it says Add New Action, type "fullscreen" as the intended name for our new action, then click the "+ Add" button directly to the right of that. Now it will listen for input. Press ctrl-shift-f, and you should see it respond/pick that up. Press Okay. Now the "action" "fullscreen" will "happen" anytime someone presses that combination of keys.
 
-Next we'll set up some code in our UI script that does something if the user has just pressed our "fullscreen" action. Replace _process function in UI script with the following (as always, ):
+Next we'll set up some code in our UI script that does something if the user has just pressed our "fullscreen" action. Replace _process function in UI script with the following (as always, check carefully to make sure the code is indented correctly, with real tabs and not spaces, which often gets scrambled during copy-paste from the web):
 
 ```
 # Called every frame. 'delta' is the elapsed time since the previous frame.
