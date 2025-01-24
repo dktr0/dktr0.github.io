@@ -71,7 +71,11 @@
 <pre><code># Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
     if Input.is_action_just_pressed(&quot;fullscreen&quot;):
-        get_window().mode = Window.MODE_EXCLUSIVE_FULLSCREEN if (!((get_window().mode == Window.MODE_EXCLUSIVE_FULLSCREEN) or (get_window().mode == Window MODE_FULLSCREEN))) else Window.MODE_WINDOWED;
+        var m = get_window().mode;
+        if m == Window.MODE_WINDOWED:
+            get_window().mode = Window.MODE_FULLSCREEN;
+        else:
+            get_window().mode = Window.MODE_WINDOWED;
 </code></pre>
 <p>Do the exact same in a script attached to the top node of your actual game scene as well. That way, in both scenes - the title and the actual game - every frame of rendering Godot will check if the action from the input map was pressed and if so it will toggle the full-screen mode. Test your UI in full-screen by launching the game and pressing the keyboard short-cut you set up (in both the title page and the actual game). Note that our individual and collective games in this course should work in both full-screen and in a reasonable selection of different not-full-screened sizes, so get used to testing full-screen and not full-screen!</p>
 <h2>D. Adding a 2D UI overlay to a 3D game</h2>
