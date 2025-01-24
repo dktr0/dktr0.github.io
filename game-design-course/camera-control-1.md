@@ -14,7 +14,10 @@ The overall shape of what we’ll do is as follows, with more detailed instructi
 
 - A. Make a player scene that includes a camera
 - B. Setup input map for keyboard and game controller control
-
+- C. Tweak the default CharacterBody3D script for 2D motion
+- D. Make a trampoline
+- E. Make a teleporter
+- F. Scale up to a complete very tiny game
 
 ## A. Make a player scene that includes a camera
 (note: this is very similar to the player controller in Mechanics 1 instructions, but with a camera and axis lock)
@@ -112,7 +115,9 @@ func teleport(teleportTo: Vector3):
 	global_position = teleportTo;	
 ```
 
-F. Apply these ideas (possibly in combination with ideas from other technical areas) in a complete, small game
+## F. Scale up to a complete very tiny game
+
+Apply these ideas (possibly in combination with ideas from other technical areas) in a complete, small game
 
 
 
