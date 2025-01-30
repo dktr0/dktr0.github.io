@@ -77,6 +77,7 @@ This is a list (in progress, still quite incomplete) of every game I can remembe
 - *Journey* (PS3; 13 Mar 2012)
 - *Spec Ops: The Line* (PS3; 26 Jun 2012)
 - *The Last of Us* (PS3; 14 Jun 2013)
+- *Cities: Skylines* (PS5; 10 Mar 2015)
 - *Exploding Kittens* (card game; Jul 2015)
 - *The Beginner's Guide* (PC; 1 Oct 2015)
 - *Overcooked* (PC; 2 Aug 2016)
@@ -92,4 +93,5 @@ This is a list (in progress, still quite incomplete) of every game I can remembe
 - *Cat Quest II* (PS5; 19 Sep 2019)
 - *Before I Forget* (PC; 16 Jul 2020)
 - *Astro's Playroom* (PS5; 12 Nov 2020)
+- *The World Game* (boardgame; 4 Jan 2021)
 - *Far Cry 6* (PS5; 7 Oct 2021)
