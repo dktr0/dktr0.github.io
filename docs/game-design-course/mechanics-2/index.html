@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>index</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="styleSheet" href="/style.css" type="text/css" media="screen">
+</head>
+<body>
+
+<center>
+<div class="outer">
+<div class="header">
+
+<div class="name"><a href="/index.html">David Ogborn (dktr0)</a></div>
+
+<div class="contact">
+<a href="mailto:ogbornd@mcmaster.ca">email</a>
+<a href="https://social.toplap.org/@dktr0">fediverse</a>
+<a href="https://www.youtube.com/@dktr0">youtube</a>
+<a href="https://orcid.org/0000-0002-5898-1660">orcid</a>
+</div> <!-- contact -->
+
+</div> <!-- header -->
+<div class="content">
+    <h1>Mechanics 2: Objects That Move</h1>
+<p>To demonstrate this technical area, submit a small, playable game that contains some variation on all three of the following mechanics (possible ways to implement each mechanic are indicated further below):</p>
+<ul>
+<li>Projectiles</li>
+<li>Moving terrain (via Godot animation)</li>
+<li>Objects that follow other objects</li>
+</ul>
+<h2>Projectiles</h2>
+<p>One overall pathway to implementing a projectile mechanic goes like this:</p>
+<ul>
+<li>make an independent scene to represent the visual and physics behaviour</li>
+<li>launch the projectile by instancing it into a scene</li>
+<li>detect and do something when the projectile hits something</li>
+</ul>
+<h3>make an independent scene for the projectile</h3>
+<p>This would be similar to independent scenes we've made in other technical areas - some kind of body as the root node, with other nodes as children as necessary.</p>
+<p>There are projectiles that are affected by physics, those that are not affected by physics, and many things in between these two extremes as well (e.g. things that are affected by physics but also continue to move in self-controlled ways). If something is set moving in a certain direction and after that obeys the &quot;laws of physics&quot; we would probably model it with a RigidBody3D as the root node of our scene. If something obeys the &quot;laws of physics&quot; but is also able to continue to resist those laws in some way (e.g. a rocket continues to propel itself as it flies) we would probably choose a CharacterBody3D as our root node.</p>
+<p>Then we would have a CollisionShape3D child (of course), either a MeshInstance3D or some other node that causes visual things to happen (assuming the projectile is visible), and most likely an Area3D (with its own CollisionShape child) so that the projectile can itself detect when it has hit something. Don't forget to rename the root node of the independent scene, and it would be a good idea to add the root node to a Group that identifies what kind of thing this is in the game.</p>
+<p>Because we'll want the projectile to delete itself even when it doesn't hit anything (so they don't pile up in the world if there's lots of them), we'll use a Timer. Add a Timer node as a child of the root node. Set its wait time to 10 seconds (or something like that, possibly less if there are going to be lots of these and they don't need to last that long). Check the boxes for &quot;One Shot&quot; and &quot;Autostart&quot; in the Inspector for the Timer node. Later we'll connect it's &quot;timeout&quot; signal to a method in a script.</p>
+<h3>launch the projectile by instancing it into a scene</h3>
+<p>The root node of your projectile scene will need a suitably named script attached to it, so do that. Immediately below is an example of a complete script for a &quot;Rocket&quot; scene, based on a CharacterBody3D root node that has been added to the &quot;Rocket&quot; group.</p>
+<pre><code>extends CharacterBody3D
+
+func launch(launcher : Node3D, launchSpeed : float, safeDistance : float):
+	var q = launcher.quaternion;
+	set_quaternion(q); # rotation of rocket matches rotation of launcher
+	set_velocity(q*Vector3.FORWARD*launchSpeed); # velocity also determined by that rotation
+	# set initial position to safeDistance away in direction of launcher's rotation
+	set_global_position(launcher.global_position + (q*Vector3.FORWARD*safeDistance));
+	
+func _physics_process(delta):
+	# if not is_on_floor(): # uncomment this block to make rocket affected by gravity
+	#	velocity += get_gravity() * delta;
+	move_and_slide()
+
+func _on_area_3d_area_entered(area):
+	collidedWithAreaOrBody(area);
+
+func _on_area_3d_body_entered(body):
+	collidedWithAreaOrBody(body);
+	
+func collidedWithAreaOrBody(areaOrBody):	
+	if(!areaOrBody.is_in_group(&quot;Player&quot;) &amp;&amp; !areaOrBody.is_in_group(&quot;Rocket&quot;)):
+		queue_free();
+		
+func _on_timer_timeout():
+	queue_free();
+</code></pre>
+<p>In the above script, the launch function is meant to be called from some other script (e.g. a script attached to whatever is launching the rocket) to position the rocket initially and to set up its initial velocity. After that the move_and_slide() call in the _physics_process() function just keeps it moving in that same direction. There's two functions (signal handlers) that respond to signals from the Area3D child of the Rocket scene - the area_3D_area_entered and area_3D_body_entered signals. Connecting both signals allows the Rocket to detect collisions with either bodies or areas - and both signal handlers (functions) call a common function collidedWithAreaOrBody so that we don't have to repeat that code for the two cases. The latter function checks if the collision is with the Player or is part of the Rocket itself, and if not, it deletes the projectile/rocket. The assumption here is that the actual consequences of a projectile hitting something are going to be handled by the thing that is hit - the projectile is only responsible for moving itself and deleting itself when it hits something.</p>
+<p>Don't forget to connect the three signals mentioned above (two from the Area3D, one from the Timer)!</p>
+<p>Now somewhere else (e.g. in a script attached to our player scene/controller) we'll do something like the following to make the projectile launchable. Near the top of the script:</p>
+<pre><code>@onready var rocketScene = preload(&quot;res://rocket.tscn&quot;); # or whatever your scene is called
+</code></pre>
+<p>And in the _physics_process for the launcher, and assuming an entry has been added to the Input Map (Project: Project Settings: Input Map) called &quot;fire&quot;:</p>
+<pre><code>	if Input.is_action_just_pressed(&quot;fire&quot;):
+		var r = rocketScene.instantiate();
+		add_child(r);
+		r.launch(self,1.0);
+</code></pre>
+<h3>detect and do something when the projectile hits something</h3>
+<p>This is left as an exercise for the reader. If you've added your projectile to a suitably named group, then anything you care about it hitting just has to detect when a body from that group hits it, and do something (i.e. very similar to ideas from Mechanics 1 technical area). And in the script/implementation above we've already taken care of the projectile deleting itself.</p>
+<h2>Moving Terrain (via Godot animation)</h2>
+<p>Moving terrain, such as moving platforms for players to jump on, can be implemented with Godot's built-in animation system.</p>
+<p>In all cases, you'll add an AnimationPlayer node as a direct child of the thing you want to move. There's generally two ways to do this if (as recommended) you are working in a very modular way with lots of independent scenes that you then bring together in an overall level or game scene: (1) you can instance the independent scene in your level/game and add the AnimationPlayer as a child in the level/game scene or (2) you can add the AnimationPlayer as a child in the independent scene itself. Method 1 lets you reuse the scene but have it animate/move in different ways as you continue to make duplicate copies of it. Method 2 lets you have an object that always moves in the same way as you duplicate it.</p>
+<p>Whichever way you pick, once you've added the AnimationPlayer to the thing you want to move, click on the button labelled Animation near the centre-middle of Godot's interface (just below the 3D view). If you don't see it, you may need to select the Animation tab from the middle bottom of Godot's interface first.</p>
+<p>Click New to make a new animation and give it a unique name. Focus on the object you are moving in the Scene panel/node graph. Now in the inspector open the Node3D: Transform area. Next to position, rotation and scale you'll see a little icon that looks like a key (for &quot;keyframe&quot;). Click the icon next to position and press &quot;Create&quot; on the window that pops up. In the Animation area at the bottom of the screen you'll see a position keyframe has been created.</p>
+<p>Change the length of the animation to something you want - it's the number near the top right of the animation area. As you change it, you'll see the new duration reflected in the scrubber of the Animation area. Click in the scrubber to position the time pointer somewhere else. Now move the object and click on the keyframe next to Position again. You should see two keyframes now.</p>
+<p>To make the animation loop, click the loop icon near the top right of the Animation area, and to make it autostart when the game starts, click the icon that looks like a letter A (it is blue when selected). You can test the animation in the editor by clicking the play button on the top left of the animation area, and when you launch the scene, the object should move back and forth between the two positions/keyframes you created.</p>
+<p>That's it - the rest is details, nuances, and applications!</p>
+<p>(Note: Unlike Blender animations, there is no need to make a keyframe at the end of a looping animation to bring things back to the initial position - Godot will do this by default.)</p>
+<h2>Objects that follow other objects</h2>
+<p>Here's a script that can be added to a scene (based on a CharacterBody3D root node) to make it follow the player. You can tweak it to match the actual names of nodes in your game:</p>
+<pre><code>extends CharacterBody3D
+
+const SPEED = 2.0
+const ACCEL = 4.0
+const DECEL = 6.0
+
+@onready var target = $&quot;/root/Game/Player&quot;;
+
+func _physics_process(delta: float) -&gt; void:
+
+	if not is_on_floor(): # gravity
+		velocity += get_gravity() * delta;
+
+	# calculate distance to target
+	var dist = global_position.distance_to(target.global_position);
+	if dist &lt; 10.0: # if distance is less than a certain threshold...
+		# ...accelerate in that direction... 
+		var dir = (target.global_position - global_position).normalized();
+		velocity.x = move_toward(velocity.x,dir.x*SPEED,abs(dir.x*ACCEL*delta));
+		velocity.z = move_toward(velocity.z,dir.z*SPEED,abs(dir.z*ACCEL*delta));
+		# ...and rotate to face that direction
+		look_at(target.global_position);
+	else:
+		# ...otherwise, slow down in the direction we are already going
+		var dir = velocity.normalized();
+		velocity.x = move_toward(velocity.x,0,dir.x*DECEL*delta);
+		velocity.z = move_toward(velocity.z,0,dir.z*DECEL*delta);
+		
+	move_and_slide()
+</code></pre>
+<h2>What to submit</h2>
+<p>Submit a small, playable game that contains some variation on all three of the above mechanics. As always, feel free to combine this with things from other areas, and it's totally fine to make weekly submissions that demonstrate multiple areas/levels of technical practice if that's helpful.</p>
+
+</div> <!-- content -->
+</div> <!-- outer -->
+</center>
+
+</body>
+</html>

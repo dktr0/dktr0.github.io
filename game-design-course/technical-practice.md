@@ -13,7 +13,7 @@ The 3 levels of technical achievement involve different levels of guidance (from
 Mechanics
 
 - [level 1: collisions as triggers (maze transitions, collecting objects, scores)](../mechanics-1/index.html)
-- level 2: objects that move (projectiles, moving terrain, following)
+- [level 2: objects that move (projectiles, moving terrain, following)](../mechanics-2/index.html)
 - level 3: branching paths, co-evolving states (or something else ambitious)
 </div>
 
