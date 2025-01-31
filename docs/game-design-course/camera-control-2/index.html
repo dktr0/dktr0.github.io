@@ -125,6 +125,7 @@ func _on_area_3d_area_entered(area):
 <li>new blender project</li>
 <li>delete the default cube</li>
 <li>add a UV sphere instead</li>
+<li>apply &quot;Shade Smooth&quot; to the object (from the Object menu)</li>
 <li>switch to edit mode</li>
 <li>zoom until you're inside the sphere</li>
 <li>with all vertices selected, use Mesh: Normals: Flip</li>
@@ -137,7 +138,7 @@ func _on_area_3d_area_entered(area):
 <ul>
 <li>click the Render panel in Properties (looks like a camera)</li>
 <li>change Render Engine to Cycles</li>
-<li>change max samples in Render: Render (its under Noise Threshold) to 64 (you can experiment with different values here by repeatedly rendering)</li>
+<li>change max samples in Render: Render (its under Noise Threshold) to 32 (you can experiment with different values here by repeatedly rendering, higher values will be lower noise but take longer to render)</li>
 <li>click the Output poanel in Properties (looks like a printer)</li>
 <li>change both the X and Y resolution to 2048 px</li>
 <li>switch to the Layout preset (to still see your work here you'll need to change the Viewport Shading method near the top right of Blender's 3D view)</li>

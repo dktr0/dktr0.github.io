@@ -124,6 +124,7 @@ Here are some steps to texture paint a simple skybox in Blender:
 - new blender project
 - delete the default cube 
 - add a UV sphere instead
+- apply "Shade Smooth" to the object (from the Object menu)
 - switch to edit mode
 - zoom until you're inside the sphere
 - with all vertices selected, use Mesh: Normals: Flip
@@ -136,7 +137,7 @@ And here are some steps to render your skybox project as a panoramic image file 
 
 - click the Render panel in Properties (looks like a camera) 
 - change Render Engine to Cycles
-- change max samples in Render: Render (its under Noise Threshold) to 64 (you can experiment with different values here by repeatedly rendering)
+- change max samples in Render: Render (its under Noise Threshold) to 32 (you can experiment with different values here by repeatedly rendering, higher values will be lower noise but take longer to render)
 - click the Output poanel in Properties (looks like a printer)
 - change both the X and Y resolution to 2048 px
 - switch to the Layout preset (to still see your work here you'll need to change the Viewport Shading method near the top right of Blender's 3D view)
