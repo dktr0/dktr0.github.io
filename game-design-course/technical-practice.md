@@ -21,8 +21,16 @@ Mechanics
 3D Assets
 
 - [level 1: textured 3D models with collision shapes](../3d-assets-1/index.html)
-- level 2: rig and animate a character model with functioning walk/idle animations
+- [level 2: rig and animate a character model with functioning walk/idle animations](../3d-assets-2/index.html)
 - level 3: generative textures, inverse kinematics, 3D scanning, motion capture, water, fire, mirrors, shader programming (or something else ambitious)
+</div>
+
+<div class="entry">
+Camera and Control
+
+- [level 1: 2D motion in 3D spaces](../camera-control-1/index.html)
+- [level 2: 1st-person with mouselook, keyboard, game controller, skybox, no edges](../camera-control-2/index.html)
+- level 3: independent cameras, context-sensitive popups, temporary "loss of control", flight, swimming, scopes (or something else ambitious)
 </div>
 
 <div class="entry">
@@ -42,10 +50,3 @@ Sound
 </div>
 
 
-<div class="entry">
-Camera and Control
-
-- [level 1: 2D motion in 3D spaces](../camera-control-1/index.html)
-- [level 2: 1st-person with mouselook, keyboard, game controller, skybox, no edges](../camera-control-2/index.html)
-- level 3: independent cameras, context-sensitive popups, temporary "loss of control", flight, swimming, scopes (or something else ambitious)
-</div>

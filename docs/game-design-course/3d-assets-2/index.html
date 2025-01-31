@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>index</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="styleSheet" href="/style.css" type="text/css" media="screen">
+</head>
+<body>
+
+<center>
+<div class="outer">
+<div class="header">
+
+<div class="name"><a href="/index.html">David Ogborn (dktr0)</a></div>
+
+<div class="contact">
+<a href="mailto:ogbornd@mcmaster.ca">email</a>
+<a href="https://social.toplap.org/@dktr0">fediverse</a>
+<a href="https://www.youtube.com/@dktr0">youtube</a>
+<a href="https://orcid.org/0000-0002-5898-1660">orcid</a>
+</div> <!-- contact -->
+
+</div> <!-- header -->
+<div class="content">
+    <h1>3D Assets 2: rig and animate a character model with functioning walk/idle animations</h1>
+<p>There's two parts to this level of this area of technical practice: (1) rigging and animating a Blender model and (2) incorporating the model (exported as GLB) into a Godot scene and using scripts to make the animations go.</p>
+<p>These five videos go through the process of making walk/idle animations in Blender. (The last of the five videos is very specific to the game engine context for our work, so if you have prior experience with Blender rigging and animation in another context, you might not want to skip that last video):</p>
+<ul>
+<li><a href="https://www.macvideo.ca/media/Blender+Animation+Basics/1_gcmoj3fy">Blender Animation Basics</a></li>
+<li><a href="https://www.macvideo.ca/media/Blender+Armature+Basics/1_ldvvjakn">Blender Armature Basics</a></li>
+<li><a href="https://www.macvideo.ca/media/A+Basic+Humanoid+Skeleton+in+Blender/1_n9o7jcwz">A Basic Humanoid Skeleton in Blender</a></li>
+<li><a href="https://www.macvideo.ca/media/Adding+a+humanoid+mesh+to+a+Blender+armature/1_of9c47pr">Adding a humanoid mesh to a Blender armature</a></li>
+<li><a href="https://www.macvideo.ca/media/Adding+walk+and+idle+animations+in+Blender/1_h4fqynwf">Adding walk and idle animations in Blender</a></li>
+</ul>
+<p>As usual (e.g. as in the work for level 1 of 3D assets), you would save your work both as a Blender project (.blend file) and export it as a .glb file (for use in Godot).</p>
+<p>Add the .glb file to a Godot project. When you click on it to open it, you should see that it contains (is converted to) a Godot scene whose root node is Node3D, with two children. One child is the Armature + Mesh combination, and the other child is an AnimationPlayer. The AnimationPlayer will show two animations called &quot;Idle&quot; and &quot;Walk&quot;.</p>
+<p>You can add the imported GLB resource as a child node of an existing player controller (player scene) you've made.</p>
+<p>Now assuming the imported GLB resource is a child node of your top-level Player node (e.g. in an independent scene for your player controller) that is called &quot;skeleton&quot; (yours would be called whatever you ), you can add the following to your _ready function (of your player script), to make sure the animations loop and to make the idle animation play from the beginning:</p>
+<pre><code>	$&quot;skeleton/AnimationPlayer&quot;.get_animation(&quot;Idle&quot;).loop_mode = Animation.LOOP_LINEAR;
+	$&quot;skeleton/AnimationPlayer&quot;.get_animation(&quot;Walk&quot;).loop_mode = Animation.LOOP_LINEAR;
+	$&quot;skeleton/AnimationPlayer&quot;.play(&quot;Idle&quot;);
+</code></pre>
+<p>And now you just have to alter your player script so that when the player starts moving, the walk animation is played, and that the idle animation is played when they stop moving. Here are two lines of code (to be used separately and modified to your context) for those two respective actions:</p>
+<pre><code>$&quot;skeleton/AnimationPlayer&quot;.play(&quot;Walk&quot;);
+$&quot;skeleton/AnimationPlayer&quot;.play(&quot;Idle&quot;);
+</code></pre>
+<h2>What to submit</h2>
+<p>Incorporate a Blender model with working Walk and Idle animations into a small, playable game. When the character is moving, the Walk animation should play. When the character is not moving, the Idle animation should play. Compress the whole working Godot project folder (the folder itself) into a ZIP archive and submit it on Avenue.</p>
+
+</div> <!-- content -->
+</div> <!-- outer -->
+</center>
+
+</body>
+</html>
