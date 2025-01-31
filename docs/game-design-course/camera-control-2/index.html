@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>index</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="styleSheet" href="/style.css" type="text/css" media="screen">
+</head>
+<body>
+
+<center>
+<div class="outer">
+<div class="header">
+
+<div class="name"><a href="/index.html">David Ogborn (dktr0)</a></div>
+
+<div class="contact">
+<a href="mailto:ogbornd@mcmaster.ca">email</a>
+<a href="https://social.toplap.org/@dktr0">fediverse</a>
+<a href="https://www.youtube.com/@dktr0">youtube</a>
+<a href="https://orcid.org/0000-0002-5898-1660">orcid</a>
+</div> <!-- contact -->
+
+</div> <!-- header -->
+<div class="content">
+    <h1>Camera and Control 2: 1st-person with mouselook, keyboard, game controller, skybox, no edges</h1>
+<p>Level 2 of the camera and control technical area involves making a player controller (an independent player scene) where the camera behaves in a &quot;1st person&quot; way, motion and the camera can happy semi-independently via some combination of mouse, keyboard and game controller controls, and then using that controller in a 3D game world that has a custom skybox and &quot;no edges&quot;.</p>
+<h2>A basic 1st person player controller</h2>
+<p>Make a new independent scene with a CharacterBody3D as the root node, rename it (e.g. &quot;Player&quot;) and save it.</p>
+<p>Give it a CollisionShape3D child and provide the CollisionShape3D with a suitable shape resource in the Inspector. If the player avatar is to be visible, add meshes or nodes for that (e.g. following techniques from 3D Assets 1 and/or 2).</p>
+<p>Note: If you have a visible avatar/mesh make sure that it is facing towards the negative part of Godot's Z axis. In other words, if you put the 3D view in front view mode, you will be looking at the back of your avatar/mesh.</p>
+<p>Add a Camera3D node as a child of the root node and position/rotate it in a way you think will make sense. If you have a visible avatar, you might want the camera to slightly behind the avatar and looking at it. If there's no visible avatar, you might want the camera to be where you imagine the eyes of the (invisible) avatar would be. You'll probably come back and tweak these decisions iteratively, later (e.g. while playtesting).</p>
+<p>You'll probably want your root node to have an Area3D node with a suitable CollisionShape3D as well, to be able to detect collisions with things in the world (as discussed in Mechanics 1, for example). If you're making this from scratch, you might want to add that and connect both its area_3d_area_entered and area_3d_body_entered signals to empty/auto-created functions in the root nodes script (to be filled in with suitable code later).</p>
+<p>We need to make sure the Input Map has all the actions we need for this 1st person controller. It's very important (and required for this technical area) to support multiple means of controlling game play such as keyboard+mouse and standard game controllers. Here are the actions to make sure exist in the Input map (Project: Project Settings: Input Map):</p>
+<ul>
+<li>left: connected to A key, and Joypad Axis 0 -</li>
+<li>right: connected to D key, and Joypad Axis 0 +</li>
+<li>forward: connected to W key, and Joypad Axis 1 -</li>
+<li>backward: connected to S key, and Joypad Axis 1 +</li>
+<li>lookleft: connected to Joypad Axis 3 -</li>
+<li>lookright: connected to Joypad Axis 3 +</li>
+<li>lookup: connected to Joypad Axis 4 +</li>
+<li>lookdown: connected to Joypad Axis 4 -</li>
+<li>jump: connected to Space key, and Joypad Button 0 (e.g. Xbox A/Sony Cross)</li>
+</ul>
+<p>(Notice that the looking actions only have a game controller entry - this is because in the script we're going to provide in a moment the mouse motions for looking area accessed in a different way than the actions from the input map.)</p>
+<p>Here's a script for basic 1st person mouselook, keyboard movement and game controller movement/looking. Feel free to customize it to the requirements of your games!:</p>
+<pre><code>extends CharacterBody3D
+
+const SPEED = 5.0
+const JUMP_VELOCITY = 4.5
+const ACCEL = 10.0
+const DECEL = 15.0
+
+var mouseLookLeftRight = 0;
+var mouseLookUpDown = 0;
+
+func _ready():
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+
+func _physics_process(delta):
+	var stickLook = Input.get_vector(&quot;lookleft&quot;,&quot;lookright&quot;,&quot;lookup&quot;,&quot;lookdown&quot;)*(-0.1);
+	rotate_y(mouseLookLeftRight + stickLook.x);
+	$Camera3D.rotate_x(mouseLookUpDown + stickLook.y);
+	$Camera3D.rotation.x = clampf($Camera3D.rotation.x, -deg_to_rad(70), deg_to_rad(70))
+
+	if not is_on_floor(): # gravity
+		velocity += get_gravity() * delta
+
+	if Input.is_action_just_pressed(&quot;jump&quot;) and is_on_floor(): # jumping
+		velocity.y = JUMP_VELOCITY
+
+	var input_dir = Input.get_vector(&quot;left&quot;, &quot;right&quot;, &quot;forward&quot;, &quot;backward&quot;)
+	var dir = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized();
+	if dir:
+		velocity.x = move_toward(velocity.x, dir.x*SPEED, abs(dir.x*ACCEL*delta));
+		velocity.z = move_toward(velocity.z, dir.z*SPEED, abs(dir.z*ACCEL*delta));
+	else:
+		var velDir = velocity.normalized();
+		velocity.x = move_toward(velocity.x, 0, abs(velDir.x*DECEL*delta));
+		velocity.z = move_toward(velocity.z, 0, abs(velDir.z*DECEL*delta));
+
+	move_and_slide()
+	
+func _input(event):
+	if event is InputEventMouseMotion and Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
+		mouseLookLeftRight = -event.relative.x * 0.01; # increase/decrease 0.01 to change sensitivity
+		if abs(mouseLookLeftRight) &lt; 0.02: # dead zone for mouse motion left/right
+			mouseLookLeftRight = 0.0;
+		mouseLookUpDown = -event.relative.y * 0.01; # increase/decrease 0.01 to change sensitivity
+		if abs(mouseLookUpDown) &lt; 0.02: # dead zone for mouse motion up/down
+			mouseLookUpDown = 0.0;
+
+func _on_area_3d_body_entered(body):
+	pass # not doing anything here yet...
+
+func _on_area_3d_area_entered(area):
+	pass # not doing anything here yet...
+</code></pre>
+<h2>Skyboxes</h2>
+<p>There's two parts to this topic:</p>
+<ul>
+<li>adding panoramic skybox images to a Godot project</li>
+<li>making custom panoramic skybox images with Blender</li>
+</ul>
+<h3>adding panoramic skybox images to a Godot project</h3>
+<p>Find and download a panoramic HDR (high dynamic range image). Many free HDR sky images can be found <a href="https://polyhaven.com/hdris/skies">here</a>. Any time we used borrowed materials it's important to take close note of any caveats or conditions around their legal use.</p>
+<p>If you have found a suitable panoramic image</p>
+<ul>
+<li>As a child of your game/level scene's root node, add a WorldEnvironment node.</li>
+<li>Then, in the Inspector add a new Environment resource to that node.</li>
+<li>Change the Background mode to Sky</li>
+<li>Now in the newly appeared Sky part of the Environment resource create a new Sky resource</li>
+<li>In the Sky resource, in Sky Material, create a new PanoramaSkyMaterial</li>
+<li>Drag and drop the panoramic image into your Godot project (e.g. by dragging and dropping from wherever you downloaded it to, into Godot's filesystem on the bottom left of the Godot interface)</li>
+<li>Drag and drop a panoramic image from Godot's filesystem (bottom left) to the Panorama field in the Inspector (the field is in the PanoramaSkyMaterial, click on it if it is not expanded)</li>
+</ul>
+<p>You should now see your new skybox both in the editor and when you play the game.</p>
+<h3>making custom panoramic skybox images with Blender</h3>
+<p>We can make custom skyboxes in Blender by placing a panoramic camera at the origin (0,0,0) and then rendered to a panoramic image format. In the instructions that follow, we do this after texture painting on a UV sphere positioned around the camera (but you can use the same camera and render technique with any Blender scene, and its popular to create Blender scenes that do various generative/dynamic things to create textures on a sphere in order to make skyboxes - that's left as an exercise for the reader).</p>
+<p>Here are some steps to texture paint a simple skybox in Blender:</p>
+<ul>
+<li>new blender project</li>
+<li>delete the default cube</li>
+<li>add a UV sphere instead</li>
+<li>switch to edit mode</li>
+<li>zoom until you're inside the sphere</li>
+<li>with all vertices selected, use Mesh: Normals: Flip</li>
+<li>switch to the texture paint layout</li>
+<li>add a base color slot that is 2048 px by 2048 px (with no alpha) and feel free to select a color to fill it with initially (e.g. blue)</li>
+<li>now you can texture paint (e.g. grey clouds) along the inside of the sphere</li>
+<li>when you're finished, save your work as a Blender project (.blend file)</li>
+</ul>
+<p>And here are some steps to render your skybox project as a panoramic image file that you can then incorporate into your Godot project:</p>
+<ul>
+<li>click the Render panel in Properties (looks like a camera)</li>
+<li>change Render Engine to Cycles</li>
+<li>change max samples in Render: Render (its under Noise Threshold) to 64 (you can experiment with different values here by repeatedly rendering)</li>
+<li>click the Output poanel in Properties (looks like a printer)</li>
+<li>change both the X and Y resolution to 2048 px</li>
+<li>switch to the Layout preset (to still see your work here you'll need to change the Viewport Shading method near the top right of Blender's 3D view)</li>
+<li>click the green icon next to the Camera in the Outliner to open camera properties in properties panel</li>
+<li>change the Type of Camera to Panoramic</li>
+<li>change Panorama Type to Equirectangular</li>
+<li>click on the Object properties panel (looks like an orange square)</li>
+<li>reposition the camera at 0,0,0 with rotation 90,0,0</li>
+<li>focus on the Light, click on its Object properties panel</li>
+<li>reposition the light at 0,0,0 (rotation doesn't matter)</li>
+<li>click on the green icon next to the Light</li>
+<li>reduce the light's power somewhat (I found 20W to be an okay value for my default sphere)</li>
+<li>select Render from the Render menu (and be prepared to wait)</li>
+<li>you'll know its done when you can select Save from the Image menu</li>
+<li>alternately if you want to cancel you can press ESC (e.g. if its taking too long and you have to move to some other productive task for a moment)</li>
+<li>Select Save Image, choose the OpenEXR format and make sure the file has the extension .exr</li>
+</ul>
+<p>That's it - now you can drag and drop that .exr file into your Godot project, and then drag and drop it from there into the Panorama field just like you did with the downloaded image.</p>
+<h2>No edges</h2>
+<p>This is really just about making sure the player can't navigate out of the desired area of play, and that, from where they are looking the sky and horizon look good. You can do this by placing objects at all of the &quot;edges of play&quot; - or even collision shapes without accompanying visual objects. It's about making sure the player can't navigate to places where the game looks bad and/or the mechanics are broken (game becomes unplayable).</p>
+<h2>What to submit</h2>
+<p>Submit a small, original, playable game (submit the whole working Godot project folder itself, as a ZIP archive) that has a 1st person player controller as above, a custom skybox (made in Blender) and does various things to ensure there are no problematic edges to the world (visually or mechanically).</p>
+
+</div> <!-- content -->
+</div> <!-- outer -->
+</center>
+
+</body>
+</html>

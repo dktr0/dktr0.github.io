@@ -46,6 +46,6 @@ Sound
 Camera and Control
 
 - [level 1: 2D motion in 3D spaces](../camera-control-1/index.html)
-- level 2: 1st-person with mouselook, keyboard, game controller, skybox, no edges
+- [level 2: 1st-person with mouselook, keyboard, game controller, skybox, no edges](../camera-control-2/index.html)
 - level 3: independent cameras, context-sensitive popups, temporary "loss of control", flight, swimming, scopes (or something else ambitious)
 </div>
