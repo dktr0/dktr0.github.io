@@ -8,7 +8,7 @@ title: "MEDIAART 3L03: Sound 1, triggered sound effects and positional ambient s
 
 # Sound 1: triggered sound effects and positional ambient sounds
 
-In the interests of making level 1 of this area of technical practice available sooner, I am providing it in a different form than the other level 1 instructions - as a set of videos from a previous year of the course, an example project, and some notes on that example project. (I will return here before too long and redo this page into instructions formatted similarly to those of the other level 1 areas of technical practice.)
+In the interests of making level 1 of this [area of technical practice](../technical-practice/index.html) available sooner, I am providing it in a different form than the other level 1 instructions - as a set of videos from a previous year of the course, an example project, and some notes on that example project. (I will return here before too long and redo this page into instructions formatted similarly to those of the other level 1 areas of technical practice.)
 
 Here are the three videos. They were made with Godot 3 but I am not aware of any significant differences that need to be taken account of in respect of this technical area:
 
@@ -36,7 +36,39 @@ And here are some further notes on the example project to help orient you.
 
 - There is a node called NonPositionalAudio, to demonstrate that. An AudioStreamPlayer (no "3D") has been added and renamed. A WAV file has been dragged on to its Stream property, auto-play has been selected, and the NonPositional bus has been selected.
 
-- There is an independent scene called EventSounds - it is a renamed Node3D with four AudioStreamPlayers as children. Each AudioStreamPlayer has had a different WAV file dropped on to it, has had the "Events" bus selected, and has been renamed - the names (including spelling and lower vs. uppercase) are important (as always!). Note that autoplay is NOT selected for these event sounds (since we want them to be triggered in response to events, not when the scene starts). The top node of the EventSounds scene has a script attached to it that provides two functions which will be called from our Player script - one of the functions can be used to play a specific named sound, the other to play a random sound. In this way, the EventSounds node is kind of like a "sound bank".
+- There is an independent scene called EventSounds - it is a renamed Node3D with four AudioStreamPlayers as children (renamed Vibe60 Vibe64 Vibe67 and Vibe69). Each AudioStreamPlayer has had a different WAV file dropped on to it, has had the "Events" bus selected, and has been renamed - the names (including spelling and lower vs. uppercase) are important (as always!). Note that autoplay is NOT selected for these event sounds (since we want them to be triggered in response to events, not when the scene starts). The top node of the EventSounds scene has a script attached to it that provides two functions which will be called from our Player script - one of the functions can be used to play a specific named sound, the other to play a random sound. In this way, the EventSounds node is kind of like a "sound bank". This is the script from the EventSounds scene:
+
+```
+extends Node3D
+
+func playSound(soundName = null):
+	if(soundName == null):
+		playRandom();
+	else:
+		get_node(soundName).play();
+
+func playRandom():
+	var c = randi() % get_child_count();
+	get_child(c).play();
+```
+
+And here is how the sounds are triggered by key presses in the example project (in your game, you'd probably have this in your code that responds to other events, like collisions, the player moving, collecting an object, etc):
+
+```
+func _physics_process(delta): 
+	
+	# triggering sounds with keypresses
+	if Input.is_action_just_pressed("1"):
+		sounds.playSound("Vibe60");
+	if Input.is_action_just_pressed("2"):
+		sounds.playSound("Vibe64");
+	if Input.is_action_just_pressed("3"):
+		sounds.playSound("Vibe67");
+	if Input.is_action_just_pressed("4"):
+		sounds.playSound("Vibe69");
+	if Input.is_action_just_pressed("space"):
+		sounds.playRandom();
+```
 
 ## What to submit
 

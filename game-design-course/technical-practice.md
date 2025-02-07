@@ -45,7 +45,7 @@ Camera and Control
 Sound
 
 - [level 1: triggered sound effects and positional ambient sounds](../sound-1/index.html)
-- level 2: sound banks with random/generative variation
+- [level 2: sound banks with random/generative variation](../sound-2/index.html)
 - level 3: adaptive sound tracks (or something else ambitious)
 </div>
 
