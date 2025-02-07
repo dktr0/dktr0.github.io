@@ -37,7 +37,7 @@ Camera and Control
 2D User Interfaces (UI)
 
 - [level 1: titles and overlays](../2D-user-interfaces-1/index.html)
-- level 2: inventories and popup dialogues
+- [level 2: inventories and popup dialogues](../2D-user-interfaces-2/index.html)
 - level 3: animated UI (or something else ambitious)
 </div>
 
