@@ -62,6 +62,8 @@ extends Control
 
 func _ready():
 	setNumberHearts(0); # change to 1 2 3 4 etc to test- 
+	
+func setNumberHearts(n):
 	deleteAllItems();
 	for x in n:
 		addItem();
