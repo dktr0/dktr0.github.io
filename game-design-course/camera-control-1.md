@@ -24,12 +24,12 @@ The overall shape of what we’ll do is as follows, with more detailed instructi
 The basic mechanism of a side-scrolling platformer is to have a camera that follows a player avatar as the move through the world, looking at them from the side while they move mostly along one axis (for example they mostly move along the x-axis, but less frequently jump/climb/etc in the y-axis, they rarely or never move in the z axis). The instructions that follow offer a simple model for a player controller oriented to this type of game (this is very similar to the player controller in Mechanics 1 instructions, but with the difference of an included camera and axis lock.)
 
 - make a new scene with a CharacterBody3D root node, rename the root node (e.g. "Player"), and save it
-- give it MeshInstance3D child for what it should look like (okay to use a cube while learning; in a real game, this would probably be an imported 3D asset from Blender like in the [level 1 3D assets instructions](../3D-assets-1/index.html)).
-- give it a CollisionShape3D child and set that up with an actual and appropriate shape
-- give it a Camera3D child, positioned somewhere in front (looking at) the player mesh, possibly a little higher than player (you can come back and tweak the relation of the camera to the player anytime)
-- give it an Area3D child, that itself has a Collisionshape3D child, the latter with a shape resource a little larger than the 1st collision shape resource (above), so that the player can detect collision with things even when they can't literally move into/through them
-- add a script to root node (it will get the default crude 3D script)
-- connect the area_entered signal of Area3D child to default named function in root node script
+- give the root node a MeshInstance3D child for what it should look like (okay to use a cube while learning; in a real game, this would probably be an imported 3D asset from Blender like in the [level 1 3D assets instructions](../3D-assets-1/index.html)).
+- give the root node a CollisionShape3D child and set that up with an actual and appropriate shape
+- give the root node a Camera3D child, positioned somewhere in front (looking at) the player mesh, possibly a little higher than player (you can come back and tweak the relation of the camera to the player anytime)
+- give the root node an Area3D child, that itself has a Collisionshape3D child, the latter with a shape resource a little larger than the 1st collision shape resource (above), so that the player can detect collision with things even when they can't literally move into/through them
+- add a script to the root node (it will get the default crude 3D script)
+- connect the area_entered signal of Area3D child to a function in the root node script (accepting the default name is fine)
 - add the root node to a group called "Player" - this will probably be useful later on (e.g. objects in the game will be able to detect whether a Player has collided with them)
 - Axis lock: In root node, Inspector: PhysicsBody3D activate Axis Lock for "Linear Z" "Angular X" "Angular Y" and "Angular Z" - this helps ensure that the physics system doesn't let your side-scrolling player character spin or drift in odd ways when it comes into collision with other objects.
 
