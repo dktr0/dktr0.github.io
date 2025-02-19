@@ -75,13 +75,13 @@ Now somewhere else (e.g. in a script attached to our player scene/controller) we
 @onready var rocketScene = preload("res://rocket.tscn"); # or whatever your scene is called
 ```
 
-And in the _physics_process for the launcher, and assuming an entry has been added to the Input Map (Project: Project Settings: Input Map) called "fire":
+And in the _physics_process for the launcher (e.g. in the player controller script's _physics_process if it is the player that is launching the projectile), and assuming an entry has been added to the Input Map (Project: Project Settings: Input Map) called "fire":
 
 ```
 	if Input.is_action_just_pressed("fire"):
 		var r = rocketScene.instantiate();
 		add_child(r);
-		r.launch(self,1.0);
+		r.launch(self,1.0,2.0);
 ```
 
 ### detect and do something when the projectile hits something
