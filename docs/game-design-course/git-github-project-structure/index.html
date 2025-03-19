@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>index</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="styleSheet" href="/style.css" type="text/css" media="screen">
+</head>
+<body>
+
+<center>
+<div class="outer">
+<div class="header">
+
+<div class="name"><a href="/index.html">David Ogborn (dktr0)</a></div>
+
+<div class="contact">
+<a href="mailto:ogbornd@mcmaster.ca">email</a>
+<a href="https://social.toplap.org/@dktr0">fediverse</a>
+<a href="https://www.youtube.com/@dktr0">youtube</a>
+<a href="https://orcid.org/0000-0002-5898-1660">orcid</a>
+</div> <!-- contact -->
+
+</div> <!-- header -->
+<div class="content">
+    <h1>git, github, and project structure guidance</h1>
+<p>Using git to manage our contributions to the shared, <a href="../collective-game/index.html">collective game project in MEDIAART 3L03</a>  will bring tremendous advantages in terms of (a) getting other people's contributions into our own copies of the game as quickly as possible, and (b) avoiding problems of accidentally breaking other people's contributions (and also making repair of such problems much, much easier). It takes a bit of getting used to, but it is 100% absolutely totally worth it.</p>
+<p>You need to do the following two things JUST ONCE before doing anything else:</p>
+<ul>
+<li>Create an account on github.com (if you don't already have one) and add your github ID to the collective project's task tracking spreadsheet (link in the links channel on discord)</li>
+<li>While you are logged in on github.com, &quot;fork&quot; Dr.0's github repository for the project by navigating to <a href="https://github.com/dktr0/3L03-2025">https://github.com/dktr0/3L03-2025</a> and clicking the Fork button.</li>
+</ul>
+<p>Then, you also need to do the following ALL of the following five things in order everytime you sit down to work on the project:</p>
+<h2>1A. Making sure git is installed and cloning project to local machine</h2>
+<ul>
+<li>Install a git client on the machine, following <a href="https://github.com/git-guides/install-git">github's instructions here</a>. For most of you, you will probably want to install the thing called &quot;GitHub Desktop&quot; which is a graphical interface to using git and github.</li>
+<li>Clone YOUR forked repository on github.com to the local computer you are working on. If you installed &quot;Git desktop&quot;, you can follow <a href="https://docs.github.com/en/desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop">these instructions</a> to clone your forked repository to a local repository on your computer. It is very important that you clone your forked repository and not Dr. 0's original repository (hint: the correct URL will include your github user ID and NOT Dr. 0's user id).</li>
+</ul>
+<h2>1B. Getting an updated version of the project from Dr. 0</h2>
+<p>If it's not the first time you're working on the project on a given computer/machine, you don't need to install git and clone the project (because you will have already done both of those things). Instead, you need to make sure you have an up to date version of the project that includes all of the changes other people have made to the project. Here's how you do that...</p>
+<p>Go to the URL for your copy/fork of the project on github.com. If the &quot;parent&quot; (Dr. 0's copy) has changes that your copy on github doesn't have, you should see a button labelled &quot;Sync fork&quot; - click it, then click the button that says &quot;Update branch&quot;. (If you can't do this for some reason, reach out for assistance from Dr. 0 or one of the programmer members of our team.)</p>
+<p>Now to get those changes onto the local machine you are working on, launch GitHub Desktop and click &quot;Fetch Origin&quot; and then &quot;Pull Origin&quot; (or just &quot;Pull Origin&quot; if you already see &quot;Pull Origin&quot;). After that, your local copy should include changes (&quot;pull requests&quot;) made by others that Dr. 0 has already accepted into the project.</p>
+<h2>2. Making changes to the project</h2>
+<p>Before you work and make any changes to the project, you need to be sure that you are working in a &quot;clean&quot; copy of the project (either freshly cloned, updated from Dr. 0's repository, or the result of committing your changes in step 3 below).</p>
+<p>Import and open the shared project using the Godot editor.</p>
+<p>IMPORTANT: In this project we are going to be individually responsible for specific files in folders with our names on them, which will help us not break things that others make. If this is the first time you are contributing to the project, you should make a folder in the Godot filesystem with your name. Anything you add to the project should be saved/placed in this folder. For example, if you add a .glb asset to the project, add it in the folder with your name in it. If you make an independent scene (.tscn file) for a 3D asset, level, UI element, etc make sure to save it in the folder with your name on it. And then please DO NOT change/edit files in other people's folders (reach out to consult if you have a problem that tempts you to do this - there is almost certainly another way to solve it...).</p>
+<p>Once you are done making some changes that advance the project, close the Godot editor completely before going on to step 3.</p>
+<h2>3. Committing your changes</h2>
+<p>Open Github Desktop and make sure the current repository is your local copy of our collective project.</p>
+<p>If you've made any changes, on the left where it says &quot;Changes&quot; you should see a list of any files that have changed (and they should pretty much only be in the folder with your name on it, as per the comment in the section above).</p>
+<p>If you don't want to commit (i.e. don't want to &quot;save&quot;) the changes to specific files you can discard those changes by right-clicking on the files in GitHub Desktop and selecting &quot;Discard Changes&quot;.</p>
+<p>When you are sure the list of changed files matches the meaningful changes you have made to our project, enter a short message to describe the change near the bottom left of the GitHub Desktop interface (it will suggest a default message like &quot;Update filename.tscn&quot;), and then press the button that says &quot;Commit to main&quot;. The list of changed files will disappear because now the files on the disk match the latest official stage of your local copy of the project according to git.</p>
+<h2>4. Pushing changes to github</h2>
+<p>If you've just committed some changes (step 3 above), then you should see a button near the top middle of the GitHub Desktop interface labelled &quot;Push Origin&quot;. Click this button to push your committed changes to github (in the cloud). After this, if you use a web browser to go to the URL of your copy of the repository on github.com, you should be able to see your changes reflected in what you see there.</p>
+<h2>5. Pull request (asking Dr. 0 to include your changes)</h2>
+<p>If you've pushed some changes to github (see step 4 above), then you probably want to have those changes go somewhere where other people will get them and benefit from them - we're using Dr. 0's copy of the repository for that purpose.</p>
+<p>In Github Desktop, on the Branch menu, click the button labelled &quot;Create pull request&quot;. Enter a title and description (e.g. &quot;update to box model&quot; for both title and description) and then click the (additional) button labelled &quot;Create pull request&quot;.</p>
+<p>What will happen now is that the changes you've requested will be sent to me (Dr. 0) for review. If I can see that you are only changing files that &quot;belong&quot; to you I will approve this request as soon as I see it (and have the 30 seconds of attention it takes me to review it). Now my (Dr. 0's) copy of the repository on github will include your changes, which will make it easier for other people to get them as well.</p>
+<p>Note: You don't necessarily have to issue a pull request every time you make, commit, and push changes to the project. If you make several commits and then issue a pull request, the changes from all of these commits will be part of the pull request &quot;all at once&quot;. Nonetheless, in a project like ours where we are working together relatively quickly, doing pull requests quite frequently (i.e. at least every day that we've made an improvement of some sort to the project) will help us all see and test the project as it comes together.</p>
+
+</div> <!-- content -->
+</div> <!-- outer -->
+</center>
+
+</body>
+</html>

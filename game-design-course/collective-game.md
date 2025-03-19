@@ -5,7 +5,7 @@ title: "MEDIAART 3L03: Collective Game Project"
 
 # Collective Game
 
-The collective game project is a complete small (not tiny) game, created by the entire class, working together, with Godot and Blender. During Week 7 of the course, we will determine specific roles and responsibilities for every member of the class. Our weekly meetings in the second half of the semester will be entirely devoted to working together on this collective project, and it is expected that students will also work at least 2 hours per week independently (outside of class time) on their contributions to the game. After the game is completed, you will submit a portfolio documenting your specific, individual contributions (due Fri 11 Apr by 10 PM) and we’ll showcase it on campus, and at the Level Up Showcase. We’ll definitely be exploring the possibilities for this collective project to explore environmental and ecological themes (and there are many, many different ways those themes could be developed).
+The collective game project in [MEDIAART 3L03](../outline/index.html) is a complete small (not tiny) game, created by the entire class, working together, with Godot and Blender. During Week 7 of the course, we will determine specific roles and responsibilities for every member of the class. Our weekly meetings in the second half of the semester will be entirely devoted to working together on this collective project, and it is expected that students will also work at least 2 hours per week independently (outside of class time) on their contributions to the game. After the game is completed, you will submit a portfolio documenting your specific, individual contributions (due Fri 11 Apr by 10 PM) and we’ll showcase it on campus, and at the Level Up Showcase. We’ll definitely be exploring the possibilities for this collective project to explore environmental and ecological themes (and there are many, many different ways those themes could be developed).
 
 # Additional Guidance
 
@@ -41,6 +41,6 @@ A few additional notes about the portfolio submitted at the end of the collectiv
 - DON'T use any AI generated materials
 - DON'T contribute random/irrelevant/not newly made/etc things in an attempt to "look busy"
 
-## git and github guidance
+## git, github, and project structure guidance
 
-(Coming soon after some initial discussion between Dr. 0, and the programming and level design teams.)
+Here is [a separate page with specific guidance about using git, github, and how our shared Godot project folder will be structured](../git-github-project-structure/index.html).
