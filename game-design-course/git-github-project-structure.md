@@ -16,8 +16,11 @@ Then, you also need to do the following ALL of the following five things in orde
 
 ## 1A. Making sure git is installed and cloning project to local machine
 
-- Install a git client on the machine, following [github's instructions here](https://github.com/git-guides/install-git). For most of you, you will probably want to install the thing called "GitHub Desktop" which is a graphical interface to using git and github.
-- Clone YOUR forked repository on github.com to the local computer you are working on. If you installed "Git desktop", you can follow [these instructions](https://docs.github.com/en/desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop) to clone your forked repository to a local repository on your computer. It is very important that you clone your forked repository and not Dr. 0's original repository (hint: the correct URL will include your github user ID and NOT Dr. 0's user id).
+You only have to do the two things in step 1A the first time you are working on a new machine (after the first time you would do step 1B to update your local copy of the project rather than clone it anew).
+
+Install a git client on the machine (if it doesn't already have one), following [github's instructions here](https://github.com/git-guides/install-git). For most of you, you will probably want to install the thing called "GitHub Desktop" which is a graphical interface to using git and github.
+
+Now use your git client to clone YOUR forked repository on github.com to the local computer you are working on. If you installed "Git desktop", you can follow [these instructions](https://docs.github.com/en/desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop) to clone your forked repository to a local repository on your computer. It is very important that you clone your forked repository and not Dr. 0's original repository (hint: the correct URL will include your github user ID and NOT Dr. 0's user id).
 
 ## 1B. Getting an updated version of the project from Dr. 0
 
