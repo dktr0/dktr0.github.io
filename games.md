@@ -64,6 +64,7 @@ This is a list (in progress, still quite incomplete) of every game I can remembe
 - *Mario Kart Wii* (Wii; 10 Apr 2008)
 - *Haze* (PS3; 20 May 2008)
 - *Castle Crashers* (PC; 27 Aug 2008)
+- *Spore* (PC; 4 Sep 2008)
 - *Little Big Planet* (PS3; 27 Oct 2008)
 - *Dixit* (boardgame; 2008)
 - *Flower* (PS3; 12 Feb 2009)
