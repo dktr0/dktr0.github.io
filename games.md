@@ -92,6 +92,7 @@ This is a list (in progress, still quite incomplete) of every game I can remembe
 - *Super Smash Bros. Ultimate* (Switch; 7 Dec 2018)
 - *A Short Hike* (PC; 30 Jul 2019)
 - *Cat Quest II* (PS5; 19 Sep 2019)
+- *Valorant* (PS5; 2 Jun 2020)
 - *Before I Forget* (PC; 16 Jul 2020)
 - *Astro's Playroom* (PS5; 12 Nov 2020)
 - *The World Game* (boardgame; 4 Jan 2021)
