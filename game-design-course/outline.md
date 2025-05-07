@@ -22,6 +22,11 @@ Online Content:	Avenue-to-Learn, Discord, my website at https://dktr0.github.io
 - [games and texts (aka the bibliography)](../games-and-texts/index.html)
 - [the Godot game engine](https://godotengine.org) (use version 4.3-stable, standard NOT mono)
 - [Blender 3D modeling software](https://www.blender.org/download/lts/4-2/) (use version 4.2 LTS)
+- [*Halcyon*, the collective game made by the class in Winter 2025](https://dktr0.github.io/Halcyon)
+- *Critter Quest*, the collective game made by the class in Winter 2023 (materials will be shared soon!)
+- [*AlieNighTown*, the collective game made by the class in Winter 2021](https://dktr0.github.io/AlieNighTown/)
+- *Snow Day*, the collective game made by the class in Winter 2017 (materials will be shared soon!)
+
 
 # Course Objectives
 

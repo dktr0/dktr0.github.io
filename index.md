@@ -82,11 +82,14 @@ Below this paragraph are some more detailed entries for various projects I've be
 
 <div class="entry">
 <p><em>MEDIAART 3L03: Game Design</em></p>
-<p>I proposed the course MEDIAART 3L03 as a new course in the Media Arts program, for 2014, and have taught it 4 times since then. In the second half of the semester, the class forms into a single team to work on a collective game together.</p>
-<ul>
-<li><a href="/game-design-course/outline/index.html">course outline (Winter 2025)</a></li>
-<li><a href="https://dktr0.github.io/AlieNighTown/"><i>AlieNighTown</i>, the collective game made by the class in Winter 2021</a></li>
-</ul>
+<p>I proposed the course MEDIAART 3L03 as a new course in the Media Arts program, for 2014, and have taught it 5 times since then. In the second half of the semester, the class forms into a single team to work on a collective game together.</p>
+
+- [course outline (Winter 2025)](/game-design-course/outline/index.html)
+- [*Halcyon*, the collective game made by the class in Winter 2025](https://dktr0.github.io/Halcyon)
+- *Critter Quest*, the collective game made by the class in Winter 2023 (materials will be shared soon!)
+- [*AlieNighTown*, the collective game made by the class in Winter 2021](https://dktr0.github.io/AlieNighTown/)
+- *Snow Day*, the collective game made by the class in Winter 2017 (materials will be shared soon!)
+
 </div>
 
 <div class="entry">
