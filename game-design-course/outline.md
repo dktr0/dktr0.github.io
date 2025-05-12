@@ -25,8 +25,7 @@ Online Content:	Avenue-to-Learn, Discord, my website at https://dktr0.github.io
 - [*Halcyon*, the collective game made by the class in Winter 2025](https://dktr0.github.io/Halcyon)
 - [*Critter Quest*, the collective game made by the class in Winter 2023](https://dktr0.github.io/CritterQuest/)
 - [*AlieNighTown*, the collective game made by the class in Winter 2021](https://dktr0.github.io/AlieNighTown/)
-- *Snow Day*, the collective game made by the class in Winter 2017 (materials will be shared soon!)
-
+- [*Snow Day*, the collective game made by the class in Winter 2017](https://dktr0.github.io/SnowDay/)
 
 # Course Objectives
 
