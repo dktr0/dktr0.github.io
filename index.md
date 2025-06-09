@@ -20,6 +20,7 @@ Here are some quick links to the projects I think people are perhaps most likely
 And here are some links to other materials I am collecting as this web garden takes shape:
 
 - [List of every game I've ever played](/games/index.html)
+- ["*Frostpunk*: Fascism, forced choices, and the limits of the steampunk past conditional" (paper presented at Canadian Game Studies Association 2025)](/frostpunk/index.html)
 - ["An interpretation of *Total Annihilation*" (paper presented at Canadian Game Studies Association 2023)](/total-annihilation-interpretation/index.html)
 - ["Computer Music as Inter/Anti/Non-Disciplinary Research" (keynote presented to interdisciplinary doctoral program at the University of Saskatchewan, 14 April 2023)](/computer-music-inter-anti-non-disciplinary/index.html)
 - ["Ideas about "New Media (Studies)"" (speaking notes in CNMCS PhD pro-seminar, 15 Nov 2022-)](/new-media/index.html)
