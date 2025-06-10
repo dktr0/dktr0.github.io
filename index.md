@@ -11,8 +11,7 @@ Here are some of my interests: improvisation, audio, generative art/music/design
 
 Here are some quick links to the projects I think people are perhaps most likely to be looking for:
 
-- [Punctual (audiovisual live coding language)](https://dktr0.github.io/Punctual)
-- [LocoMotion (live coding language for dance, choreography, 3D avatars)](https://dktr0.github.io/LocoMotion)
+- Punctual (audiovisual live coding language) [try it live](https://dktr0.github.io/Punctual) [read a paper](https://doi.org/10.5281/zenodo.15527253) [watch videos](https://www.youtube.com/playlist?list=PLyEzdf4cdMMFUUldSqHd6ZipDYbiSJaIR) [source code](https://github.com/dktr0/Punctual.git)
 - [Estuary (browser-based collaborative live coding platform)](https://estuary.mcmaster.ca)
 - [Cybernetic Orchestra (open, live coding laptop orchestra)](https://nil.mcmaster.ca/cybOrch.html)
 - [MEDIAART 3L03 Game Design course](/game-design-course/outline/index.html)
@@ -41,17 +40,6 @@ Below this paragraph are some more detailed entries for various projects I've be
 </ul>
 </div>
 
-<div class="entry">
-<p><em>Punctual</em> (audiovisual live coding language):</p>
-<p>Punctual is a live coding language that aims to use similar abstractions for both visual results (fragment shaders) and audible results (audio synthesis), while also providing emphatic notations for transitions between new and old programs.</p>
-<ul>
-<li><a href="https://dktr0.github.io/Punctual">try the standalone Punctual in your browser</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLyEzdf4cdMMFUUldSqHd6ZipDYbiSJaIR">YouTube playlist of videos showing Punctual in action</a></li>
-<li><a href="https://github.com/dktr0/Punctual.git">browse source code repository at GitHub</a></li>
-<li>developed in Haskell, using <a href="https://github.com/reflex-frp/reflex-platform">the Reflex platform</a> and <a href="https://github.com/ghcjs/ghcjs">GHCJS</a></li>
-<li>Related work by others: <a href="http://akustik.hfbk.net/sc/SuperColliderHelp/JITLib/JITLib.html">JITLib</a>, <a href="https://shawnlawson.github.io/The_Force/">Shawn Lawson's The Force</a>, <a href="https://hydra.ojack.xyz/">Olivia Jack's Hydra</a>, and <a href="https://www.shadertoy.com/">Shadertoy</a></li>
-</ul>
-</div>
 
 <div class="entry">
 <p><em>estuary</em> (browser-based collaborative live coding platform):</p>
