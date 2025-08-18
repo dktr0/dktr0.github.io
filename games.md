@@ -23,6 +23,7 @@ This is a list (in progress, still quite incomplete) of every game I can remembe
 - *Warhammer* (tabletop wargame; 1983)
 - *Spy vs. Spy* (C64; 1984)
 - *Summer Games* (C64; 1984)
+- *Duck Hunt* (NES; 21 Apr 1984)
 - *Robot Odyssey* (PC; Dec 1984)
 - *Toon* (TTRPG; 1984)
 - *Super Mario Bros* (NES; 13 Sep 1985)
