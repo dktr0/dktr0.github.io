@@ -14,6 +14,7 @@ Here are some quick links to the projects I think people are perhaps most likely
 - Punctual (audiovisual live coding language) [try it live](https://dktr0.github.io/Punctual) [read a paper](https://doi.org/10.5281/zenodo.15527253) [watch videos](https://www.youtube.com/playlist?list=PLyEzdf4cdMMFUUldSqHd6ZipDYbiSJaIR) [source code](https://github.com/dktr0/Punctual.git)
 - [Estuary (browser-based collaborative live coding platform)](https://estuary.mcmaster.ca)
 - [Cybernetic Orchestra (open, live coding laptop orchestra)](https://nil.mcmaster.ca/cybOrch.html)
+- [MEDIAART 3D03 Interface, Code, Data course](/interface-code-data-course/outline/index.html)
 - [MEDIAART 3L03 Game Design course](/game-design-course/outline/index.html)
 
 And here are some links to other materials I am collecting as this web garden takes shape:
