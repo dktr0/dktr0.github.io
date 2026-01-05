@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>index</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="styleSheet" href="/style.css" type="text/css" media="screen">
+</head>
+<body>
+
+<center>
+<div class="outer">
+<div class="header">
+
+<div class="name"><a href="/index.html">David Ogborn (dktr0)</a></div>
+
+<div class="contact">
+<a href="mailto:ogbornd@mcmaster.ca">email</a>
+<a href="https://social.toplap.org/@dktr0">fediverse</a>
+<a href="https://www.youtube.com/@dktr0">youtube</a>
+<a href="https://orcid.org/0000-0002-5898-1660">orcid</a>
+</div> <!-- contact -->
+
+</div> <!-- header -->
+<div class="content">
+    <h1><a href="../outline/index.html">MEDIAART 3D03</a>: Terminal basics</h1>
+<p>It's really useful to be able to manipulate folders and files, and edit text files, from a text-based &quot;UNIX&quot; terminal. This sometimes lets you do things you would otherwise be unable to do on your local machine, but just as importantly, it is a very common way of changing the configuration of, running software, etc on remotely located machines (e.g. servers in the &quot;cloud&quot; or computers elsewhere on your local network).</p>
+<h2>Getting to a terminal for the first time (on 4 different operating systems)</h2>
+<p>On Mac OS, use the Spotlight/Search feature to look for &quot;Terminal&quot; and launch it (or find it directly in your Applications or Utilities folders).</p>
+<p>On Windows, you'll want to install the &quot;Windows Subsystem for Linux&quot; or &quot;WSL&quot; for short, and for our class I recommend using the Debian distribution with WSL. That goes something like this:</p>
+<ul>
+<li>Search for &quot;Powershell&quot;, right click on the result &quot;Windows Powershell&quot; that comes up and select Run as Administrator.</li>
+<li>at the PowerShell terminal that pops up, type the following and press enter: <code>wsl --install</code></li>
+<li>now to make Debian available, enter the following: <code>wsl --install Debian</code></li>
+<li>finally, now and in the future, you should be able to launch a WSL terminal with Debian linux by searching for WSL in the search bar and clicking the result that you get.</li>
+</ul>
+<p>On a Chromebook, you'd also need to install a virtual Linux environment (similar to WSL). In the Chromebook's settings app you should be able to find a Linux development environment setting, which can be turned on and then &quot;installed&quot;.</p>
+<p>On Linux, there are many terminals available, so if you are Linux user I will leave you to figure out how to get to a terminal yourself!</p>
+<h2>Some terminal commands to try out (and know by heart)</h2>
+<p>At the terminal you always have a &quot;present working directory&quot;. Think of this like a folder (containing files and subfolders) on which the attention of the terminal is focused. Depending on how your terminal is configured, it is probably already telling you what the present working directory is. The tilde (~) is an abbreviation for the current user's home folder/directory.</p>
+<p>The following command lets you verify most completely what the location of the present working directory is: <code>pwd</code></p>
+<p>The following command lets you see the contents of the present working directory: <code>ls</code></p>
+<p>If you are using a fresh WSL or Chromebook Linux installation, the previous command will probably show you an empty folder. On MacOS, you probably already have some stuff in that folder.</p>
+<p>The following variation of ls gives you more details about each entry in the directory: <code>ls -l</code></p>
+<p>You can make a new folder &quot;under&quot; the present folder with mkdir. For example the following will create a folder called test (try it out then use ls to see that something else is there): <code>mkdir test</code></p>
+<p>And the following would remove a folder called test, but only if it is already empty: <code>rmdir test</code></p>
+<p>To change the present working directory into another folder that is in/under the present folder use cd, for example: <code>cd test</code></p>
+<p>To change the present working directory into the folder ABOVE your current present working directory use this idiom: <code>cd ..</code></p>
+<p>(The two dots .. are an abbreviation for &quot;the folder above the present one&quot;)</p>
+<p>A common text editor that we can use to create simple text files is called nano. If, when we launch nano, we provide a filename that file will be loaded and displayed/edited as text if it already exists, or created if it doesn't exist (when we save in nano). Here's creating a file in the present working directory called test.txt: <code>nano test.txt</code></p>
+<p>In Nano, you can use the arrow keys to move around, the number and letter keys (etc) to enter text characters, etc. When you are done editing the file, you press Ctrl-X to exit. A message will &quot;pop up&quot; (sort of) saying &quot;Save modified buffer&quot;. Press Y (for yes) and then enter to confirm the name of the file that should be created/saved/modified.</p>
+<p>You can check that the file you created has what you put in it by reloading it with Nano. Another way is to use cat to &quot;dump&quot; the contents of the file to the screen. If your file was called test.txt then this would be the way of dumping it with cat: <code>cat test.txt</code></p>
+<p>You can delete a file with rm (but be very careful!), for example to delete a file called test.txt in your present working directory you would enter the following: <code>rm test.txt</code></p>
+<p>You can close a terminal with: <code>exit</code></p>
+
+</div> <!-- content -->
+</div> <!-- outer -->
+</center>
+
+</body>
+</html>
