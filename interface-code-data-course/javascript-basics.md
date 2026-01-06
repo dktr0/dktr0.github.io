@@ -19,7 +19,7 @@ sudo apt install nodejs
 sudo apt install npm
 ```
 
-Whatever method you use, you should be able to verify that node and npm (an adjacent program used to install libraries/plugins/addons to nodejs) with the following:
+Whatever method you use, you should be able to verify that node and npm (an adjacent program used to install libraries/plugins/addons to nodejs) by entering the following at your terminal:
 ```
 node --version
 npm --version
