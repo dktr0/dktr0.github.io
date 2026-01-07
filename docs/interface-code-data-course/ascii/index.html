@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>index</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="styleSheet" href="/style.css" type="text/css" media="screen">
+</head>
+<body>
+
+<center>
+<div class="outer">
+<div class="header">
+
+<div class="name"><a href="/index.html">David Ogborn (dktr0)</a></div>
+
+<div class="contact">
+<a href="mailto:ogbornd@mcmaster.ca">email</a>
+<a href="https://social.toplap.org/@dktr0">fediverse</a>
+<a href="https://www.youtube.com/@dktr0">youtube</a>
+<a href="https://orcid.org/0000-0002-5898-1660">orcid</a>
+</div> <!-- contact -->
+
+</div> <!-- header -->
+<div class="content">
+    <h1><a href="../outline/index.html">MEDIAART 3D03</a>: ASCII and ASCII art</h1>
+<h2>ASCII</h2>
+<p>ASCII (&quot;American Standard Code for Information Interchange&quot;) is an old and influential code for representing characters, whether for the purpose of specifying what is displayed or printed (on a screen or printer) or for the purpose of registering input (e.g. keeping track of which key on a keyboard has been pressed).</p>
+<p><a href="https://en.wikipedia.org/wiki/ASCII">The Wikipedia page about ASCII</a> has a lot of the gory details, including (if you scroll down) a helpful chart of the 1963, 1965, and 1967 variants of the ASCII code. Here are some things I'd highlight about it:</p>
+<ul>
+<li>It's from the early 1960s (first edition published in 1963) and was developed entirely by American (US) committees.</li>
+<li>It uses numbers from 0 to 127 to represent printable letters as well as &quot;control characters&quot; (e.g. delete)</li>
+<li>There are 128 possible values, of which 95 are printable and 33 are control</li>
+<li>This means each character can be represented with only 7 bits (0s or 1s)</li>
+<li>The &quot;control&quot; codes are represented with numbers 0 - 31, as well as 127</li>
+<li>The &quot;printable&quot; codes are represented with numbers 32 - 126</li>
+<li>It builds on and responds to earlier codes for the telegraph</li>
+<li>Most of our text systems nowadays use Unicode instead (to represent something closer to the full diversity of the world's text characters) - but the first 128 entries in Unicode are still just ASCII!</li>
+</ul>
+<h2>ASCII art</h2>
+<p>ASCII art composes the characters of the ASCII code together for the purpose of representing shapes and images. Sometimes the term is used more loosely to refer to any sort of visual art made by putting together text characters (e.g. with characters beyond the limited ASCII set) - that seems very fair to me, especially since the limited ASCII set was very specific to a relatively narrow cultural location (official US cultures in the 1960s).</p>
+<p>Some sources of interesting examples of ASCII art:</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/ASCII_art">The Wikipedia page about ASCII art</a></li>
+<li><a href="https://www.asciiart.eu/">The ASCII Art Archive</a></li>
+</ul>
+<p>We can make ASCII art with nano (or any other text editor). It's typically important to have a fixed-width font for ASCII art (that should be the default if you use an editor meant for programming). In Nano you can input characters by their ASCII/Unicode number by pressing Alt-V and then entering the number, or pressing Esc then pressing V then entering the number. You probably won't need this if you are only using the basic ASCII set (although if you have a broken key on your keyboard I guess it could be a workaround) - it will be very useful for accessing other characters to play with.</p>
+<p>If you make some ASCII art in a text file with Nano, you might want a way to copy it to the clipboard to put it other places (for example, to share it with the class via our Discord server). That might look differently on different operating systems.</p>
+<p>On MacOS, probably: <code>cat myfile.txt | pbcopy</code></p>
+<p>On Debian (i.e. via WSL on Windows, or installed on Chromebook, or on a Linux laptop), first you'd need to install xclip: <code>sudo apt install xclip</code></p>
+<p>Then here's how you'd use that: <code>cat myfile.txt | xclip -selection clipboard</code></p>
+<p>If xclip doesn't work on your Linux operating system, there are other little packages that do the same thing.</p>
+
+</div> <!-- content -->
+</div> <!-- outer -->
+</center>
+
+</body>
+</html>

@@ -24,6 +24,7 @@ In Weeks One through Six (Mon Jan 5 - Fri Feb 13), we'll work through fundamenta
 ### Wed 7 Jan
 
 - introduction of [project #1](../project-1/index.html)
+- [ASCII and ASCII art](../ascii/index.html)
 
 ## Part B
 
