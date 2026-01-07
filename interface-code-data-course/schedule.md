@@ -9,7 +9,7 @@ title: "MEDIAART 3D03: Detailed Schedule/Diary"
 
 In Weeks One through Six (Mon Jan 5 - Fri Feb 13), we'll work through fundamental content and activities in each of the six areas/learning outcomes, while completing a first project (project #1) that engages with those learning outcomes. The last day of class in Week Six (Wed Feb 11) will be devoted to last minute peer and instructor assistance with project #1, which will be submitted by 10 PM on Fri Feb 13 (and will be showcased during the first day back after the Winter recess, Mon 23 Feb).
 
-Mon 5 Jan
+### Mon 5 Jan
 
 - discussion of the prehistory of this class
 - big question: what is the web as a technology and what can we make with it?
@@ -20,6 +20,10 @@ Mon 5 Jan
 - [terminal basics](../terminal-basics/index.html)
 - [JavaScript basics](../javascript-basics/index.html)
 - [Cryptograms](../cryptograms/index.html)
+
+### Wed 7 Jan
+
+- introduction of [project #1](../project-1/index.html)
 
 ## Part B
 

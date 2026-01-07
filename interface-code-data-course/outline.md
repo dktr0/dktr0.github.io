@@ -49,8 +49,8 @@ Assessment in this course works in a different way than what you might be used t
 
 In this course, the grade on McMaster's 12-point scale is determined by adding the following (assuming the minimum achievement to pass the course has been met, see further below):
 
-- +1 project #1 meets all requirements (due 10 PM on Fri 13 Feb, on Avenue)
-- +1 project #1 shared during showcase #1 (during class meeting on Mon 23 Feb)
+- +1 [project #1](../project-1/index.html) meets all requirements (due 10 PM on Fri 13 Feb, on Avenue)
+- +1 [project #1](../project-1/index.html) shared during showcase #1 (during class meeting on Mon 23 Feb)
 - +1 project #2 proposal meets all requirements (due 10 PM on Fri 13 Mar, on Avenue)
 - +1 project #2 meets all requirements (due 10 PM on Thu 2 Apr, on Avenue)
 - +1 project #2 shared during showcase #2 (during class meeting on Mon 6 Apr)
