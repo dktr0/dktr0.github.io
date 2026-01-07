@@ -11,7 +11,7 @@ The purpose of the first project in this course is to explore the six areas/lear
 
 The requirements of project #1 are as follows:
 
-- it must take the form of a self-contained (no server-side features) website (partying like it's 1999 - or 2039?)
+- it must take the form of a self-contained (no server-side features) website (partying like it's 1999)
 - it must be authored using a text editor, with no copy-pasting or code generation
 - it must be implemented with standard HTML, CSS, and JavaScript
 - it must engage somehow (potentially very loosely) with any of the ideas we've discussed in connection with one or more of the "Codes", "Web Pasts, Presents, Futures", and "Generative Art and Live Coding"
