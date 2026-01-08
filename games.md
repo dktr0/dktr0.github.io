@@ -3,6 +3,8 @@ layout: layout.njk
 title: Games List
 ---
 
+## Games List
+
 This is a list (in progress, still quite incomplete) of every game I can remember really playing (so, not including anything I only tried briefly, and also not anything that I only watched others play). The dates provided are the date of that game's first release, generally sourced from Wikipedia, while the platforms listed are those on which I played the game (for video games only, obviously).
 
 - Chess (board game)
@@ -45,12 +47,14 @@ This is a list (in progress, still quite incomplete) of every game I can remembe
 - *Simcity* (PC; 2 Feb 1989)
 - *Space Quest III: The Pirates of Pestulon*  (PC; 24 Mar 1989)
 - *Adventures of Lolo* (NES; Apr 1989)
+- [*Heavy Shreddin'* (NES; June 1990)](https://en.wikipedia.org/wiki/Heavy_Shreddin%27)
 - *Wolfenstein 3D* (PC; 5 May 1992)
 - *Doom* (PC; 10 Dec 1993)
 - *Warcraft: Orcs & Humans* (PC; 15 Nov 1994)
 - *The Settlers of Catan* (tabletop; 1995)
 - *Duke Nukem 3D* (PC; 29 Jan 1996)
 - *Cool Boarders* (PS5; 30 Aug 1996)
+- [*2Xtreme* (PS5; 8 Nov 1996)](https://en.wikipedia.org/wiki/2Xtreme)
 - *Total Annihilation* (PC; 25 Sep 1997)
 - *Carcassonne* (tabletop; 2000)
 - *Ticket to Ride: Europe* (tabletop; 2005)
@@ -99,4 +103,5 @@ This is a list (in progress, still quite incomplete) of every game I can remembe
 - *Before I Forget* (PC; 16 Jul 2020)
 - *Astro's Playroom* (PS5; 12 Nov 2020)
 - *The World Game* (boardgame; 4 Jan 2021)
+- [*Carve Snowboarding* (Quest; 27 May 2021)](https://www.ign.com/games/carve-snowboarding)
 - *Far Cry 6* (PS5; 7 Oct 2021)
