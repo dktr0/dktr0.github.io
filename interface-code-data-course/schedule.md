@@ -26,6 +26,12 @@ In Weeks One through Six (Mon Jan 5 - Fri Feb 13), we'll work through fundamenta
 - introduction of [project #1](../project-1/index.html)
 - [ASCII and ASCII art](../ascii/index.html)
 
+### Mon 12 Jan
+
+- [HTML basics](../html-basics/index.html)
+- [CSS basics](../css-basics/index.html)
+- [JavaScript functions](../javascript-functions/index.html)
+
 ## Part B
 
 In Weeks Seven through Nine (Mon 23 Feb - Fri 13 Mar), we'll work through some more advanced content and activities in each of the six areas/learning outcomes, while also conceiving, planning, and proposing a second project (project #2) that must be more ambitious/scaled than project #1 was. The last class meeting (Wed 11 Mar) will be devoted to last minute peer and instructor assistance with the full proposal for project #2, which is due by 10 PM on Fri 13 Mar. 

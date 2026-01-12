@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>index</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="styleSheet" href="/style.css" type="text/css" media="screen">
+</head>
+<body>
+
+<center>
+<div class="outer">
+<div class="header">
+
+<div class="name"><a href="/index.html">David Ogborn (dktr0)</a></div>
+
+<div class="contact">
+<a href="mailto:ogbornd@mcmaster.ca">email</a>
+<a href="https://social.toplap.org/@dktr0">fediverse</a>
+<a href="https://www.youtube.com/@dktr0">youtube</a>
+<a href="https://orcid.org/0000-0002-5898-1660">orcid</a>
+</div> <!-- contact -->
+
+</div> <!-- header -->
+<div class="content">
+    <h1><a href="../outline/index.html">MEDIAART 3D03</a>: JavaScript functions</h1>
+<p>We saw in JavaScript basics that JavaScript is an &quot;imperative language&quot;, in other words one where the programs we write are basically lists of instructions to do this, then that, then this other thing, etc. In that specific way of looking at things, we might define &quot;functions&quot; as ways of bundling or grouping specific sets of instructions for reuse.</p>
+<p>Functions are a key strategy (perhaps &quot;the&quot; key strategy) in managing the complexity of projects by breaking them into smaller units that we can think about, test, re-use in different projects, perhaps ultimately share with others for their re-use (e.g. if a function does something sufficiently general/universal that it might be useful to people doing something different).</p>
+<h2>Functions (without arguments)</h2>
+<p>Here is a simple example of defining a JavaScript function:</p>
+<pre><code>function printTwoLines() {
+console.log(&quot;a line&quot;);
+console.log(&quot;a second line&quot;);
+}
+</code></pre>
+<p>The code above would &quot;define&quot; a function called printTwoLines. To actually make those things happen, we would have to insert a &quot;call&quot; to the function somewhere in our code (when/where we want those things to happen). That would look like this: <code>printTwoLines();</code></p>
+<h2>Functions with arguments</h2>
+<p>Often we have things that we need to do multiple/many times, but with some variation between each time. We can define functions to take &quot;arguments&quot; which are pieces of information (e.g. numbers, strings) that may be different each time the function is run/called. Here's an example of a function that &quot;takes a single argument&quot; called x:</p>
+<pre><code>function sayHello(x) {
+console.log(&quot;hello &quot; + x + &quot;!&quot;);
+}
+</code></pre>
+<p>And here's an example of calling that function twice to say hello to two individuals:</p>
+<pre><code>sayHello(&quot;Dr. 0&quot;);
+sayHello(&quot;David&quot;);
+</code></pre>
+<h2>Functions with return values</h2>
+<p>Sometimes we want to use functions in order to calculate something. For example, a dozen of something is 12 of that thing. We could define a function to convert a number from individual items to dozens:</p>
+<pre><code>function howManyDozens(x) {
+return (x/12);
+}
+</code></pre>
+<p>And here's an example of using/calling that function somewhere else:
+<code>console.log(&quot;36 eggs is &quot; + howManyDozens(36) + &quot; dozen eggs&quot;);</code></p>
+
+</div> <!-- content -->
+</div> <!-- outer -->
+</center>
+
+</body>
+</html>

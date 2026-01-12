@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>index</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="styleSheet" href="/style.css" type="text/css" media="screen">
+</head>
+<body>
+
+<center>
+<div class="outer">
+<div class="header">
+
+<div class="name"><a href="/index.html">David Ogborn (dktr0)</a></div>
+
+<div class="contact">
+<a href="mailto:ogbornd@mcmaster.ca">email</a>
+<a href="https://social.toplap.org/@dktr0">fediverse</a>
+<a href="https://www.youtube.com/@dktr0">youtube</a>
+<a href="https://orcid.org/0000-0002-5898-1660">orcid</a>
+</div> <!-- contact -->
+
+</div> <!-- header -->
+<div class="content">
+    <h1><a href="../outline/index.html">MEDIAART 3D03</a>: HTML basics</h1>
+<p>HTML is the language that we use to outline the <em>structure</em> of what is displayed in the web browser. It is short for Hyper Text Markup Language - the word &quot;markup&quot; is meant to signal that the language started as something that is added to a pre-existing text (in order to indicate its structure).</p>
+<p>The key element of HTML is the HTML &quot;tag&quot;, which is something that looks like this: <code>&lt;div&gt;This is a div&lt;/div&gt;</code></p>
+<p>The above example is a div, and like many (but not all) HTML elements it consists of an opening tag <code>&lt;div&gt;</code>, a closing tag <code>&lt;/div&gt;</code>, and the &quot;contents&quot; of the div which are everything that appears between the opening and closing tag.</p>
+<p>At the top level, a web page is an <code>&lt;html&gt;</code> element - everything in the page will be contained within this element.</p>
+<p>The <code>&lt;html&gt;</code> element always contains two child elements: a <code>&lt;head&gt;</code> and a <code>&lt;body&gt;</code>. The <code>&lt;head&gt;</code> basically contains metadata, information &quot;about&quot; the document, while the <code>&lt;body&gt;</code> basically contains the things that appear in the document/webpage.</p>
+<p>Here's a list of the basic tags we should know about and be ready to use in this course, mostly demonstrated with examples:</p>
+<ul>
+<li>A <code>&lt;div&gt;</code> is a &quot;block&quot; level part of a document's structure, such as a paragraph of text, but it can also often be used for other things to do with aligning and dividing space on the webpage: <code>&lt;div&gt;This is a div&lt;/div&gt;</code></li>
+<li><code>&lt;span&gt;This is a span, usually used to style some text within a paragraph.&lt;/span&gt;</code></li>
+<li>An <code>&lt;a&gt;</code> tag is used to create links (and also to identify points of navigation within a document). Here's an example of a link to another webpage: <code>&lt;a href=&quot;https://dktr0.github.io&quot;&gt;link to dktr0's web garden&lt;/a&gt;</code></li>
+<li>An <code>&lt;img&gt;</code> is used to include an image in the document: <code>&lt;img src=&quot;put url here&quot;/&gt;</code> - note in this that there is no opening and closing tag, just a single tag - that's why the slash appears at the end of the tag instead of not being there or being at the beginning (that's the syntax for a tag that is simultaneously an opening and closing tag).</li>
+<li><code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code> are unordered and ordered lists. They contain some number of <code>&lt;li&gt;</code> elements (short for &quot;list item&quot;). Here's an unordered list with three things in it: <code>&lt;ul&gt;&lt;li&gt;item one&lt;/li&gt;&lt;li&gt;item two&lt;/li&gt;&lt;li&gt;item three&lt;/li&gt;&lt;/ul&gt;</code></li>
+<li>A <code>&lt;title&gt;</code> tag containing the title for the document should be a child of the <code>&lt;head&gt;</code> element (unlike the above examples, which should all appear within the <code>&lt;body&gt;</code> element): <code>&lt;title&gt;This is a title, and must be a child of the head element.&lt;/title&gt;</code></li>
+<li>When we look at CSS (a second key language mostly used for describing how and where things appear in webpages) we'll use the <code>&lt;style&gt;</code> and <code>&lt;link&gt;</code> tags to connect CSS information to an HTML page.</li>
+</ul>
+<p>We can inspect the HTML source of web pages using our web browser. With most browsers we can right click somewhere on a page and select an action called something like &quot;View page source&quot;.</p>
+<p>There are lots of good references to the use of HTML tags online, and here are some recommended ones:</p>
+<ul>
+<li><a href="https://www.w3schools.com/TAGS/default.asp">W3Schools HTML tag reference</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference">The Mozilla developers network HTML reference</a></li>
+<li><a href="https://htmlreference.io/">htmlreference.io</a></li>
+</ul>
+<p>We can experiment with HTML authoring by using a text editor (like nano) to create text files containing HTML, and then use the &quot;Open file&quot; feature of our browser. (And then at another time, we'll look at other ways of accessing web content that we author.)</p>
+
+</div> <!-- content -->
+</div> <!-- outer -->
+</center>
+
+</body>
+</html>
