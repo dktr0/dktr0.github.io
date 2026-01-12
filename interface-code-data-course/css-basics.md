@@ -76,7 +76,7 @@ We'll come back later to the question of what happens when multiple style rules 
 ## Stylesheets as separate files, and as inline-in-an-HTML-element
 
 It's most common for CSS info to be put in a separate file because (a) there can be a lot of it and it can get distracting and (b) this allows a single carefully designed/maintained stylesheet to be used across many HTML files in a larger project/website and (c) we can even have separate complete stylesheets for different user configurations/needs and just switch which stylesheet is being used, independently of the content it is being used with.
-If we place the following tag in the <head> of our HTML document, it will tell that document to get CSS style info from the text file style.css which is in the same folder/directory as the HTML file: ```<link rel="styleSheet" href="/style.css" type="text/css" media="screen"/>```
+If we place the following tag in the <head> of our HTML document, it will tell that document to get CSS style info from the text file style.css which is in the same folder/directory as the HTML file: ```<link rel="styleSheet" href="style.css" type="text/css" media="screen"/>```
 
 We can also place CSS info directly in HTML using the style attribute. This isn't a great practice though, because it makes things very hard to maintain/edit/update (one of the ways you can sometimes tell something has been generated with machine tools is lots of this sort of thing): ```<div style="color: red;">This is a red div</div>```
 
