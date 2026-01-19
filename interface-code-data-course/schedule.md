@@ -17,24 +17,28 @@ In Weeks One through Six (Mon Jan 5 - Fri Feb 13), we'll work through fundamenta
 - big question: how improvisational engagement with the web and programming lets us learn and explore these questions
 - how I've come to these topics, personally
 - review of course outline and assessment
-- [terminal basics](../terminal-basics/index.html)
-- [JavaScript basics](../javascript-basics/index.html)
-- [Cryptograms](../cryptograms/index.html)
+- [Devops: terminal basics](../terminal-basics/index.html)
+- [JavaScript: JavaScript basics](../javascript-basics/index.html)
+- [Codes: Cryptograms](../cryptograms/index.html)
 
 ### Wed 7 Jan
 
 - introduction of [project #1](../project-1/index.html)
-- [ASCII and ASCII art](../ascii/index.html)
+- [Codes: ASCII and ASCII art](../ascii/index.html)
 
 ### Mon 12 Jan
 
-- [HTML basics](../html-basics/index.html)
-- [CSS basics](../css-basics/index.html)
-- [JavaScript functions](../javascript-functions/index.html)
+- [Web Interfaces: HTML basics](../html-basics/index.html)
+- [Web Interfaces: CSS basics](../css-basics/index.html)
+- [JavaScript: JavaScript functions](../javascript-functions/index.html)
 
 ### Wed 14 Jan
-- [Relative and absolute filepaths, and copying, moving, renaming files](../filepaths/index.html)
-- [Binary numbers](../binary-numbers/index.html)
+- [Devops: Relative and absolute filepaths, and copying, moving, renaming files](../filepaths/index.html)
+- [Codes: Binary numbers](../binary-numbers/index.html)
+
+### Mon 19 Jan
+- [Web Pasts, Presents, Futures: BBSes, Usenet newsgroups, and Gopher](../bbses-usenet-gopher/index.html)
+- [JavaScript: Javascript arrays and loops](../javascript-arrays-loops/index.html)
 
 ## Part B
 

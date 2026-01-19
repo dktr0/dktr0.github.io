@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>index</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="styleSheet" href="/style.css" type="text/css" media="screen">
+</head>
+<body>
+
+<center>
+<div class="outer">
+<div class="header">
+
+<div class="name"><a href="/index.html">David Ogborn (dktr0)</a></div>
+
+<div class="contact">
+<a href="mailto:ogbornd@mcmaster.ca">email</a>
+<a href="https://social.toplap.org/@dktr0">fediverse</a>
+<a href="https://www.youtube.com/@dktr0">youtube</a>
+<a href="https://orcid.org/0000-0002-5898-1660">orcid</a>
+</div> <!-- contact -->
+
+</div> <!-- header -->
+<div class="content">
+    <h1><a href="../outline/index.html">MEDIAART 3D03</a>: JavaScript arrays and loops</h1>
+<h2>Array basics</h2>
+<p>Fire up node.js at your terminal, with: <code>node</code></p>
+<p>Then, enter the following at the node terminal: <code>x = [&quot;red&quot;,&quot;blue&quot;,&quot;green&quot;];</code></p>
+<p>The variable x now contains an &quot;array&quot;, a list of items.</p>
+<p>This will read/access the first item: <code>x[0]</code></p>
+<p>This will read/access the second item: <code>x[1]</code></p>
+<p>This will read/access the third item: <code>x[2]</code></p>
+<p>And since there is no fourth item, this will return &quot;undefined&quot;: <code>x[4]</code></p>
+<p>What if we wanted to change one of those items? We can specify a place in the array (the technical term is &quot;de-index&quot;) and then use the normal assignment operator (the equals sign) to change the item at that location: <code>x[0] = &quot;pink&quot;</code></p>
+<p>The above would change the first item in the array, and we could verify that happened by evaluating just x at the terminal: <code>x</code></p>
+<h2>Loop basics</h2>
+<p>All of the examples in this section should be entered in a textfile (e.g. test.js) and run with node, e.g.: <code>node test.js</code></p>
+<p>The following program would set the variable x to contain an array with three items in it, and then loop over the console.log statement three times, one for each item in the array. The variable y will be the number 0 the first time through, then the number 1, then the number 2:</p>
+<pre><code>x = [&quot;red&quot;,&quot;green&quot;,&quot;blue&quot;];
+
+
+for(y in x) {
+  console.log(x[y]);
+}
+</code></pre>
+<p>There is a more general form of the loop in JavaScript that we should understand. It looks like this:</p>
+<pre><code>for(var y = 0; y&lt;3; y++) {
+  console.log(y);
+}
+</code></pre>
+<p>In the above example, the part inside the brackets right after the word &quot;for&quot; says three things:</p>
+<ul>
+<li>the new variable y will start out containing the number 0: <code>var y = 0</code></li>
+<li>the loop will continue so long as y is lower than 3: <code>y&lt;3</code></li>
+<li>after each time through the loop, y will go up by one: <code>y++</code></li>
+<li>notice how these three things are in a specific order and are separated by a semi-colon</li>
+</ul>
+<p>We could use this form to make something happen n times in a way that doesn't have to do with the items in an array, for example:</p>
+<pre><code>for (var y=0; y&lt;10; y++) {
+  console.log(&quot;printing a message 10 times!&quot;);
+}
+</code></pre>
+<p>Notice that if a variable is/contains an array, then the name of the variable followed by .length will access the length of that array: <code>x.length</code></p>
+<p>So we could rewrite our first example of looping over an array as follows (if we wanted) - you will see this form in code examples that are out there:</p>
+<pre><code>x = [&quot;red&quot;,&quot;green&quot;,&quot;blue&quot;];
+
+for(var y = 0; y &lt; x.length; y++) {
+  console.log(x[y]);
+}
+</code></pre>
+<h2>Selecting something randomly from an array</h2>
+<pre><code>x = [&quot;Red&quot;,&quot;Green&quot;,&quot;Blue&quot;,&quot;Yellow&quot;,&quot;Pink&quot;];
+y = Math.random();
+z = y * x.length;
+console.log(x[Math.floor(z)]);
+</code></pre>
+<p>As an exercise in class, we'll write and then use a Javascript function to choose a random item given any array...</p>
+
+</div> <!-- content -->
+</div> <!-- outer -->
+</center>
+
+</body>
+</html>
