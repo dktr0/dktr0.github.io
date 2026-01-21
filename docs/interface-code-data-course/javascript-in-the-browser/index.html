@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>index</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="styleSheet" href="/style.css" type="text/css" media="screen">
+</head>
+<body>
+
+<center>
+<div class="outer">
+<div class="header">
+
+<div class="name"><a href="/index.html">David Ogborn (dktr0)</a></div>
+
+<div class="contact">
+<a href="mailto:ogbornd@mcmaster.ca">email</a>
+<a href="https://social.toplap.org/@dktr0">fediverse</a>
+<a href="https://www.youtube.com/@dktr0">youtube</a>
+<a href="https://orcid.org/0000-0002-5898-1660">orcid</a>
+</div> <!-- contact -->
+
+</div> <!-- header -->
+<div class="content">
+    <h1><a href="../outline/index.html">MEDIAART 3D03</a>: JavaScript in the browser</h1>
+<h2>The Web console/terminal</h2>
+<p>Right click in an empty browser tab and choose &quot;Inspect&quot; (or something like that). Then from the tab that pops up navigate to something called &quot;Console&quot; (or something like that). This gets you to an interactive console/terminal that is in many ways similar to interacting with JavaScript via node.js and the terminal - except that it is in the browser (which means ultimately that some different possibilities are available, even if the basic rules of JavaScript still work the same way).</p>
+<p>If you haven't done so before, take a moment to fire up a JavaScript console in your web browser and try it out. The web console can be useful for testing, figuring out problems, etc in your JavaScript-enabled websites - we'll use it particularly heavy as a way of getting feedback from our JavaScript programs about what is happening and when it is happening.</p>
+<h2>Integrating JavaScript into HTML+CSS web pages</h2>
+<h3>Example 1: Three times/places for JavaScript</h3>
+<pre><code>&lt;html&gt;
+  &lt;head&gt;
+    &lt;script&gt;console.log(&quot;this script is in the head&quot;);&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body onload=&quot;console.log('body onload')&quot;&gt;
+    &lt;script&gt;console.log(&quot;this script is in the body&quot;);&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h3>Example 2: Responding to the user clicking on an element</h3>
+<pre><code>&lt;html&gt;
+  &lt;head&gt;
+    &lt;script&gt;
+function doSomething() {
+  alert(&quot;this is an annoying popup&quot;);
+  alert(&quot;this is another annoying popup&quot;);
+  alert(&quot;this is yet another annoying popup&quot;);
+}
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div onclick=&quot;doSomething()&quot;&gt;This is a div with some text in it.&lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h3>Example 3: Changing the text of a particular element</h3>
+<pre><code>&lt;html&gt;
+  &lt;head&gt;
+    &lt;script&gt;
+function doSomething() {
+  var thediv = document.getElementById(&quot;thediv&quot;);
+  thediv.innerText = &quot;The text has changed because you clicked&quot;;
+}
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id=&quot;thediv&quot; onclick=&quot;doSomething()&quot;&gt;This is a div with some text in it.&lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h3>Example 4: Changing the CSS class of a particular element</h3>
+<pre><code>&lt;html&gt;
+  &lt;head&gt;
+    &lt;script&gt;
+function doSomething() {
+  var thediv = document.getElementById(&quot;thediv&quot;);
+  thediv.setAttribute(&quot;class&quot;,&quot;clicked&quot;);
+}
+    &lt;/script&gt;
+    &lt;style type=&quot;text/css&quot;&gt;
+.notClicked {
+  background-color: green;
+}
+.clicked {
+  background-color: red;
+}
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id=&quot;thediv&quot; class=&quot;notclicked&quot; onclick=&quot;doSomething()&quot;&gt;This is a div with some text in it.&lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h3>Example 5a: Generated/calculated CSS style info (and the example of absolute positioning)</h3>
+<pre><code>&lt;html&gt;
+  &lt;head&gt;
+    &lt;script&gt;
+function doSomething() {
+  var left = Math.random()*98;
+  var top = Math.random()*98;
+  var style = &quot;left: &quot; + left + &quot;%; top: &quot; + top + &quot;%;&quot;;
+  var thediv = document.getElementById(&quot;thediv&quot;);
+  thediv.setAttribute(&quot;style&quot;,style);
+}
+    &lt;/script&gt;
+    &lt;style type=&quot;text/css&quot;&gt;
+.myclass {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+}
+   &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id=&quot;thediv&quot; class=&quot;myclass&quot; onclick=&quot;doSomething()&quot;&gt;This is a div with some text in it.&lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h3>Example 6</h3>
+<p>This is exactly the same functionality as example 5a but split into three separate text files. This is the recommended minimum of separation/modularity for your projects (more complex projects might have multiple separated HTML CSS and JavaScript files).</p>
+<p>One of them called index.html:</p>
+<pre><code>&lt;html&gt;
+  &lt;head&gt;
+    &lt;script src=&quot;index.js&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;styleSheet&quot; href=&quot;style.css&quot; type=&quot;text/css&quot; media=&quot;screen&quot;/&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id=&quot;thediv&quot; class=&quot;myclass&quot; onclick=&quot;doSomething()&quot;&gt;This is a div with some text in it.&lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>One of them called style.css:</p>
+<pre><code>.myclass {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+}
+</code></pre>
+<p>One of them called index.js:</p>
+<pre><code>function doSomething() {
+  var left = Math.random()*98;
+  var top = Math.random()*98;
+  var style = &quot;left: &quot; + left + &quot;%; top: &quot; + top + &quot;%;&quot;;
+  var thediv = document.getElementById(&quot;thediv&quot;);
+  thediv.setAttribute(&quot;style&quot;,style);
+}
+</code></pre>
+<h3>Example 7: A framework for a text adventure game, a bad chatbot, or web operating system (etc)</h3>
+<p>Here's the index.html (notice how little it changes relative to example 6, since so much of the substance of this is in the javascript code rather than the HTML):</p>
+<pre><code>&lt;html&gt;
+  &lt;head&gt;
+    &lt;script src=&quot;index.js&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;styleSheet&quot; href=&quot;style.css&quot; type=&quot;text/css&quot; media=&quot;screen&quot;/&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id=&quot;log&quot;&gt;Hello. Please type your message in the terminal below.&lt;/div&gt;
+    &lt;textarea id=&quot;userinput&quot; rows=&quot;3&quot; cols=&quot;40&quot; onkeypress=&quot;userTypedSomething(event);&quot;&gt;&lt;/textarea&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>Here's the style.css:</p>
+<pre><code>#log {
+  border: 1px solid black;
+  width: 100%;
+  height: 90%;
+  overflow-y: scroll;
+}
+#userinput {
+  border: 1px solid black;
+  width: 100%;
+  height: 10%;
+}
+</code></pre>
+<p>Here's the index.js:</p>
+<pre><code>function userTypedSomething(ev) {
+  var key = ev.keyCode;
+  if(key == 13) {
+    console.log(&quot;enter pressed&quot;);
+    var textArea = document.getElementById(&quot;userinput&quot;);
+    var theText = textArea.value;
+    textArea.value = &quot;&quot;;
+    respondToInput(theText);
+    ev.preventDefault();
+  }
+}
+function respondToInput(i) {
+  addToLog(&quot;user input: &quot; + i);
+  if(Math.random() &gt; 0.5) {
+    addToLog(&quot;yes&quot;);
+  }
+  else {
+    addToLog(&quot;no&quot;);
+  }
+}
+function addToLog(x) {
+  var log = document.getElementById(&quot;log&quot;);
+  log.innerText = log.innerText + &quot;\n&quot; + x;
+}
+</code></pre>
+
+</div> <!-- content -->
+</div> <!-- outer -->
+</center>
+
+</body>
+</html>
