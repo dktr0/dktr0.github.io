@@ -22,3 +22,8 @@ Projects that meet all of the above requirements will count as "ACHIEVED" for th
 
 It's quite important that you write the code yourself for this project. Iterative, direct contact with code that you write, read, and change yourself is the best way to learn about how that code works (and thus also good preparation for the final exam in this course). In addition to the time we'll spend hacking together on things in our class meetings, I am always happy to meet with people outside of class to think about project challenges, strategize about how projects can be kept manageable and realizable, etc.
 
+## Project Ideation Questions
+
+- What are unique/highly local ideas or knowledge that you could use a webpage/website to represent?
+- What are aesthetic possibilities of the web browser that you would like to explore more closely?
+- How might you engage with the project's requirement to "engage somehow (potentially very loosely) with any of the ideas we've discussed in connection with one or more of the "Codes", "Web Pasts, Presents, Futures", and "Generative Art and Live Coding"?
