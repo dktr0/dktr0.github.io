@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>index</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="styleSheet" href="/style.css" type="text/css" media="screen">
+</head>
+<body>
+
+<center>
+<div class="outer">
+<div class="header">
+
+<div class="name"><a href="/index.html">David Ogborn (dktr0)</a></div>
+
+<div class="contact">
+<a href="mailto:ogbornd@mcmaster.ca">email</a>
+<a href="https://social.toplap.org/@dktr0">fediverse</a>
+<a href="https://www.youtube.com/@dktr0">youtube</a>
+<a href="https://orcid.org/0000-0002-5898-1660">orcid</a>
+</div> <!-- contact -->
+
+</div> <!-- header -->
+<div class="content">
+    <h1><a href="../outline/index.html">MEDIAART 3D03</a>: JavaScript dictionaries</h1>
+<p>Earlier we looked at <a href="../javascript-arrays-loops/index.html">arrays in JavaScript</a>. Review: An array is a way of storing lots of things in a single variable. Usually the things are all the same kind of information as each other. When we have an array, we tend to do things like loop over it, doing something to each of the items of the array in turn.
+Like an array, a dictionary has more than one piece of information in it. Unlike an array, the different pieces of information typically represent different things (e.g. different aspects of something) and different things are usually done with each piece of information. Also unlike an array, instead of using numbers to pick particular things out, we'll use words/names.</p>
+<p>Here's a literal dictionary: { name: &quot;David Ogborn&quot;, hackerName: &quot;dktr0&quot; }</p>
+<p>And we can assign it to a variable, just like any other type of data we deal with in JavaScript: <code>x = { name: &quot;David Ogborn&quot;, hackerName: &quot;dktr0&quot; }</code></p>
+<p>We can use JavaScript's typeof operator to inspect the &quot;type&quot; of something.</p>
+<pre><code>typeof 10
+typeof &quot;ten&quot;
+typeof x
+</code></pre>
+<p>That last line should give &quot;object&quot; because objects (which we'll talk about later) and dictionaries are actually extremely similar to each other.</p>
+<p>If we want to access the specific fields of a dictionary we can use the dot . notation and the name of the field:</p>
+<pre><code>x.name
+x.hackerName
+</code></pre>
+<p>What are main things dictionaries support doing?</p>
+<ul>
+<li>making little databases with different kinds of information about a group of things (make each dictionary an item in an array)</li>
+<li>making (potentially reusable) functions that somehow use multiple pieces of information from a dictionary together in some way</li>
+<li>they're also pretty important for understanding the later topic of objects</li>
+</ul>
+
+</div> <!-- content -->
+</div> <!-- outer -->
+</center>
+
+</body>
+</html>

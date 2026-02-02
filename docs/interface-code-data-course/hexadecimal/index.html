@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>index</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="styleSheet" href="/style.css" type="text/css" media="screen">
+</head>
+<body>
+
+<center>
+<div class="outer">
+<div class="header">
+
+<div class="name"><a href="/index.html">David Ogborn (dktr0)</a></div>
+
+<div class="contact">
+<a href="mailto:ogbornd@mcmaster.ca">email</a>
+<a href="https://social.toplap.org/@dktr0">fediverse</a>
+<a href="https://www.youtube.com/@dktr0">youtube</a>
+<a href="https://orcid.org/0000-0002-5898-1660">orcid</a>
+</div> <!-- contact -->
+
+</div> <!-- header -->
+<div class="content">
+    <h1><a href="../outline/index.html">MEDIAART 3D03</a>: Hexadecimal numbers</h1>
+<p>Hopefully we've gotten used to the concept of <a href="../binary-numbers/index.html">binary numbers</a>. Being able to directly encode/decode binary numbers ourselves is useful both for general comprehension but also because it makes the limits, the materiality, of numbers in lots of computer systems very visible to us. (For example, when we know that 8 bits can encode 256 possibilities, i.e. 0-255, then we are less surprised to see that colour systems are often on a 0-255 scale.)</p>
+<p>But encoding big numbers in binary is really long and tedious! Hexadecimal is another way of encoding/decoding numbers that is more compact than binary, but still very clearly related to the underlying bits. Here's how it works:</p>
+<p>Each digit is encoded with 16 possible values, which are the numbers 0 through 9 followed by the letters a through f. So the letter a is worth 10, b is worth 11, c is worth 12, d is worth 13, e is worth 14, and finally f is worth 15.</p>
+<p>The rightmost digit is just worth that number from 0-15.</p>
+<p>The next digit to the left is worth 16 times whatever it is worth as an individual digit.</p>
+<p>The next digit to the left is worth 256 times whatever it is worth as an individual digit.</p>
+<p>The next digit to the left is worth 4096 times whatever it is worth as an individual digit.</p>
+<p>(If we kept going, each next digit would be worth 16 times more than what the one before it was.)</p>
+<p>If we restrict ourselves to 4-digit hexadecimal numbers, the largest one would be ffff, and it would be worth  15<em>4096 + 15</em>256 + 15*16 + 15 = 65535; so, with 4 hexadecimal digits we can encode values from 0-65535 (65,536 possibilities). This also happens to be exactly the number of possibilities we can encode with 16 binary bits.</p>
+<p>Each hexadecimal digit corresponds to 4 binary bits.</p>
+<p>There's three places we might be likely to encounter binary numbers - in configuring computers/hardware, in some things to do with computer networking, and (maybe) in code that we encounter and are reading.</p>
+<h2>JavaScript and hexadecimal numbers</h2>
+<p>We can use JavaScript to encode/decode hexadecimal numbers.</p>
+<p>If we put 0x in front a sequence of hexadecimal digits, JavaScript will interpret that as a literal hexadecimal number.</p>
+<p>For example: <code>0x1abc</code> is equivalent to the literal decimal number 444</p>
+<p>If we put a number in a variable then we can use the .toString method to convert it to another &quot;base&quot; (e.g. hexadecimal = base 16).</p>
+<pre><code>// at the node.js prompt
+x = 1234;
+x.toString(16); // will be 4d2 which is 1234 in hexadecimal
+</code></pre>
+<p>If we want to &quot;parse&quot; text from a user as if it was hexadecimal we can use the parseInt function, which takes two arguments - the text to be parsed and the base to parse it with (e.g. 16 for hexadecimal): <code>parseInt(&quot;ffff&quot;,16); // will produce 65535 as discussed above</code></p>
+
+</div> <!-- content -->
+</div> <!-- outer -->
+</center>
+
+</body>
+</html>

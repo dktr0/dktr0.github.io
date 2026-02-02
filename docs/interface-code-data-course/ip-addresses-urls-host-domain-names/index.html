@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>index</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="styleSheet" href="/style.css" type="text/css" media="screen">
+</head>
+<body>
+
+<center>
+<div class="outer">
+<div class="header">
+
+<div class="name"><a href="/index.html">David Ogborn (dktr0)</a></div>
+
+<div class="contact">
+<a href="mailto:ogbornd@mcmaster.ca">email</a>
+<a href="https://social.toplap.org/@dktr0">fediverse</a>
+<a href="https://www.youtube.com/@dktr0">youtube</a>
+<a href="https://orcid.org/0000-0002-5898-1660">orcid</a>
+</div> <!-- contact -->
+
+</div> <!-- header -->
+<div class="content">
+    <h1><a href="../outline/index.html">MEDIAART 3D03</a>: IP addresses, URLs, and host/domain names</h1>
+<h2>IPv4 addresses</h2>
+<p>Once upon a time (and still), computers (etc, i.e. &quot;devices&quot;) on computer networks all had a unique address that
+consisted of four 8-bit numbers (i.e. numbers between 0 and 255). In this system (part of IPv4 or &quot;Internet Protocol version 4&quot;) only 32 bits are required to uniquely identify a destination/location on the network.</p>
+<p>If you are connected to a wired or wireless network right now (as you probably are), you can probably find your IPv4 address on that network. For example in Windows, I can search for the Network Connections settings panel, then right click on my Wifi connection, select Status, then Details, and right there near the top there's an entry that says IPv4 address. Mine is currently 172.17.210.38 (this is temporary and random, tomorrow it will likely be something else).</p>
+<p>Right below that there is another set of four 8-bit numbers and it is labelled &quot;netmask&quot;. This is an indication of how much of the address is shared with other computers on this same local network, versus how much of the address is specific to just my device. A netmask of 255.255.255.0, for example, would mean that the first three numbers in my address are common to all computers on this network, while the last number is specific to just my device.</p>
+<p>Don't worry if the concept of the netmask is a bit unclear though - the important point is really just that it is very common for devices on networks to be identified by an &quot;IPv4 address&quot; that consists of 4 8-bit numbers.</p>
+<h2>URLs</h2>
+<p>We're probably already familar with the basic use of a &quot;URL&quot; - as an &quot;address&quot; that we stick into a web browser to identify some unique place on the web.</p>
+<p>URL is short for &quot;uniform resource locator&quot; and it is a more specific example of a more general class of things known as URIs (uniform resource identifier). These notes focus on the more specific web URLs.</p>
+<p>A web URL will start with a &quot;protocol&quot; that will be either &quot;http:&quot; or &quot;https:&quot;. That will tell, for example, a web browser how it needs to go about sending the detailed request that follows, since http and https are gone about in very different ways.</p>
+<p>Usually (there are some exceptions) the next part is the &quot;host&quot; which identifies the computer/web server from which a web file should be requested. This can be an IP address but it's much more common for it to be a &quot;hostname&quot; that gets decoded by the &quot;domain name&quot; system into the actual IP address (more about that below). The host normally starts with two slashes.
+The next part, after a single slash / is the path, which is a series of names separated by slashes that is conceptually similar to a filepath in an operating system (such as those we're starting to get used to in our <a href="../filepaths/index.html">devops practice about filepaths</a>.</p>
+<p>The next part (not always present) is the &quot;query&quot; - which starts with a ? and then consists of a series of pairs of keys and values, e.g. <code>?mode=display&amp;columns=40</code>. These might be &quot;options&quot; that change the nature of the response from the web server, or they might be options that are interpreted and used by the interactive JavaScript in a page.</p>
+<p>The last part (also not always present) is the &quot;fragment&quot; which is a way of telling the browser to jump to a specific marked section of a web document. This fragment: <code>#sectionA</code> at the end of a web URL would tell the browser to jump to the section identified in the web document as sectionA (by giving some HTML element the id sectionA).</p>
+<p>In practice some of the elements of a URL can be omitted. Browsers will assume http (or sometimes https) if the protocol is omitted. If there's no host (preceded by //) browsers will assume that whatever you are requesting comes from the same place as the thing you are currently looking at.</p>
+<p>So a URL like this means get the file called &quot;myOtherFile.html&quot; from wherever the thing I am currently looking at is: <code>myOtherFile.html</code>.</p>
+<p>And a URL like this means get the file called &quot;yetAnotherFile.html&quot; from a folder below wherever the thing I am currently looking at is: <code>myFolder/myOtherFile.html</code></p>
+<p>Knowing about this becomes really useful as your projects start to get bigger and you want to use folders to organize them (e.g. different folders for different sections of a website, or sometimes people like to put images and such in a special folder separate from HTML-CSS-JavaScript).</p>
+<h2>Host/Domain Names</h2>
+<p>The name www.mcmaster.ca is a &quot;hostname&quot; that uses text to identify a specific computer/device on the Internet.
+These addresses are managed by a series of &quot;authorities&quot;. When our computer attempts to figure out the real (i.e. numeric) address it starts by consulting an authority for the &quot;top level domain&quot; - the most general one, and it asks it where it should ask about the next part. So a top level authority is consulted for .ca about where to ask about .mcmaster. Then THAT authority is asked about the next part and so on and so on until we have a final, complete numeric address.</p>
+<p>We can use the &quot;dig&quot; utility to kind of inspect this up a little closer. On Mac, this is already installed and usable through the Terminal. We'll need to install it once which on WSL/Debian/Ubuntu would look like this: <code>sudo apt install dnsutils</code></p>
+<p>Then we can issue this at the terminal to get some information about a particular host: <code>dig www.mcmaster.ca</code>
+Note: If we enter the IP address of a webserver directly into a web browser we'll sometimes get a different website than we expect, because many large web servers serve different websites from exactly the same address - basically they give a different response depending on the &quot;name&quot; one uses to make a request of them.</p>
+<p>As a final note, on many systems the name &quot;localhost&quot; is set up to be the name of &quot;this computer itself&quot; so a URL like this &quot;http://localhost/myFile.html&quot; is a request for the file myFile.html being served by a web server running on this computer itself and not somewhere else on the Internet. On many systems the IP address 127.0.0.1 is also a way of pointing to this computer itself (but note that all of this depends on how the machine is configured: some won't respond to 127.0.0.1 and some won't respond to localhost...).</p>
+
+</div> <!-- content -->
+</div> <!-- outer -->
+</center>
+
+</body>
+</html>
