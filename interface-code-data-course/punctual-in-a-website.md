@@ -5,7 +5,7 @@ title: "MEDIAART 3D03: Incorporating Punctual into a website"
 
 # [MEDIAART 3D03](../outline/index.html): Incorporating Punctual into a website
 
-Here's an example of incorporating the live coding language Punctual into a website, for example as a way of having generative visual art in the background of the website.
+Here's an example of incorporating the live coding language [Punctual](https://dktr0.github.io/Punctual) into a website, for example as a way of having generative visual art in the background of the website.
 
 For this to work, you'll need to grab the latest version of the file punctual.js from within [the Punctual repository at github](https://github.com/dktr0/Punctual). You can click the big green button that says "Code" and then "Download Zip" to download the whole Punctual repository, within which you'll find the file punctual.js. Then you can copy that file to the folder containing your website.
 
