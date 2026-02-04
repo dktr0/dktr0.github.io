@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>index</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="styleSheet" href="/style.css" type="text/css" media="screen">
+</head>
+<body>
+
+<center>
+<div class="outer">
+<div class="header">
+
+<div class="name"><a href="/index.html">David Ogborn (dktr0)</a></div>
+
+<div class="contact">
+<a href="mailto:ogbornd@mcmaster.ca">email</a>
+<a href="https://social.toplap.org/@dktr0">fediverse</a>
+<a href="https://www.youtube.com/@dktr0">youtube</a>
+<a href="https://orcid.org/0000-0002-5898-1660">orcid</a>
+</div> <!-- contact -->
+
+</div> <!-- header -->
+<div class="content">
+    <h1><a href="../outline/index.html">MEDIAART 3D03</a>: Incorporating Punctual into a website</h1>
+<p>Here's an example of incorporating the live coding language Punctual into a website, for example as a way of having generative visual art in the background of the website.</p>
+<p>For this to work, you'll need to grab the latest version of the file punctual.js from within <a href="https://github.com/dktr0/Punctual">the Punctual repository at github</a>. You can click the big green button that says &quot;Code&quot; and then &quot;Download Zip&quot; to download the whole Punctual repository, within which you'll find the file punctual.js. Then you can copy that file to the folder containing your website.</p>
+<p>Once you have punctual.js in the folder where you are working, here is a barebones example of a web page that loads Punctual, tells it to start rendering frames of animation, and then &quot;defines&quot; a specific Punctual &quot;program&quot; (in the variable t that is then passed to the define call). Note the use of backticks in defining t - this allows line breaks to work nicely (normally you can't just have plain linebreaks like that in a JavaScript literal string).</p>
+<pre><code>&lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+
+&lt;script type=&quot;module&quot;&gt;
+import * as P from &quot;./punctual.js&quot;;
+window.punctual = new P.Punctual();
+window.punctual.startAnimation();
+var t = `
+[0,0,0] ++ circle (osc [0.2,0.3]) 0.2 &gt;&gt; blend;
+[0,0,0] ++ circle (osc [0.4,0.5]) 0.1 &gt;&gt; blend;
+`;
+window.punctual.define({zone:0,text:t,time: Date.now()/1000.0});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>One more important note: Punctual will not work if you just open the webpage using the open mechanism of your browser. You need to serve it via a webserver. One easy way to do that is to use the web server that is part of (sort of) node and npm. Launching that would look like this (need to be in the folder where your website is):</p>
+<pre><code>npx http-server -c-1
+</code></pre>
+<p>And then you would access what the web server is serving with this url in your browser:</p>
+<pre><code>http://localhost:8080
+</code></pre>
+
+</div> <!-- content -->
+</div> <!-- outer -->
+</center>
+
+</body>
+</html>

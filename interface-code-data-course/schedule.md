@@ -56,6 +56,10 @@ In Weeks One through Six (Mon Jan 5 - Fri Feb 13), we'll work through fundamenta
 - [IP addresses, URLs, and host/domain names](../ip-addresses-urls-host-domain-names/index.html)
 - [Javascript dictionaries](../javascript-dictionaries/index.html)
 
+## Wed 4 Feb
+- Live coding visuals in Punctual
+- [Incorporating Punctual into a website](../punctual-in-a-website/index.html)
+
 ### Project #1 is submitted on Avenue by 10 PM on Fri Feb 13
 
 ## Part B
