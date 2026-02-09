@@ -60,6 +60,15 @@ In Weeks One through Six (Mon Jan 5 - Fri Feb 13), we'll work through fundamenta
 - Live coding visuals in Punctual
 - [Incorporating Punctual into a website](../punctual-in-a-website/index.html)
 
+## Mon 9 Feb
+- [CSS flexbox and grid](../flexbox-grid/index.html)
+- Experiments with styling images via css, c.f. [this w3schools reference](https://www.w3schools.com/css/css3_images.asp)
+- Further demonstration of what I mean by a "self-contained" website (including e.g. with respect to images)
+- Further experiments with both Punctual-in-a-website and example 7 from "javascript in the browser"
+
+## Wed 11 Feb
+- "dress rehearsal" for project showcase (serving your own site on our local network) and other assistance with project #1
+
 ### Project #1 is submitted on Avenue by 10 PM on Fri Feb 13
 
 ## Part B
