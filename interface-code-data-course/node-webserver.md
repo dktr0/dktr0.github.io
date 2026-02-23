@@ -53,21 +53,17 @@ But you could also access the files with your IP address on whatever network you
 
 ## Path 2: a further comment about Windows and WSL
 
-On Windows with WSL (specifically WSL2 which is the default option at this time), there is a further wrinkle. By default, Windows puts WSL behind a virtual firewall in such a way that the networking interfaces of the computer go through an additional layer that (long story short) scrambles all the addresses. The easy way around this is to change the networking mode of WSL from the default ("NAT" or network address translation) to another "mirrored" mode. Here are some instructions for what I think is the easiest way to go about that.
+On Windows with WSL (specifically WSL2 which is the default option at this time), there is a further wrinkle. By default, Windows puts WSL behind a virtual firewall in such a way that the networking interfaces of the computer go through an additional layer that (long story short) scrambles all the addresses. The easy way around this appears to be as follows:
 
-First: figure out what your Windows username is (not your WSL username). For example, use File Explorer to look at the folder C:\Users. One of those folders should be your Windows username.
+- Restart your computer (to ensure that WSL is shutdown)
+- Search for and open the app called "WSL Settings"
+- Navigate to the Networking page of that app
+- Change Networking Mode to "Mirrored"
+- Make sure that "Enable localhost forwarding" is "On"
+- Change "Host Adress Loopback" to "On"
 
-Second: launch the WSL terminal, and then use nano to edit a file called .wslconfig (note the period at the beginning of the file name) in your Windows user folder (not your WSL home folder). That would probably look like this (changing the user name obviously): ```nano /mnt/c/Users/yourUserName/.wslconfig```
+And then do either one of these two things:
+- Launch Windows Powershell with "Run as administrator" and issue the following command to open port 8080 for incoming connections: ```New-NetFirewallRule -DisplayName "node http-server" -Direction Inbound -LocalPort 8080 -Protocol TCP -Action Allow```
+- OR (only if you are on a secure/private network): Temporarily disactivate Windows Firewall (but remember to turn it back on!...)
 
-Third: Copy the following text into that text editing window exactly:
-
-```
-[wsl2]
-networkingMode=mirrored
-```
-
-Fourth step: After you've saved and quit the text editor, restart your computer.
-
-Final step: Check that it worked by launching your WSL terminal, and issuing the following command: ```wslinfo --networking-mode```
-
-You should get the response "mirrored". If you get the response "NAT" instead, it means it didn't work (let's troubleshoot it together). If you got the response mirrored, at this point, all of the things above in the document should work.
+Finally, after you've done all of those things, you can launch WSL and launch your webserver as above, then test it.

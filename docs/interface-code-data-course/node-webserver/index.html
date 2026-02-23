@@ -55,16 +55,21 @@ http://127.0.0.1:8080
 </code></pre>
 <p>But you could also access the files with your IP address on whatever network you are on (and with any luck so can other people on that network), for example <code>http://192.168.0.53:8080</code> if 192.168.0.53 is your address on the network. Hint: when you launch http-server with npx you can see a little report of the URLs that should be usable to access the pages you are serving.</p>
 <h2>Path 2: a further comment about Windows and WSL</h2>
-<p>On Windows with WSL (specifically WSL2 which is the default option at this time), there is a further wrinkle. By default, Windows puts WSL behind a virtual firewall in such a way that the networking interfaces of the computer go through an additional layer that (long story short) scrambles all the addresses. The easy way around this is to change the networking mode of WSL from the default (&quot;NAT&quot; or network address translation) to another &quot;mirrored&quot; mode. Here are some instructions for what I think is the easiest way to go about that.</p>
-<p>First: figure out what your Windows username is (not your WSL username). For example, use File Explorer to look at the folder C:\Users. One of those folders should be your Windows username.</p>
-<p>Second: launch the WSL terminal, and then use nano to edit a file called .wslconfig (note the period at the beginning of the file name) in your Windows user folder (not your WSL home folder). That would probably look like this (changing the user name obviously): <code>nano /mnt/c/Users/yourUserName/.wslconfig</code></p>
-<p>Third: Copy the following text into that text editing window exactly:</p>
-<pre><code>[wsl2]
-networkingMode=mirrored
-</code></pre>
-<p>Fourth step: After you've saved and quit the text editor, restart your computer.</p>
-<p>Final step: Check that it worked by launching your WSL terminal, and issuing the following command: <code>wslinfo --networking-mode</code></p>
-<p>You should get the response &quot;mirrored&quot;. If you get the response &quot;NAT&quot; instead, it means it didn't work (let's troubleshoot it together). If you got the response mirrored, at this point, all of the things above in the document should work.</p>
+<p>On Windows with WSL (specifically WSL2 which is the default option at this time), there is a further wrinkle. By default, Windows puts WSL behind a virtual firewall in such a way that the networking interfaces of the computer go through an additional layer that (long story short) scrambles all the addresses. The easy way around this appears to be as follows:</p>
+<ul>
+<li>Restart your computer (to ensure that WSL is shutdown)</li>
+<li>Search for and open the app called &quot;WSL Settings&quot;</li>
+<li>Navigate to the Networking page of that app</li>
+<li>Change Networking Mode to &quot;Mirrored&quot;</li>
+<li>Make sure that &quot;Enable localhost forwarding&quot; is &quot;On&quot;</li>
+<li>Change &quot;Host Adress Loopback&quot; to &quot;On&quot;</li>
+</ul>
+<p>And then do either one of these two things:</p>
+<ul>
+<li>Launch Windows Powershell with &quot;Run as administrator&quot; and issue the following command to open port 8080 for incoming connections: <code>New-NetFirewallRule -DisplayName &quot;node http-server&quot; -Direction Inbound -LocalPort 8080 -Protocol TCP -Action Allow</code></li>
+<li>OR (only if you are on a secure/private network): Temporarily disactivate Windows Firewall (but remember to turn it back on!...)</li>
+</ul>
+<p>Finally, after you've done all of those things, you can launch WSL and launch your webserver as above, then test it.</p>
 
 </div> <!-- content -->
 </div> <!-- outer -->
