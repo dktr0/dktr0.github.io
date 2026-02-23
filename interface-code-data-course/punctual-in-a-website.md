@@ -32,16 +32,4 @@ window.punctual.define({zone:0,text:t,time: Date.now()/1000.0});
 </html>
 ```
 
-One more important note: Punctual will not work if you just open the webpage using the open mechanism of your browser. You need to serve it via a webserver. One easy way to do that is to use the web server that is part of (sort of) node and npm. Launching that would look like this (need to be in the folder where your website is):
-
-```
-npx http-server -c-1
-```
-
-And then you would access what the web server is serving with this url in your browser:
-
-```
-http://localhost:8080
-```
-
-
+One more VERY IMPORTANT note: Punctual will NOT work if you just open the webpage using the open mechanism of your browser. You need to [serve it via a webserver, as discussed in the instructions for using node's standard web server to serve websites](../node-webserver/index.html).

@@ -51,23 +51,24 @@ In Weeks One through Six (Mon Jan 5 - Fri Feb 13), we'll work through fundamenta
 - [net.art](../net-art/index.html)
 - Project ideation questions/discussion for [Project #1](../project-1/index.html)
 
-## Mon 2 Feb
+### Mon 2 Feb
 - [Hexadecimal numbers](../hexadecimal/index.html)
 - [IP addresses, URLs, and host/domain names](../ip-addresses-urls-host-domain-names/index.html)
 - [Javascript dictionaries](../javascript-dictionaries/index.html)
 
-## Wed 4 Feb
+### Wed 4 Feb
 - Live coding visuals in Punctual
 - [Incorporating Punctual into a website](../punctual-in-a-website/index.html)
 
-## Mon 9 Feb
+### Mon 9 Feb
 - [CSS flexbox and grid](../flexbox-grid/index.html)
 - Experiments with styling images via css, c.f. [this w3schools reference](https://www.w3schools.com/css/css3_images.asp)
 - Further demonstration of what I mean by a "self-contained" website (including e.g. with respect to images)
 - Further experiments with both Punctual-in-a-website and example 7 from "javascript in the browser"
 
-## Wed 11 Feb
+### Wed 11 Feb
 - "dress rehearsal" for project showcase (serving your own site on our local network) and other assistance with project #1
+- see especially: [Using node to run a webserver](../node-webserver/index.html)
 
 ### Project #1 is submitted on Avenue by 10 PM on Fri Feb 13
 
@@ -78,6 +79,10 @@ In Weeks Seven through Nine (Mon 23 Feb - Fri 13 Mar), we'll work through some m
 There will be no scheduled class meetings on Mon 16 Mar and Wed 18 Mar, while I inspect and approve all of the proposals. You are strongly encouraged to begin working in earnest on the execution of project #2 immediately, prior to receiving my feedback on your proposal.
 
 During both part B and most of part C, you'll be able to complete the six asynchronous (on your own time), open-book, re-doable tests on each area/learning outcome, repeating each test as many time as necessary to receive the necessary 80% (between Mon 23 Feb and 10 PM on Mon 30 Mar, after which point the tests will become no longer available to complete, strictly). You are strongly encouraged to start attempting these tests early in the window in which they are available, to complete them without assistance or collaboration, and to use the possibility of repeated attempts as a way of learning and preparing for the final exam.
+
+### Mon 23 Feb
+- Project showcase! 
+- see especially: [Using node to run a webserver](../node-webserver/index.html)
 
 ## Part C
 

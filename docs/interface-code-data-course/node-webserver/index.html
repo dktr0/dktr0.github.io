@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>index</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="styleSheet" href="/style.css" type="text/css" media="screen">
+</head>
+<body>
+
+<center>
+<div class="outer">
+<div class="header">
+
+<div class="name"><a href="/index.html">David Ogborn (dktr0)</a></div>
+
+<div class="contact">
+<a href="mailto:ogbornd@mcmaster.ca">email</a>
+<a href="https://social.toplap.org/@dktr0">fediverse</a>
+<a href="https://www.youtube.com/@dktr0">youtube</a>
+<a href="https://orcid.org/0000-0002-5898-1660">orcid</a>
+</div> <!-- contact -->
+
+</div> <!-- header -->
+<div class="content">
+    <h1><a href="../outline/index.html">MEDIAART 3D03</a>: Using node to run a webserver</h1>
+<h2>Path 1: The quickest way (but not completely robust, see also path 2 below)</h2>
+<p>If you need to run a web server primarily in order to check how a website/web project you are working on works when served, then it is enough to change your present working directory (i.e. in the terminal) to the directory containing the files you wish to serve and then issue the following command (which assumes you have node and npm installed):</p>
+<pre><code>npx http-server -c-1
+</code></pre>
+<p>The <code>-c-1</code> option in the command above tells the node-based http-server to not &quot;cache&quot; any files it serves. All of the files that the server serves to web browsers will be marked as un-cacheable, which will mean that if a reload happens it will request all of those files again. In a situation of low traffic with files that may be changing constantly (i.e. because you are working on them, changing them, etc) this is certainly what you would want.</p>
+<p>With the node http-server running, you should now be able to access the files through your web browser with at least one of the following URLs:</p>
+<pre><code>http://localhost:8080
+http://127.0.0.1:8080
+</code></pre>
+<h2>Path 2: A bit more robust than path 1</h2>
+<p>The method above works for quick self-testing. The method described in this section is basically the same thing, but adds some things that should help it to work even when you are not connected to the Internet, and when the requests for pages come from machines other than the one with the web server (such as in our class showcase).</p>
+<p>To set it up so that node can find the code for the http-server even when you are not on the Internet, do the following two things once (while connected to the Internet), in the folder of your website/web project.</p>
+<ol>
+<li><code>npm init</code></li>
+</ol>
+<p>After npm init a series of questions will pop up. Enter a title for the first question (probably doesn't really matter what it is, and you could always change it later), and then just press enter to accept the defaults for all the other questions. npm init will make two files called package.json package-lock.json that together are used to manage JavaAScript &quot;dependencies&quot; of your project (things your project depends on - which could include a webserver if your project needs to be served via a webserver). After that do this:</p>
+<ol start="2">
+<li><code>npm install http-server</code></li>
+</ol>
+<p>That second step will install the http-server dependency (the same one we were using with npx http-server -c-1) in a new folder called node_modules under your present folder. In this way the code of the http-server will be there in that folder even when you are not connected to the global Internet.</p>
+<p>If you are using MacOS, ChromeOS or &quot;real&quot; Linux you are probably done at this stage, now just issuing the following command in the directory of your project, like in path 1, will launch your webserver even if you are not connected to the Internet (for Windows/WSL users see below):</p>
+<pre><code>npx http-server -c-1
+</code></pre>
+<p>And then you could access the files from the browser via the web server with one of the two following URLs (just like in path 1):</p>
+<pre><code>http://localhost:8080
+http://127.0.0.1:8080
+</code></pre>
+<p>But you could also access the files with your IP address on whatever network you are on (and with any luck so can other people on that network), for example <code>http://192.168.0.53:8080</code> if 192.168.0.53 is your address on the network. Hint: when you launch http-server with npx you can see a little report of the URLs that should be usable to access the pages you are serving.</p>
+<h2>Path 2: a further comment about Windows and WSL</h2>
+<p>On Windows with WSL (specifically WSL2 which is the default option at this time), there is a further wrinkle. By default, Windows puts WSL behind a virtual firewall in such a way that the networking interfaces of the computer go through an additional layer that (long story short) scrambles all the addresses. The easy way around this is to change the networking mode of WSL from the default (&quot;NAT&quot; or network address translation) to another &quot;mirrored&quot; mode. Here are some instructions for what I think is the easiest way to go about that.</p>
+<p>First: figure out what your Windows username is (not your WSL username). For example, use File Explorer to look at the folder C:\Users. One of those folders should be your Windows username.</p>
+<p>Second: launch the WSL terminal, and then use nano to edit a file called .wslconfig (note the period at the beginning of the file name) in your Windows user folder (not your WSL home folder). That would probably look like this (changing the user name obviously): <code>nano /mnt/c/Users/yourUserName/.wslconfig</code></p>
+<p>Third: Copy the following text into that text editing window exactly:</p>
+<pre><code>[wsl2]
+networkingMode=mirrored
+</code></pre>
+<p>Fourth step: After you've saved and quit the text editor, restart your computer.</p>
+<p>Final step: Check that it worked by launching your WSL terminal, and issuing the following command: <code>wslinfo --networking-mode</code></p>
+<p>You should get the response &quot;mirrored&quot;. If you get the response &quot;NAT&quot; instead, it means it didn't work (let's troubleshoot it together). If you got the response mirrored, at this point, all of the things above in the document should work.</p>
+
+</div> <!-- content -->
+</div> <!-- outer -->
+</center>
+
+</body>
+</html>

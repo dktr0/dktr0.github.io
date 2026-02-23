@@ -53,4 +53,21 @@ But you could also access the files with your IP address on whatever network you
 
 ## Path 2: a further comment about Windows and WSL
 
-*** TODO ****
+On Windows with WSL (specifically WSL2 which is the default option at this time), there is a further wrinkle. By default, Windows puts WSL behind a virtual firewall in such a way that the networking interfaces of the computer go through an additional layer that (long story short) scrambles all the addresses. The easy way around this is to change the networking mode of WSL from the default ("NAT" or network address translation) to another "mirrored" mode. Here are some instructions for what I think is the easiest way to go about that.
+
+First: figure out what your Windows username is (not your WSL username). For example, use File Explorer to look at the folder C:\Users. One of those folders should be your Windows username.
+
+Second: launch the WSL terminal, and then use nano to edit a file called .wslconfig (note the period at the beginning of the file name) in your Windows user folder (not your WSL home folder). That would probably look like this (changing the user name obviously): ```nano /mnt/c/Users/yourUserName/.wslconfig```
+
+Third: Copy the following text into that text editing window exactly:
+
+```
+[wsl2]
+networkingMode=mirrored
+```
+
+Fourth step: After you've saved and quit the text editor, restart your computer.
+
+Final step: Check that it worked by launching your WSL terminal, and issuing the following command: ```wslinfo --networking-mode```
+
+You should get the response "mirrored". If you get the response "NAT" instead, it means it didn't work (let's troubleshoot it together). If you got the response mirrored, at this point, all of the things above in the document should work.
