@@ -10,6 +10,8 @@ Note: This is the "fluid syllabus" for the course MEDIAART 3D03: Interface, Code
 # Quick Links
 
 - [detailed schedule/diary](../schedule/index.html)
+- [project #1 requirements](../project-1/index.html)
+- [project #2 requirements](../project-2/index.html)
 - [the less detailed Simple Syllabus version of this outline](https://mcmaster.simplesyllabusca.com/en-US/doc/2i3r66tq9/Winter-2026-MEDIAART-3D03-C01-OGBORND-Interface,-Code,-Data?mode=view)
 
 # Course Description
@@ -51,9 +53,9 @@ In this course, the grade on McMaster's 12-point scale is determined by adding t
 
 - +1 [project #1](../project-1/index.html) meets all requirements (due 10 PM on Fri 13 Feb, on Avenue)
 - +1 [project #1](../project-1/index.html) shared during showcase #1 (during class meeting on Mon 23 Feb)
-- +1 project #2 proposal meets all requirements (due 10 PM on Fri 13 Mar, on Avenue)
-- +1 project #2 meets all requirements (due 10 PM on Thu 2 Apr, on Avenue)
-- +1 project #2 shared during showcase #2 (during class meeting on Mon 6 Apr)
+- +1 [project #2](../project-2/index.html) proposal meets all requirements (due 10 PM on Fri 13 Mar, on Avenue)
+- +1 [project #2](../project-2/index.html) meets all requirements (due 10 PM on Thu 2 Apr, on Avenue)
+- +1 [project #2](../project-2/index.html) shared during showcase #2 (during class meeting on Mon 6 Apr)
 - +1 for every 2 out of 6 asynchronous, open-book, re-doable tests completed to 80% correct (can be earned 3 times; tests available between Mon 23 Feb and 10 PM on Mon 30 Mar)
 - +1 for each of 6 areas/learning outcomes completed to 80% on registrar scheduled final exam (can be earned 6 times)
 - +1 for peer recognition (top 3 places or honorable mention) in either project showcase (can be earned twice)
