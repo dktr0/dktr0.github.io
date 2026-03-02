@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>index</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="styleSheet" href="/style.css" type="text/css" media="screen">
+</head>
+<body>
+
+<center>
+<div class="outer">
+<div class="header">
+
+<div class="name"><a href="/index.html">David Ogborn (dktr0)</a></div>
+
+<div class="contact">
+<a href="mailto:ogbornd@mcmaster.ca">email</a>
+<a href="https://social.toplap.org/@dktr0">fediverse</a>
+<a href="https://www.youtube.com/@dktr0">youtube</a>
+<a href="https://orcid.org/0000-0002-5898-1660">orcid</a>
+</div> <!-- contact -->
+
+</div> <!-- header -->
+<div class="content">
+    <h1><a href="../outline/index.html">MEDIAART 3D03</a>: Notes on textmode.js</h1>
+<h2>textmode.js</h2>
+<p>Here's <a href="https://code.textmode.art/">textmode.js' main website</a>.</p>
+<p>In theory there are three ways to use it, via <a href="https://editor.textmode.art/">the online editor</a> and by loading it as a JavaScript module (either the older UMD way or the newer ESM way). I found the online editor didn't match the current documentation for the project, and is a better investment (IMHO) to focus on the newer ESM way, so here's an &quot;all in one file&quot; starter example, based on the ESM module method, for textmode.js.</p>
+<p>We can grab a copy of the textmode.js library using npm (node package manager). That would go something like this... If you don't already have a project, make a new folder for the project, change into it, do npm init (and just press enter to answer all the questions), and then npm install textmode.js:</p>
+<pre><code>mkdir my-cool-project
+cd my-cool-project
+npm init
+npm install textmode.js
+</code></pre>
+<p>If we poke around now with cd/ls etc we'll find a file called textmode.esm.js in the folder node_modules/textmode.js/dist/ under our project folder. We can then load that JavaScript module into any JavaScript module we make in our project. Here's an example (all in one file) of that (this might be called index.html):</p>
+<pre><code>&lt;html&gt;
+ &lt;body&gt;
+  &lt;script type=&quot;module&quot;&gt;
+
+import { textmode } from &quot;./node_modules/textmode.js/dist/textmode.esm.js&quot;;
+
+// sketch.js
+const t = textmode.create({
+    width: window.innerWidth,
+    height: window.innerHeight,
+    fontSize: 16,
+    frameRate: 60
+});
+
+t.draw(() =&gt; {
+    t.background(32); // Dark gray background
+    // insert further drawing instructions for each frame here
+});
+
+  &lt;/script&gt;
+ &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>Possibly useful for games/demos etc using this - basic approach to catching user keyboard events in the browser:</p>
+<pre><code>document.onkeydown = function(ev) {
+  console.log(ev.key); // prints the key that was [pushed]
+}
+</code></pre>
+<p>Here is <a href="https://www.toptal.com/developers/keycode">a useful online tool for getting information about the various pieces of information in a key down event</a>.</p>
+<p>Also relevant: This is <a href="https://jvns.ca/blog/2024/11/18/how-to-import-a-javascript-library/">a good resource with notes on importing JavaScript libraries (potentially with various complications) in browser projects</a>.</p>
+
+</div> <!-- content -->
+</div> <!-- outer -->
+</center>
+
+</body>
+</html>

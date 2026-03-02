@@ -91,6 +91,9 @@ During both part B and most of part C, you'll be able to complete the six asynch
 - Discussion question: What is something (more or less related to our discussion so far) you'd be particularly excited to explore in the last half of the course?
 - Introduction of [project #2](../project-2/index.html)
 
+## Mon 2 Mar
+- Experiments with [textmode.js, a JavaScript library for ASCII art in the browser](../textmode.js/index.html)
+
 ## Part C
 
 The last three weeks of class (Mon 23 Mar to Mon 6 Apr) are devoted to the execution, completion, and showcasing of project #2, which is due by the end of day on Thu 2 Apr, and will be exhibited during a public showcase during the last class meeting (Mon 6 Apr).
