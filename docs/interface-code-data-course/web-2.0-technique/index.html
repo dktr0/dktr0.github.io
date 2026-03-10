@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>index</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="styleSheet" href="/style.css" type="text/css" media="screen">
+</head>
+<body>
+
+<center>
+<div class="outer">
+<div class="header">
+
+<div class="name"><a href="/index.html">David Ogborn (dktr0)</a></div>
+
+<div class="contact">
+<a href="mailto:ogbornd@mcmaster.ca">email</a>
+<a href="https://social.toplap.org/@dktr0">fediverse</a>
+<a href="https://www.youtube.com/@dktr0">youtube</a>
+<a href="https://orcid.org/0000-0002-5898-1660">orcid</a>
+</div> <!-- contact -->
+
+</div> <!-- header -->
+<div class="content">
+    <h1><a href="../outline/index.html">MEDIAART 3D03</a>: Web 2.0 technique</h1>
+<h2>Databases and AxioDB</h2>
+<p>AxioDB official document is <a href="https://axiodb.in/">here</a></p>
+<p>One would install axiodb in an npm-managed project folder like so: <code>npm install axiodb</code></p>
+<p>Here's a &quot;hello world&quot; axiodb example, lightly modified from the official examples provided in the librarie's documentation. It's a node.js program that creates a database, and a specific collection/table within that database, if they don't already exists, inserts a new entry in the collection/table, and prints all of the entries that are already in the database.</p>
+<pre><code>import { AxioDB } from 'axiodb';
+const axio = new AxioDB(false);
+const database = await axio.createDB('HelloWorldDB');
+const collection = await database.createCollection('posts');
+await collection.insert( { post: 'an example post' } );
+const results = await collection.query({}).exec();
+for (var n in results.data.documents) {
+  console.log(&quot;post &quot; + n + &quot;: &quot; + results.data.documents[n].post);
+}
+</code></pre>
+<h2>AJAX updating of info (via GET method)</h2>
+<pre><code>&lt;script&gt;
+function loadStuff() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 &amp;&amp; this.status == 200) {
+      console.log(&quot;received: &quot; + this.responseText);
+      document.getElementById('results').innerHTML = this.responseText;
+    }
+  };
+  xhttp.open(&quot;GET&quot;,&quot;getAllPosts&quot;, true);
+  xhttp.send();
+}
+loadStuff();
+setInterval(loadStuff,2000);
+&lt;/script&gt;
+</code></pre>
+<h2>HTML form submission (via POST method)</h2>
+<pre><code>&lt;form id=&quot;myform&quot; action=&quot;/submit&quot; method=&quot;POST&quot;&gt;
+  &lt;input type=&quot;text&quot; name=&quot;message&quot;/&gt;
+  &lt;button type=&quot;button&quot; onclick=&quot;document.getElementById('myform').submit()&quot;&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+</code></pre>
+<h2>Using express to write custom webservers</h2>
+<p>One would install it like so: <code>npm install express</code></p>
+<p>A &quot;hello world&quot; express example that basically recreates what you get by running the simple node http-server (and things like that):</p>
+<pre><code>import express from 'express';
+const app = express();
+app.use(express.static('./'));
+app.listen(3000, () =&gt; { console.log('listening on port 3000'); } );
+</code></pre>
+<h2>A more complete example</h2>
+<p>Here's the complete example we developed during class of a very crude social media site that receives and also displays anonymous posts. All the basic ingredients of web 2.0 are here, in a minimal form!</p>
+<p>index.html</p>
+<pre><code>&lt;html&gt;
+&lt;body&gt;
+&lt;form id=&quot;myform&quot; action=&quot;/submit&quot; method=&quot;POST&quot;&gt;
+  &lt;input type=&quot;text&quot; name=&quot;message&quot;/&gt;
+  &lt;button type=&quot;button&quot; onclick=&quot;document.getElementById('myform').submit()&quot;&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+&lt;div id=&quot;results&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+function loadStuff() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 &amp;&amp; this.status == 200) {
+      console.log(&quot;received: &quot; + this.responseText);
+      document.getElementById('results').innerHTML = this.responseText;
+    }
+  };
+  xhttp.open(&quot;GET&quot;,&quot;displayAllPosts&quot;, true);
+  xhttp.send();
+}
+loadStuff();
+setInterval(loadStuff,2000);
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>server.js</p>
+<pre><code>import express from 'express';
+const app = express();
+app.use(express.static('./'));
+app.get('/displayAllPosts', displayAllPosts); 
+app.use(express.urlencoded({ extended: true })); // note: different middleware required
+app.post('/submit', submit);
+
+import { AxioDB } from 'axiodb';
+const axio = new AxioDB(false);
+const database = await axio.createDB('HelloWorldDB');
+const collection = await database.createCollection('posts');
+
+async function submit(req,res) {
+  await anonymousPost(req.body.message);
+  res.sendFile(&quot;/home/dktr0/mar09/index.html&quot;); // this isn't ideal, but it will work for now
+}
+
+async function displayAllPosts(req,res) {
+  const allThePosts = await getAllPosts();
+  var output = &quot;&lt;html&gt;&lt;body&gt;&lt;div&gt;&quot;;
+  for (var n in allThePosts) {
+    output = output + &quot;&lt;div class='postClass'&gt;&quot;;
+    output = output + allThePosts[n].post;
+    output = output + &quot;&lt;/div&gt;&quot;;
+  }
+  output = output + &quot;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;&quot;;
+  res.send(output);
+}
+
+async function anonymousPost(msg) {
+  await collection.insert( { post: msg } );
+}
+
+async function getAllPosts() {
+  const results = await collection.query({}).exec();
+  return results.data.documents;
+}
+
+app.listen(3000, () =&gt; { console.log('listening on port 3000'); } );
+</code></pre>
+
+</div> <!-- content -->
+</div> <!-- outer -->
+</center>
+
+</body>
+</html>

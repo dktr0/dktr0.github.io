@@ -97,6 +97,9 @@ During both part B and most of part C, you'll be able to complete the six asynch
 ## Wed 4 Mar
 - Experiments with [three.js, a JavaScript library for 3D graphics in the browser](../three.js/index.html)
 
+## Mon 9 Mar
+- Experiments with [web 2.0 technique](../web-2.0-technique/index.html), including writing custom web-servers, working with databases, and asynchronous update of webpages (AJAX)
+
 ## Part C
 
 The last three weeks of class (Mon 23 Mar to Mon 6 Apr) are devoted to the execution, completion, and showcasing of project #2, which is due by the end of day on Thu 2 Apr, and will be exhibited during a public showcase during the last class meeting (Mon 6 Apr).
