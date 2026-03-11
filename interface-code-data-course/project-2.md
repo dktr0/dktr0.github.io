@@ -25,12 +25,14 @@ As if with the first project, it's quite important that you write the code yours
 
 This is a non-exhaustive list of some ways to extend the topics from the first part of this course in more ambitious directions:
 
-- Incorporate things discussed in the middle part of the course, such as static-site generation (and markdown), databases, QR codes and QR code art
+- Incorporate things discussed in the middle part of the course, such as static-site generation (and markdown), databases/web 2.0, three.js, textmode.js  
 - Work with translating more substantial or complex knowledge/data into web-based form
-- Go further with JavaScript programming, including using carefully selected JavaScript libraries for various purposes
+- Go further with JavaScript programming, potentially including using carefully selected JavaScript libraries for various purposes
 - Go further with incorporating generative art and live coding features into a website (especially if you didn't do this in your first project)
 - Explore deploying a "directly authored" website to a cloud-based webserver with a purchased domain name (this probably isn't ambitious enough by itself, but could be an element of an overall plan to make something more ambitious in this and other ways)
 - Explore deploying a "directly authored" website to a globally accessible home server (with or without a domain name) (also probably not ambitious enough by itself, but could be an element of an overall plan to make something more ambitious in this and other ways)
+
+I am sure there are many other possibilities beyond the ones listed above!
 
 ## More about the proposal
 
