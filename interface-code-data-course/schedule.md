@@ -100,6 +100,10 @@ During both part B and most of part C, you'll be able to complete the six asynch
 ## Mon 9 Mar
 - Experiments with [web 2.0 technique](../web-2.0-technique/index.html), including writing custom web-servers, working with databases, and asynchronous update of webpages (AJAX)
 
+## Wed 11 Mar
+- Experiments with [eleventy as a static site generator](../eleventy-static-site-generator/index.html)
+- [Project #2](../project-2/index.html) ideation activity
+
 ## Part C
 
 The last three weeks of class (Mon 23 Mar to Mon 6 Apr) are devoted to the execution, completion, and showcasing of project #2, which is due by the end of day on Thu 2 Apr, and will be exhibited during a public showcase during the last class meeting (Mon 6 Apr).

@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>index</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="styleSheet" href="/style.css" type="text/css" media="screen">
+</head>
+<body>
+
+<center>
+<div class="outer">
+<div class="header">
+
+<div class="name"><a href="/index.html">David Ogborn (dktr0)</a></div>
+
+<div class="contact">
+<a href="mailto:ogbornd@mcmaster.ca">email</a>
+<a href="https://social.toplap.org/@dktr0">fediverse</a>
+<a href="https://www.youtube.com/@dktr0">youtube</a>
+<a href="https://orcid.org/0000-0002-5898-1660">orcid</a>
+</div> <!-- contact -->
+
+</div> <!-- header -->
+<div class="content">
+    <h1><a href="../outline/index.html">MEDIAART 3D03</a>: Using eleventy as a static site generator&quot;</h1>
+<p>eleventy (also known as 11ty) is an awesome static-site generator. I use it to manage my own web garden. Here's <a href="https://www.11ty.dev/">the official website, including community forums, conferences, and other awesome resources</a></p>
+<p>Installing the eleventy static-site generator (in a project already initialized with npm init): <code>npm install @11ty/eleventy --save-dev</code></p>
+<p>Running eleventy as a development web server: <code>npx eleventy --serve</code></p>
+<p>Then you can connect to the HTML site it publishes/serves by pointing your browser to: <code>http://localhost:8080</code></p>
+<p>(You can also run eleventy just to build a site without serving it: <code>npx eleventy</code></p>
+<p>As you make changes in your project folder, eleventy will automatically notice changes, rebuild the site and serve the new files. Nice, eh?</p>
+<p>So, let's make a simple &quot;markdown&quot; file called index.md in your project folder (e.g. using nano or another text editor):</p>
+<pre><code>---
+title: My Index Page
+---
+
+# This is a level one heading
+
+## This is a level two heading
+
+### This is a level three heading
+
+- This is an unordered list
+- Second item
+- Third item
+
+[This is a web link to this very page](index.html)
+[This is a web link to a remotely located page](https://www.mcmaster.ca)
+</code></pre>
+<p>You should see the browser auto-update to the new version of the site, and if you poke around with ls you'll see (a) that a new directory called _site has been created and (b) that it contains a file called index.html that was made from the index.md markdown file.</p>
+<p>Let's make second markdown file called page2.md:</p>
+<pre><code>---
+title: Page two
+---
+
+# This is page two
+
+It has less content than the index. You can directly put HTML inside markdown when you need to do something that the automatic conversions don't cover!
+
+&lt;hr/&gt;
+
+&lt;img src=&quot;spongebob.png&quot;/&gt;
+</code></pre>
+<p>If you make a file in the project folder called eleventy.config.js, you can configure various special things such as changing the name of the output folder (&quot;docs&quot; in the example below), and automatically copying certain files without translation to the output folder or even all files of a certain kind (the bottom two lines in the example below):</p>
+<pre><code>export default function(eleventyConfig) {
+  eleventyConfig.setOutputDirectory(&quot;docs&quot;);
+  eleventyConfig.addPassthroughCopy(&quot;style.css&quot;);
+  eleventyConfig.addPassthroughCopy(&quot;background.jpg&quot;);
+  eleventyConfig.addPassthroughCopy(&quot;**/*.png&quot;);
+  eleventyConfig.addPassthroughCopy(&quot;**/*.zip&quot;);
+};
+</code></pre>
+<p>If in the header of a markdown file you set the field layout, e.g. like so:</p>
+<pre><code>---
+layout: layout.njk
+title: Web/Digital Gardening
+---
+</code></pre>
+<p>And then you have a folder called _includes with a file called layout.njk, then that markdown file will be rendered using that &quot;template&quot; for the generated html. Here's <a href="https://github.com/dktr0/dktr0.github.io/blob/master/_includes/layout.njk">a link to the layout.njk file from my web garden at whatever the present time is</a> (so it might change...)... (I imagine it might be different later on!):</p>
+
+</div> <!-- content -->
+</div> <!-- outer -->
+</center>
+
+</body>
+</html>
