@@ -84,29 +84,32 @@ During both part B and most of part C, you'll be able to complete the six asynch
 - Project showcase! 
 - see especially: [Using node to run a webserver](../node-webserver/index.html)
 
-## Wed 25 Feb
+### Wed 25 Feb
 - SSH demonstration
 - Discussion question: What's the most important thing you think you learned in this course up to and including Monday's showcase?
 - Discussion question: What is something you think you should have learned (or learned better) in this course up to and including Monday's showcase?
 - Discussion question: What is something (more or less related to our discussion so far) you'd be particularly excited to explore in the last half of the course?
 - Introduction of [project #2](../project-2/index.html)
 
-## Mon 2 Mar
+### Mon 2 Mar
 - Experiments with [textmode.js, a JavaScript library for ASCII art in the browser](../textmode.js/index.html)
 
-## Wed 4 Mar
+### Wed 4 Mar
 - Experiments with [three.js, a JavaScript library for 3D graphics in the browser](../three.js/index.html)
 
-## Mon 9 Mar
+### Mon 9 Mar
 - Experiments with [web 2.0 technique](../web-2.0-technique/index.html), including writing custom web-servers, working with databases, and asynchronous update of webpages (AJAX)
 
-## Wed 11 Mar
+### Wed 11 Mar
 - Experiments with [eleventy as a static site generator](../eleventy-static-site-generator/index.html)
 - [Project #2](../project-2/index.html) ideation activity
 
 ## Part C
 
 The last three weeks of class (Mon 23 Mar to Mon 6 Apr) are devoted to the execution, completion, and showcasing of project #2, which is due by the end of day on Thu 2 Apr, and will be exhibited during a public showcase during the last class meeting (Mon 6 Apr).
+
+### Mon 23 Mar
+- Experiments with [a model for a text adventure game](../adventure-game-model/index.html)
 
 ## Final Examination
 

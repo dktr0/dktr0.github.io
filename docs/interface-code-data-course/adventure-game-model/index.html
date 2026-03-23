@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>index</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="styleSheet" href="/style.css" type="text/css" media="screen">
+</head>
+<body>
+
+<center>
+<div class="outer">
+<div class="header">
+
+<div class="name"><a href="/index.html">David Ogborn (dktr0)</a></div>
+
+<div class="contact">
+<a href="mailto:ogbornd@mcmaster.ca">email</a>
+<a href="https://social.toplap.org/@dktr0">fediverse</a>
+<a href="https://www.youtube.com/@dktr0">youtube</a>
+<a href="https://orcid.org/0000-0002-5898-1660">orcid</a>
+</div> <!-- contact -->
+
+</div> <!-- header -->
+<div class="content">
+    <h1><a href="../outline/index.html">MEDIAART 3D03</a>: Model for an 'adventure' game</h1>
+<p>This is a basic JavaScript model for an adventure game, something like <a href="https://en.wikipedia.org/wiki/Colossal_Cave_Adventure">Colossal Cave Adventure (1976)</a> or <a href="https://en.wikipedia.org/wiki/Zork">Zork (1977)</a>.</p>
+<p>You can <a href="https://grack.com/demos/adventure/">play Colossal Cave Adventure online here</a> and <a href="https://classicreload.com/play/zork-i.html">play Zork online here</a>. You can also play Colossal Cave Adventure on Debian Linux (or Debian Linux on WSL) by installing the bsdgames package and then launching adventure from your terminal:</p>
+<pre><code>sudo apt install bsdgames
+adventure
+</code></pre>
+<p>The model provided here is just a starting point, and could be extended in many ways!</p>
+<pre><code>var world = {};
+var player = { items: {} };
+
+world.start = {
+    description: &quot;You are in a place.&quot;,
+    routes: { north: &quot;somewhereElse&quot; },
+    items: { sword: &quot;shiny sword&quot;, shield: &quot;wooden shield&quot; }
+};
+
+world.somewhereElse = {
+    description: &quot;You are somewhere else, pretty different than where you started&quot;,
+    routes: { south: &quot;start&quot; },
+    items: {}
+}
+
+var place = world.start;
+
+function go(d) {
+  if(place.routes[d] != undefined) {
+    const destinationName = place.routes[d];
+    if(world[destinationName] != undefined) {
+        place = world[destinationName];
+        return place.description;
+    }
+    else {
+        return &quot;Uhoh you have encountered a tear in the space-time continuum.&quot;;
+    }
+  } else {
+    return &quot;You can't go that way.&quot;;
+  }
+}
+
+function take(itemName) {
+    if(place.items[itemName] != undefined) {
+        const item = place.items[itemName];
+        place.items[itemName] = undefined;
+        player.items[itemName] = item;
+        return (&quot;You pick up the &quot; + itemName);
+    } else {
+        return &quot;There is nothing by that name here.&quot;
+    }
+}
+
+// this is the main &quot;entry-point&quot; - it takes text entered by the player as input and returns the response to display
+function respondToInput(input) {
+    const cleaned = input.replaceAll(&quot;\n&quot;,&quot;&quot;);
+    const words = cleaned.split(&quot; &quot;);
+    if(words[0] == &quot;go&quot;) {
+        return go(words[1]);
+    }
+    else if(words[0] == &quot;take&quot;) {
+        return take(words[1]);
+    }
+}
+</code></pre>
+<p>We could incorporate the above model into a browser application, like <a href="../javascript-in-the-browser/index.html">example 7 from the javascript in a browser page</a>. Or we could make a custom &quot;REPL&quot; (read evaluate print loop) in node.js and play the game that way. That might look like adding the following to the model/code above (which will make it only work in node.js, not the browser anymore, btw):</p>
+<pre><code>function myRepl(input, context, filename, callback) {
+    callback(null, respondToInput(input));
+}
+const repl = require(&quot;repl&quot;);
+console.log(place.description);
+repl.start( { prompt: &quot;&gt;&quot;, eval: myRepl });
+</code></pre>
+
+</div> <!-- content -->
+</div> <!-- outer -->
+</center>
+
+</body>
+</html>

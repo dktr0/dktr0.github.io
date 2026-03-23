@@ -157,9 +157,9 @@ function doSomething() {
 }
 ```
 
-### Example 7: A framework for a text adventure game, a bad chatbot, or web operating system (etc)
+### Example 7: A model for a text adventure game, a bad chatbot, or web operating system (etc)
 
-Here's the index.html (notice how little it changes relative to example 6, since so much of the substance of this is in the javascript code rather than the HTML):
+Here's a basic model for an interactive "REPL" (read evaluate print loop) in the browser. It could be could be combined with the [basic model here for a text adventure game](../adventure-game-model/index.html), or perhaps it could be used to create a "bad" chatbot or a web operating system (etc). Here's the index.html (notice how little it changes relative to example 6, since so much of the substance of this is in the javascript code rather than the HTML):
 
 ```
 <html>
