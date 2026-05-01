@@ -8,7 +8,7 @@ title: INSPIRE 3EL3 C01 - Live Coding
 Note: This is the "fluid syllabus" for the course INSPIRE 3EL3 C01 - Live Coding at McMaster University (May 2026 intersession). Expectations, policies, rules, etc will be the same as the official course outline (which current students can access on Simple Syllabus and Avenue), but this fluid version is formatted differently to take advantage of web possibilities, can be navigated in different ways, has up-to-date links to more detailed resources of various types, and will be updated to refer to new resources as they become available.
 
 Instructor: Dr. David Ogborn (“Dr. 0”, he/they), ogbornd@mcmaster.ca<br/> 
-Office Hours: Fridays 12:30–1:20 or 4:30–5:30 in TSH-306; or by email appointment<br/>
+Office Hours: by email appointment<br/>
 
 # Quick Links
 
@@ -23,7 +23,7 @@ Office Hours: Fridays 12:30–1:20 or 4:30–5:30 in TSH-306; or by email appoin
 
 # Course Information
 
-Live coding is an artistic and cultural practice in which programs are created and modified on-the-fly, to produce music, visuals, animation, etc. In this course, students will interact with live coding artists and researchers from around the world in the Networked Imagination Laboratory (NIL, https://nil.mcmaster.ca), producing their own improvised live coding performances and tools. During the first two weeks of the course, we’ll introduce live coding and practice the basics of several different live coding programming languages. Then, during the last two weeks of the course we’ll share the space with guest artists and researchers who come to McMaster fo for the NIL Live Coding Intensive. No prior experience with music, live coding, programming, etc. is required.
+Live coding is an artistic and cultural practice in which programs are created and modified on-the-fly, to produce music, visuals, animation, etc. In this course, students will interact with live coding artists and researchers from around the world in the Networked Imagination Laboratory (NIL, https://nil.mcmaster.ca), producing their own improvised live coding performances and tools. During the first two weeks of the course, we’ll introduce live coding and practice the basics of several different live coding programming languages. Then, during the last two weeks of the course we’ll share the space with guest artists and researchers who come to McMaster for the NIL Live Coding Intensive. No prior experience with music, live coding, programming, etc. is required.
 
 # Course Learning Outcomes
 
