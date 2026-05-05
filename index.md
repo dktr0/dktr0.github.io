@@ -17,6 +17,7 @@ Here are some quick links to the projects I think people are perhaps most likely
 - [MEDIAART 3D03 Interface, Code, Data course](/interface-code-data-course/outline/index.html)
 - [MEDIAART 3L03 Game Design course](/game-design-course/outline/index.html)
 - [INSPIRE 3EL3 C01 Live Coding course](/live-coding-course/outline/index.html)
+- [dktr0's MiniTidal tutorial](/minitidal/index.html)
 
 And here are some links to other materials I am collecting as this web garden takes shape:
 

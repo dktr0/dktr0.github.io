@@ -66,7 +66,16 @@ All class meetings take place in the Networked Imagination Laboratory ("NIL", lo
 
 ## Week One
 
-- Tuesday May 5th 1-4 PM: introduction to each other and to live coding; MiniTidal tutorial; group improvisation activities
+- Tuesday May 5th 1-4 PM
+    - introductions
+    - review of web garden/course outline
+    - invitation to join NIL and Estuary discord servers
+    - a quick demo of a multi-lingual live coding performance
+    - a slow roulette together
+    - (break)
+    - [dktr0's MiniTidal tutorial](../../minitidal/index.html)
+    - (break)
+    - group improvisation activities
 - Thursday May 7th 1-4 PM: live coding as a movement; Punctual tutorial; group improvisation activities
 
 ## Week Two
