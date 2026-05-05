@@ -9,8 +9,6 @@ title: dktr0's MiniTidal tutorial
 
 As you work through these examples, I strongly recommend that you type things in yourself (don't copy and paste). Copying and pasting is easy but leads to less learning. Typing is harder but engages your body and mind more substantially in transferring the code, and transitions more fluidly to changing and varying the code yourself.
 
- type them in yourself (don't copy and paste
-
 ## 1. Triggering sound samples with Tidal's s function /  s patterns
 
 Let's think about the following lines of code one by one, by entering them (only one at any given time) into a code panel in Estuary's solo mode (with MiniTidal selected as the language in the drop down menu) and "evaluating" them (by pressing shift-Enter or clicking on the play button):
