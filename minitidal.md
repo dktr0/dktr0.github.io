@@ -3,7 +3,7 @@ layout: layout.njk
 title: dktr0's MiniTidal tutorial
 ---
 
-# INSPIRE 3EL3 C01 - Live Coding
+# dktr0's MiniTidal tutorial
 
 ## A Very Important Recommendation
 

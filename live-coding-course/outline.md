@@ -15,11 +15,13 @@ Office Hours: by email appointment<br/>
 - [Estuary server at McMaster](https://estuary.mcmaster.ca)
 - [Invite link to the Estuary Discord server - make an account on discord.com first](https://discord.gg/snvFzkPtFr)
 - [Playlist of all known Cybernetic Orchestra videos](https://www.youtube.com/watch?v=L3E3htcABGg&list=PLyEzdf4cdMMHUpjp5nZ-r1AiaILd33-IG)
-- [LocoMotion standalone](https://dktr0.github.io/LocoMotion)
-- [LocoMotion reference](https://github.com/dktr0/LocoMotion/)
+- [dktr0's MiniTidal tutorial](../../minitidal/index.html)
 - [Punctual standalone](http://dktr0.github.io/Punctual)
+- [dktr0's Punctual tutorial](../../punctual/index.html)
 - [Punctual reference](https://github.com/dktr0/Punctual/blob/main/REFERENCE.md)
 - [Juan Queralt Molina's awesome Punctual visuals guide](https://punctual.savamala.top/)
+- [LocoMotion standalone](https://dktr0.github.io/LocoMotion)
+- [LocoMotion reference](https://github.com/dktr0/LocoMotion/)
 
 # Course Information
 
@@ -76,7 +78,10 @@ All class meetings take place in the Networked Imagination Laboratory ("NIL", lo
     - [dktr0's MiniTidal tutorial](../../minitidal/index.html)
     - (break)
     - group improvisation activities
-- Thursday May 7th 1-4 PM: live coding as a movement; Punctual tutorial; group improvisation activities
+- Thursday May 7th 1-4 PM
+    - live coding as a movement (discussion)
+    - [dktr0's Punctual tutorial](../../punctual/index.html)
+    - group improvisation activities
 
 ## Week Two
 

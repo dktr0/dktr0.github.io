@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>index</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="styleSheet" href="/style.css" type="text/css" media="screen">
+</head>
+<body>
+
+<center>
+<div class="outer">
+<div class="header">
+
+<div class="name"><a href="/index.html">David Ogborn (dktr0)</a></div>
+
+<div class="contact">
+<a href="mailto:ogbornd@mcmaster.ca">email</a>
+<a href="https://social.toplap.org/@dktr0">fediverse</a>
+<a href="https://www.youtube.com/@dktr0">youtube</a>
+<a href="https://orcid.org/0000-0002-5898-1660">orcid</a>
+</div> <!-- contact -->
+
+</div> <!-- header -->
+<div class="content">
+    <h1>dktr0's Punctual tutorial</h1>
+<h2>A Very Important Recommendation</h2>
+<p>As you work through these examples, I strongly recommend that you type things in yourself (don't copy and paste). Copying and pasting is easy but leads to less learning. Typing is harder but engages your body and mind more substantially in transferring the code, and transitions more fluidly to changing and varying the code yourself.</p>
+<h2>Basics of Punctual visual output</h2>
+<pre><code>hline 0 0.002 &gt;&gt; add; -- a horizontal line at the middle of the screen
+hline 0.5 0.002 &gt;&gt; add; -- halfway to the top of the screen
+hline -0.5 0 0.002 &gt;&gt; add; --halfway to the bottom of the screen
+hline (osc 1) 0.002 &gt;&gt; add; --going between the top and the bottom according to 0.1 hz sine oscillation
+-- you can try all of the above with vline instead of hline
+hline [-0.5,0,0.5] 0.002 &gt;&gt; add; -- three &quot;variants&quot; of argument leads to three lines, red, green, blue
+hline (osc [0.1,0.2,0.3]) 0.002 &gt;&gt; add; -- basically all punctual functions can handle 1-n variants
+line [-0.5,-0.5] [0.5,0.5] 0.002 &gt;&gt; add;
+iline [-0.5,-0.5] [0.5,0.5] 0.002 &gt;&gt; add; -- infinite line goes through indicated points but extends infinitely
+iline [-0.5,-0.5] [0.5,osc [0.1,0.2,0.3]] 0.002 &gt;&gt; add; -- with simultaneous variations
+ilines [-0.5,-0.5,0.5,osc [0.1,0.2,0.3]] 0.002 &gt;&gt; add; -- an alternate syntax for the same thing
+rect [0,0] [2,0.1] &gt;&gt; add;
+circle [0,0] 0.1 &gt;&gt; add;
+dist [0,0] &gt;&gt; add; 
+prox [0,0] &gt;&gt; add; 
+</code></pre>
+<h2>Basics of Punctual audio output</h2>
+<pre><code>osc 330 * dbamp (-20) &gt;&gt; audio;
+osc (midicps 64) * dbamp (-20) &gt;&gt; audio; -- the same thing, but with the pitch in MIDI note numbers
+osc (midicps [64,67,71]) * dbamp (-20) &gt;&gt; audio; -- &quot;variants&quot; could be &quot;chords&quot;
+osc (midicps $ 64 + [0,3,7]) * dbamp (-20) &gt;&gt; audio; -- the same thing
+saw (midicps $ 64 + [0,3,7]) * dbamp (-20) &gt;&gt; audio; -- sawtooth oscillator instead of sine oscillator
+sqr (midicps $ 64 + [0,3,7]) * dbamp (-20) &gt;&gt; audio; -- square wave oscillator
+tri (midicps $ 64 + [0,3,7]) * dbamp (-20) &gt;&gt; audio; -- triangle wave oscillator
+lpf 1000 1 $ saw (midicps $ 64 + [0,3,7]) * dbamp (-20) &gt;&gt; audio; -- low pass filtered sawtooth
+hpf 3000 1 $ saw (midicps $ 64 + [0,3,7]) * dbamp (-20) &gt;&gt; audio; -- high pass filtered sawtooth
+bpf (midicps 71) 10 $ saw (midicps $ 64 + [0,3,7]) * dbamp (-20) &gt;&gt; audio; -- band pass filtered sawtooth
+bpf (midicps $ [71,74,78]) 100 rnd * dbamp (6) &gt;&gt; audio; -- band pass filtered white noise
+</code></pre>
+<h2>Sequencing, Mapping, Assignment, Functions, Crossfades</h2>
+<p>Use of seq for step sequencing (enter both lines, notice synchronization):</p>
+<pre><code>hline (seq [-0.5,0,0.5]) 0.002 &gt;&gt; add;
+saw (midicps $ seq [60,62,67]) * dbamp (-20) &gt;&gt; audio;
+</code></pre>
+<p>Use of ~~ for linear mapping from -1 to 1 to whatever min and max:</p>
+<pre><code>hline (0.2 ~~ 0.4 $ osc 0.1) 0.002 &gt;&gt; add;
+saw (midicps $ 60 ~~ 62 $ osc 0.1) * dbamp (-20) &gt;&gt; audio
+</code></pre>
+<p>The same thing as the above but with the possibiity to change the input range if necessary:</p>
+<pre><code>hline (linlin [-1,1] [0.2,0.4] $ osc 0.1) 0.002 &gt;&gt; add;
+saw (midicps $ linlin [-1,1] [60,62] $ osc 0.1) * dbamp (-20) &gt;&gt; audio
+</code></pre>
+<p>All of Punctual's oscillators (e.g. osc) are &quot;bipolar&quot; = they give values that range between -1 and 1. The unipolar function can be used to remap bipolar values to &quot;unipolar&quot; values that range between 0 and 1:<code>hline (unipolar $ osc 0.1) 0.002 &gt;&gt; add</code></p>
+<p>Similarly, the &quot;bipolar&quot; function will remap unipolar values to be between -1 and 1: <code>circle [bipolar $ seq [0,0.2,0.4,0.8], 0] 0.1 &gt;&gt; add</code></p>
+<p>We can assign things to variables. This is helpful because it makes it easier to reuse the same thing in different ways within the same Punctual program, and because it just generally makes programs easier to read and transform:</p>
+<pre><code>a = seq [60,62,67,63];
+(lpf 1000 1 $ saw $ midicps a) * dbamp (-20) &gt;&gt; audio
+</code></pre>
+<p>We can also make our own functions by choosing a good name (not already used by Punctual itself) and then providing one or more arguments after the name, and then providing a &quot;definition&quot; of what that should be translated to:</p>
+<pre><code>mysynth n = (lpf 1000 1 $ saw $ midicps n) * dbamp (-20);
+mysynth $ seq [60,62,67,64] &gt;&gt; audio
+</code></pre>
+<p>(Note: although not covered here, it is also possible to make text files full of your own Punctual function definitions, post them to the web, and then import them into your Punctual live coding for reuse over many situations, performances, etc.)</p>
+<p>In the program that follows, the &lt;&gt; 5 at the end of each line after the output (i.e. audio or add) is a crossfade time. Try changing each line and re-evaluating - over 5 seconds you will hear/see a gradual transition between the new and old programs:</p>
+<pre><code>(lpf 1000 1 $ saw $ midicps $ 24 + [0,0.01]) * dbamp (-20) &gt;&gt; audio &lt;&gt; 5;
+circle [0,0] 0.2 &gt;&gt; add &lt;&gt; 5;
+</code></pre>
+<h2>More visual possibilities: transformations, images, videos, transparency, audio reactivity</h2>
+<pre><code>tile 2 $ circle [0,0] 0.2 &gt;&gt; add;
+img &quot;https://dktr0.github.io/Punctual/woodbine-2025-summer.jpg&quot; &gt;&gt; add;
+tile 2 $ img &quot;https://dktr0.github.io/Punctual/woodbine-2025-summer.jpg&quot; &gt;&gt; add;
+zoom 0.4 $ img &quot;https://dktr0.github.io/Punctual/woodbine-2025-summer.jpg&quot; &gt;&gt; add;
+move [0.5,-0.5] $ img &quot;https://dktr0.github.io/Punctual/woodbine-2025-summer.jpg&quot; &gt;&gt; add;
+spin (osc 0.1) $ img &quot;https://dktr0.github.io/Punctual/woodbine-2025-summer.jpg&quot; &gt;&gt; add;
+vid &quot;https://upload.wikimedia.org/wikipedia/commons/3/34/Pill_woodlouse_%28Armadillidium_vulgare%29.webm?utm_source=commons.wikimedia.org&amp;utm_campaign=index&amp;utm_content=original&quot; &gt;&gt; add;
+</code></pre>
+<p>Now transparency (this is one connected example, enter all four lines) - the blend output expects 4 channels at a time (red, green, blue, alpha = opacity):</p>
+<pre><code>[1,0,0,rect [0,0] [2,0.1]] &gt;&gt; blend;
+[0,1,0,rect [0,0] [0.1,2]] &gt;&gt; blend;
+spin (osc 0.1) $ [0,0,1,rect [0,0] [1,1]] &gt;&gt; blend;
+spin (osc 0.05) $ zoom 0.2 $ imga &quot;https://dktr0.github.io/Punctual/woodbine-2025-summer.jpg&quot; &gt;&gt; blend;
+</code></pre>
+<p>(There's also vida which is like imga but for videos.)</p>
+<p>Audio reactivity: For this it's probably helpful to use Punctual in Estuary, so you can make some MiniTidal beats and see how the Punctual visuals react:</p>
+<pre><code>circle [bipolar lo, 0] 0.2 &gt;&gt; add; -- moves with low frequencies of audio output
+circle [bipolar mid, 0] 0.2 &gt;&gt; add; -- moves with mid frequencies of audio output
+circle [bipolar hi, 0] 0.2 &gt;&gt; add; -- moves with highest frequencies of audio output
+hline ifft 0.002 &gt;&gt; add -- analysis of audio spectrum, lowest frequencies on left
+</code></pre>
+
+</div> <!-- content -->
+</div> <!-- outer -->
+</center>
+
+</body>
+</html>
