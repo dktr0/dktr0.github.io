@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>index</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="styleSheet" href="/style.css" type="text/css" media="screen">
+</head>
+<body>
+
+<center>
+<div class="outer">
+<div class="header">
+
+<div class="name"><a href="/index.html">David Ogborn (dktr0)</a></div>
+
+<div class="contact">
+<a href="mailto:ogbornd@mcmaster.ca">email</a>
+<a href="https://social.toplap.org/@dktr0">fediverse</a>
+<a href="https://www.youtube.com/@dktr0">youtube</a>
+<a href="https://orcid.org/0000-0002-5898-1660">orcid</a>
+</div> <!-- contact -->
+
+</div> <!-- header -->
+<div class="content">
+    <h1>dktr0's LocoMotion tutorial</h1>
+<p>You can use LocoMotion at it's <a href="https://dktr0.github.io/LocoMotion">&quot;standalone&quot; website</a> or on Estuary (selecting LocoMotion from the drop-down language menu). At the standalone you get a simple demo program to start with.</p>
+<p>The simplest LocoMotion program is just this: <code>dancer</code></p>
+<p>It gives you a random model/dancer from the LocoMotion universe, and they are performing a random dance/animation.</p>
+<p>We can select specific models like this - and here are also most of the basic/standard models/dancers in the LocoMotion universe (just use one of these lines for now):</p>
+<pre><code>dancer { url=&quot;sunstone&quot; }
+dancer { url=&quot;camille&quot; }
+dancer { url=&quot;ordroid&quot; }
+dancer { url=&quot;dataghost&quot; }
+dancer { url=&quot;cactus&quot; }
+dancer { url=&quot;daffy&quot; }
+dancer { url=&quot;lily&quot; }
+dancer { url=&quot;willy&quot; }
+dancer { url=&quot;ant&quot; }
+dancer { url=&quot;branch&quot; }
+dancer { url=&quot;leafy&quot; }
+dancer { url=&quot;oak&quot; }
+dancer { url=&quot;raccoon&quot; }
+dancer { url=&quot;mushy&quot; }
+</code></pre>
+<p>A specific dancer, positioned in xyz space, and with a specific numbered dance/animation: <code>dancer { url=&quot;daffy&quot;, animation = 3, x = -2, y = 2 }</code></p>
+<p>Making something vary/oscillate with a sine oscillator - the range of the oscillator's output is 0-1: <code>dancer { url=&quot;daffy&quot;, x = osc 1 }</code></p>
+<p>Change the range of a 0-1 thing to some other range: <code>dancer { url=&quot;daffy&quot;, x = range (-3) 3 (osc 1) }</code></p>
+<p>Step sequencing with step and phase: <code>dancer { url=&quot;daffy&quot;, x = step [-3,3] (phase 1 0) }</code></p>
+<p>Rotation around the y axis: <code>dancer { url=&quot;daffy&quot;, ry = 90 }</code></p>
+<p>A scene demonstrating various other things we can do:</p>
+<pre><code>dancer { url=&quot;daffy&quot; };
+sphere { x = -5, colour = hsv 0.33 1 1 };
+box { sx = 100, sy = 0.1, sz = 100 }; -- changing the size of a box in specific dimensions to make a plane
+point { y = 5, x = 10, z = 5, intensity = 3, colour = hsv 0.66 0.33 1 }; -- a not-default point light looks much better!
+camera { lx = 0, ly = 0, lz = 0, y = 3 }; -- using lx lyz lz and to make the camera look at a specific point from whatever location
+</code></pre>
+
+</div> <!-- content -->
+</div> <!-- outer -->
+</center>
+
+</body>
+</html>

@@ -21,7 +21,9 @@ Office Hours: by email appointment<br/>
 - [Punctual reference](https://github.com/dktr0/Punctual/blob/main/REFERENCE.md)
 - [Juan Queralt Molina's awesome Punctual visuals guide](https://punctual.savamala.top/)
 - [LocoMotion standalone](https://dktr0.github.io/LocoMotion)
+- [dktr0's LocoMotion tutorial](../../locomotion/index.html)
 - [LocoMotion reference](https://github.com/dktr0/LocoMotion/)
+- [Reflection #1 assignment](../reflection-1/index.html)
 
 # Course Information
 
@@ -47,7 +49,7 @@ Assessment in this course works in a different way than what you might be used t
 
 All work in the course will be assessed as either ACHIEVED, or as requiring resubmission (which is always allowed within the normal timeframe of the course). Here are the five deliverables of the course:
 
-- Reflection #1: Submit a text reflection on what you find most interesting/exciting about live coding and why (due by 10 PM on Fri 15th May, on Avenue To Learn)
+- [Reflection #1: Submit a text reflection on what you find most interesting/exciting about live coding and why (due by 10 PM on Fri 15th May, on Avenue To Learn)](../reflection-1/index.html)
 - Participate fully in large group live coding improvisations (throughout weeks 1-4)
 - Perform a brief duo 8x8 live coding improvisation with a partner (week 2, Thu 14th May)
 - Individual project: Propose something you can work on and deliver that goes above and beyond the other deliverables in some direction of interest to you and related to the course. After we’ve agreed on the parameters of this, work on it as agreed (delivering any final result by the last class meeting on Thu 28th May). Note that in most cases this will probably take the form of a live coding performance that you develop and deliver in a concert setting.
@@ -85,7 +87,11 @@ All class meetings take place in the Networked Imagination Laboratory ("NIL", lo
 
 ## Week Two
 
-- Tuesday May 12th 1-4 PM: live coding as research; LocoMotion tutorial; group improvisation activities
+- Tuesday May 12th 1-4 PM
+    - discussion of [reflection #1](../reflection-1/index.html) due at the end of the week
+    - discussion of [live coding as research](../../live-coding-research/index.html)
+    - [dktr0's LocoMotion tutorial](../../locomotion/index.html)
+    - group improvisation activities
 - Thursday May 14th 1-4 PM: hybrid live coding; 8x8 duo improv (8 minutes, from scratch, 8 loudspeakers)
 - Friday 15th May by 10 PM: reflection #1 due (on Avenue to Learn)
 

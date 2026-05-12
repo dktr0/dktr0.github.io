@@ -19,6 +19,7 @@ Here are some quick links to the projects I think people are perhaps most likely
 - [INSPIRE 3EL3 C01 Live Coding course](/live-coding-course/outline/index.html)
 - [dktr0's MiniTidal tutorial](/minitidal/index.html)
 - [dktr0's Punctual tutorial](/punctual/index.html)
+- [dktr0's LocoMotion tutorial](/locomotion/index.html)
 
 And here are some links to other materials I am collecting as this web garden takes shape:
 
