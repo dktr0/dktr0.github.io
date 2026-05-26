@@ -53,7 +53,7 @@ All work in the course will be assessed as either ACHIEVED, or as requiring resu
 - Participate fully in large group live coding improvisations (throughout weeks 1-4)
 - Perform a brief duo 8x8 live coding improvisation with a partner (week 2, Thu 14th May)
 - Individual project: Propose something you can work on and deliver that goes above and beyond the other deliverables in some direction of interest to you and related to the course. After we’ve agreed on the parameters of this, work on it as agreed (delivering any final result by the last class meeting on Thu 28th May). Note that in most cases this will probably take the form of a live coding performance that you develop and deliver in a concert setting.
-- Reflection #2: Submit a text reflection on what you learned during the course and how live coding and improvisational practices might be relevant to future life, work, and cultural situations (due by 10 PM on Fri 29th May, on Avenue To Learn)
+- [Reflection #2: Submit a text reflection on what you learned during the course and how live coding and improvisational practices might be relevant to future life, work, and cultural situations (due by 10 PM on Fri 29th May, on Avenue To Learn)](../reflection-2/index.html)
 
 Here is how the achievement of the five deliverables above translates into final course grades on McMaster's 12-point scale:
 
