@@ -5,7 +5,7 @@ title: "MEDIAART 2G03: Detailed Schedule/Diary"
 
 # [MEDIAART 2G03](../outline/index.html): Detailed Schedule/Diary (Fall 2026)
 
-No tutorials or full-class meetings the week of Mon 7 Sept. Before the first full-class meeting (or as soon as possible), please (1) review the course outline closely, (2) read “About Headphones” on the course website and acquire studio-grade headphones, and (3) please complete the self-introduction survey on Avenue to introduce yourself to the teaching team.
+No tutorials or full-class meetings the week of Mon 7 Sept. Before the first full-class meeting (or as soon as possible), please (1) review the course outline closely, (2) read ["Headphones” on the course website](../headphones/index.html) and acquire studio-grade headphones, and (3) please complete the self-introduction survey on Avenue to introduce yourself to the teaching team.
 
 Week of Mon 14 Sept: focus on Practice #1 (Qualities/Projects)
 - full-class meeting on Mon 14 Sept
