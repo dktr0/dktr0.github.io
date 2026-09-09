@@ -5,6 +5,8 @@ title: "MEDIAART 3D03: Project 2"
 
 # [MEDIAART 3D03](../outline/index.html): Project 2
 
+Note: this project was part of the first iteration of this course in Winter 2026. It is not currently a requirement of the course.
+
 # Project Requirements
 
 The purpose of the second project in this course is to continue to explore the six areas/learning outcomes in a project that is demonstrably more ambitious than the first project. A text proposal for the second project is due by 10 PM on Fri 13 Mar (on Avenue). The project itself is due by 10 PM on Thu 2 Apr (on Avenue), and will be exhibited during a public showcase during the last class meeting (Mon 6 Apr, during the regular class meeting time).

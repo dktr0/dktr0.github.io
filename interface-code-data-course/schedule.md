@@ -3,7 +3,85 @@ layout: layout.njk
 title: "MEDIAART 3D03: Detailed Schedule/Diary"
 ---
 
-# [MEDIAART 3D03](../outline/index.html): Detailed Schedule/Diary
+# [MEDIAART 3D03](../outline/index.html): Detailed Schedule (Fall 2026)
+
+## Fall 2026 Schedule
+
+### Wed 9 Sept: Introductions / getting ready for what is to come
+- discussion of the history of this class
+- some stories about programming
+- review of course outline and assessment
+- installation of suitable terminal environments
+- time permitting: [Devops: terminal basics](../terminal-basics/index.html)
+
+Fri 11 Sept: Experiments with a disaster-proof web
+
+Wed Sept 16: Before/outside (ARPANET, BBSes, Usenet, Gopher, el paquete, etc)
+
+Fri Sept 18: work on practice #3 (Codes)
+
+Practice #3 (Codes) submission due Mon 14 Sep at 10 PM on Avenue
+
+Wed Sept 23: Partying like its 1999 (The web of the 1990s and early 2000s)
+
+Fri Sept 25: work on practice #4 (Web 1.0)
+
+Practice #4 (Web 1.0) submission due Mon 28 Sep at 10 PM on Avenue
+
+Wed Sept 30: No class meeting - National Day for Truth and Reconciliation
+
+Fri Oct 2: work on practice #5 (JavaScript)
+
+Practice #5 (JavaScript) submission due Mon 5 Oct at 10 PM on Avenue
+
+Wed Oct 7: The calm before the storm (net.art, live coding, generative art)
+
+Fri Oct 9: work on practice #6 (Web APIs)
+
+(mid-term recess Oct 12 -16)
+
+Practice #6 (Web APIs) submission due Mon 19 Oct at 10 PM on Avenue
+
+Wed 21 Oct: Cunning chatbots and deadly dungeons
+
+Fri 23 Oct 23: work on practice #7 (Chat)
+
+Practice #7 (Chat) submission due Mon 26 Oct at 10 PM on Avenue
+
+Wed 28 Oct: The Beginning Of The End (Web 2.0)
+
+Fri 30 Oct: work on practice #8 (Libraries)
+
+Practice #8 (Libraries) submission due Mon 2 Nov at 10 PM on Avenue
+
+Wed Nov 4: Living in the ruins (local knowledge, digital gardening, solar computing, etc)
+
+Fri Nov 6: Experiments with markdown and static-site generation; Term project ideation activities
+
+Wed Nov 11: TBD / practice / assistance
+
+Fri Nov 13: TBD / practice / assistance
+
+Wed Nov 18: TBD / practice / assistance
+
+Fri Nov 20: work-in-progress mini-showcase
+
+In-term exam in flexible testing centre, Sat Nov 21 - Fri Nov 27
+
+No class meetings the week of Wed 25 Nov and Fri 27 Nov (please come to drop-in hours for assistance with your web art term projects in progress!)
+
+Wed Dec 2: Dress Rehearsal for the Apocalypse
+
+Web Art Term Project due Thu Dec 3 at 10 PM on Avenue
+
+Fri Dec 4: Apocalypse Now! (in-class showcase, and demonstrating Practices #1 & #2)
+
+Wed Dec 9: After the End (final exam review)
+
+Final multiple-choice exam during examination period to be scheduled by registrar
+
+
+# Schedule from the previous offering of the course (Winter 2026)
 
 ## Part A
 
