@@ -14,7 +14,9 @@ title: "MEDIAART 3D03: Detailed Schedule/Diary"
 - installation of suitable terminal environments
 - time permitting: [Devops: terminal basics](../terminal-basics/index.html)
 
-Fri 11 Sept: Experiments with a disaster-proof web
+### Fri 11 Sept: Jurassic Park: Experiments with a disaster-proof web
+- [Devops: terminal basics](../terminal-basics/index.html)
+- [Using node to run a webserver](../node-webserver/index.html)
 
 Wed Sept 16: Before/outside (ARPANET, BBSes, Usenet, Gopher, el paquete, etc)
 
