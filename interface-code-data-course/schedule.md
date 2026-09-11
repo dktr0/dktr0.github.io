@@ -22,7 +22,7 @@ Wed Sept 16: Before/outside (ARPANET, BBSes, Usenet, Gopher, el paquete, etc)
 
 Fri Sept 18: work on practice #3 (Codes)
 
-Practice #3 (Codes) submission due Mon 14 Sep at 10 PM on Avenue
+Practice #3 (Codes) submission due Mon 21 Sep at 10 PM on Avenue
 
 Wed Sept 23: Partying like its 1999 (The web of the 1990s and early 2000s)
 
