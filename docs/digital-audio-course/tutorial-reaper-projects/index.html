@@ -45,25 +45,43 @@
 <li>Take a moment to understand the intellectual property considerations around your chosen sound: what is the name of the license under which this sound is available to you? Click through to get more details about what those license conditions mean. What conditions or restrictions are there on your use of this sound? If this were a project, you'd need to take reliable notes about the creator, the source (i.e. the URL) and the license conditions on this sound.</li>
 <li>Take a moment to think about how you would describe your chosen sound in referential and reduced terms (see the notes you should have already read about <a href="../modes-of-listening/index.html">Modes of Listening</a>).</li>
 </ul>
-<p>*** PLACEHOLDER Image ***</p>
+<img src="../creative-commons-license.jpg" alt='A license indication on freesound.org' style="width: 100%"/>
 <h3>B. Setup a new Reaper digital audio workstation (DAW) project, with attention to some important nuances</h3>
 <ul>
 <li>Launch Reaper. When the program has finished launching, you will be in a blank, new project. If for some reason you don't have a blank new project, you can always create a new project by selecting File: New Project from the menus. (Note: when you launch Reaper you may receive a message about choosing a device - Click yes in that dialogue window, change the sample rate to 48khz and accept).</li>
 <li>Our digital audio projects will all have a sample rate - the number of times per second measurements of the audio level are made and passed on for audio playback (or storage). We'll talk more about sample rates in our full-class meetings and the online modules but for now let's choose to work at 48 kHZ (48 kilo-Hertz or 48,000 Hertz or 48,000 cycles per second - all different ways of saying the same thing). Set the sample rate in File: Project Settings to 48000 (change the setting AND tick the box): <em><strong>PLACEHOLDER Image</strong></em></li>
-<li>We normally use a bit depth of 24 bits (at least) during any recording (or any mixdown or other creation of audio files within a production process). Take a moment to verify that this is the case on the &quot;Media&quot; tab of the File: Project Settings dialog (see image below - where it says WAV bit depth it should say &quot;24 bit PCM&quot;): <em><strong>PLACEHOLDER Image</strong></em></li>
-<li>When we work with digital audio projects in a DAW we will have a project file and some number of source audio files. The project file actually doesn't contain any audio data - it just contains instructions for how the computer should combine the audio files. Save a project file now but don't just save the file anywhere - use the Save dialog that pops up to create a new folder somewhere you will keep your audio work throughout this course (&quot;create subdirectory for project&quot;). Make sure to name it with the tutorial number and your name, i.e. tutorial-1-david-ogborn. Also make sure that &quot;Copy all media into project directory&quot; is selected (but convert media unselected). This is a VERY important step so pay close attention to it! If people get confused and lose audio recordings between the studio and the lab or home it is usually because of not being careful at this step!:<em><strong>PLACEHOLDER Image</strong></em></li>
+<li>We normally use a bit depth of 24 bits (at least) during any recording (or any mixdown or other creation of audio files within a production process). Take a moment to verify that this is the case on the &quot;Media&quot; tab of the File: Project Settings dialog (see image below - where it says WAV bit depth it should say &quot;24 bit PCM&quot;:</li>
+</ul>
+<img src="../project-settings-sample-rate.jpg" alt='Sample rate in Reaper project settings' style="width: 100%"/>
+<ul>
+<li>When we work with digital audio projects in a DAW we will have a project file and some number of source audio files. The project file actually doesn't contain any audio data - it just contains instructions for how the computer should combine the audio files. Save a project file now but don't just save the file anywhere - use the Save dialog that pops up to create a new folder somewhere you will keep your audio work throughout this course (&quot;create subdirectory for project&quot;). Make sure to name it with the tutorial number and your name, i.e. tutorial-1-david-ogborn. Also make sure that &quot;Copy all media into project directory&quot; is selected (but convert media unselected). This is a VERY important step so pay close attention to it! If people get confused and lose audio recordings between the studio and the lab or home it is usually because of not being careful at this step!:</li>
+</ul>
+<img src="../project-settings-bit-depth.jpg" alt='Bit depth in Reaper project settings' style="width: 100%"/>
+<ul>
 <li>We need to set or check a Reaper preference to make sure that any new audio files we import into this project get copied to the project folder we created. The relevant setting is under Reaper/Options: Preferences: Media: Import and is called &quot;Copy imported media to project media directory.&quot; Make sure it is checked</li>
+</ul>
+<img src="../copy-imported-media.jpg" alt='Creating Reaper project file, making sure copy imported media is checked' style="width: 100%"/>
+<ul>
 <li>Finally, if you look at File: Project Settings: Media you will see that the first parameter in that window is called &quot;Path to save media files&quot;. In the default setting (blank) the audio files you create during the project will be saved to same folder as the one that contains your project file. So making a new folder and saving the project file is necessary to keep your project together! If you do everything right you'll be able to move that whole folder around confident that it contains everything needed for the playback and exporting of your project.</li>
 <li>Now we are going to import your downloaded Freesound recording into your Reaper project. This is also a step to be treated with great care, because some things can go wrong here that may cause you problems later on. Using Insert: Media File select your downloaded sound for insertion into your project. Note you can also click and drag from the Finder/Explorer into the Reaper window to do this. Look at your project folder in Finder/Explorer to make sure it contains a copy of the file you just inserted.</li>
 </ul>
 <h3>C. Explore basic DAW editing operations</h3>
 <ul>
 <li>Experiment with playing back the project and &quot;scrubbing&quot;. The play and stop controls should be straightforward enough. Note that you can reposition playback by clicking on the top of the &quot;scrubber&quot; or horizontal timeline at the top of your Reaper project window.</li>
-<li>Here are the &quot;transport&quot; playback controls: <em><strong>PLACEHOLDER Image</strong></em></li>
-<li>And here is the &quot;scrubber&quot;: <em><strong>PLACEHOLDER Image</strong></em></li>
+<li>Here are the &quot;transport&quot; playback controls:</li>
+</ul>
+<img src="../transport.jpg" alt='Reaper transport' style="width: 50%"/>
+<ul>
+<li>And here is the &quot;scrubber&quot;:</li>
+</ul>
+<img src="../scrubber.jpg" alt='Reaper scrubber' style="width: 50%"/>
+<ul>
 <li>Experiment with trimming the beginning and/or end of the sound using the trim controls on the middle left/right of the inserted audio region (hover over the left or right ends of the inserted audio region and then click and drag). Before you do this turn of &quot;Snap&quot; (which would constrain your choices to certain moments in an imagined musical tempo).</li>
-<li>This is the control you click to enable or disable Snap: <em><strong>PLACEHOLDER Image</strong></em>
-Experiment with adding short or long fades to the beginning and/or end of the sound using the fade controls on the top left/right of the imported audio region (again hover over the top-left or top-right of the region and then click and drag).</li>
+<li>This is the control you click to enable or disable Snap:</li>
+</ul>
+<img src="../snap.jpg" alt='Snap toggle control in Reaper' style="width: 25%"/>
+<p>Experiment with adding short or long fades to the beginning and/or end of the sound using the fade controls on the top left/right of the imported audio region (again hover over the top-left or top-right of the region and then click and drag).</p>
+<ul>
 <li>Experiment with copying and overlapping audio regions. Click on a region and use Cmd-C to copy it to the clipboard then Cmd-V to paste it OR Cmd-click-and-drag on a region, dragging it to a blank area below your track to create a new track and leave an independent copy of the audio region on the new track. You can create interesting musical and sonic effects just by making many copies of something and arranging them in time.</li>
 </ul>
 <h3>D. Render/export a deliverable &quot;mixed down&quot; audio file (a &quot;rendered result&quot;), with attention to sample rate and bit depth</h3>
@@ -74,8 +92,10 @@ Experiment with adding short or long fades to the beginning and/or end of the so
 <li>Channels: Should be stereo (that is to say, an audio file containing two separate signals: one for the left headphone/speaker, one for the right).</li>
 <li>WAV bit depth: Again, unless you are making a file for certain particular purposes, it is best to stick with the high resolution format of 24 bits per sample. So: 24 bit PCM</li>
 <li>Directory and filename: These are going to control where your exported mixdown file goes.</li>
-<li>When everything looks right - and I can't emphasize enough how much you need to take the time to verify these settings every time you render/export something - press Render to create an independent, simple sound file representation of your work. Here's an example of how it might look:
-*** PLACEHOLDER Image ***</li>
+<li>When everything looks right - and I can't emphasize enough how much you need to take the time to verify these settings every time you render/export something - press Render to create an independent, simple sound file representation of your work. Here's an example of how it might look:</li>
+</ul>
+<img src="../render.jpg" alt='Example of Reaper render settings' style="width: 100%"/>
+<ul>
 <li>Now let's quit Reaper and check our work independently - don't trust yourself or the software to do things right the first time (or anytime without checking your work independently)! Save your project file and quit Reaper completely. Find your exported &quot;bounce&quot; (the new independent audio file you just created) using the operating system's file browser (eg. Finder on Mac) and open/play it some other way. Does everything seem the same? Try clicking on the file and accessing Properties for it to see if your operating system gives you any info about the channels (eg. stereo), sample rate and bit depth.</li>
 </ul>
 <h3>Package the submission requirements into a ZIP archive</h3>
