@@ -11,18 +11,22 @@ title: "MEDIAART 3D03: Detailed Schedule/Diary"
 - discussion of the history of this class
 - some stories about programming
 - review of course outline and assessment
-- installation of suitable terminal environments
-- time permitting: [Devops: terminal basics](../terminal-basics/index.html)
+- installation of suitable terminal environments (see instructions in the first part of [Terminal basics](../terminal-basics/index.html))
 
 ### Fri 11 Sept: Jurassic Park: Experiments with a disaster-proof web
-- [Devops: terminal basics](../terminal-basics/index.html)
+- [Terminal basics](../terminal-basics/index.html)
 - [Using node to run a webserver](../node-webserver/index.html)
 
-Wed Sept 16: Before/outside (ARPANET, BBSes, Usenet, Gopher, el paquete, etc)
+### Wed Sept 16: The Imitation Game: Work on practice #3 (Codes)
+- [Cryptograms](../cryptograms/index.html)
+- [Binary numbers](../binary-numbers/index.html)
 
-Fri Sept 18: work on practice #3 (Codes)
+### Fri Sept 18: Before/outside
+- Before/outside (ARPANET, BBSes, Usenet, Gopher, el paquete, etc)
+- [ASCII and ASCII art](../ascii/index.html)
+- work on [Practice #3 (Codes)](../codes-practice-submission/index.html)
 
-Practice #3 (Codes) submission due Mon 21 Sep at 10 PM on Avenue
+[Practice #3 (Codes)](../codes-practice-submission/index.html) submission due Mon 21 Sep at 10 PM on Avenue
 
 Wed Sept 23: Partying like its 1999 (The web of the 1990s and early 2000s)
 

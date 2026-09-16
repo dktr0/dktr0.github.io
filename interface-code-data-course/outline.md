@@ -13,6 +13,24 @@ Note: This is the "fluid syllabus" for the course MEDIAART 3D03: Interface, Code
 - [web art term projects](../project-1/index.html)
 - [the less detailed Simple Syllabus version of this outline](https://mcmaster.simplesyllabusca.com/en-US/doc/byj1tbuz4/Fall-2026-MEDIAART-3D03-C01-OGBORND-Interface,-Code,-Data?mode=view)
 
+# Course Learning Outcomes
+
+- To imagine alternative presents and futures for the web, informed by an understanding of the web's past and present
+- Practice #1 - Terminals: navigate UNIX terminals/filesystems to make/change web projects
+  - [Terminal basics](../terminal-basics/index.html)
+- Practice #2 - Servers: run and interact with local/self-configured web servers
+  - [Using node to run a webserver](../node-webserver/index.html)
+- Practice #3 - Codes: translate and do creative things with everyday computing/web codes (e.g. binary, ASCII, Unicode, QR codes)
+  - [Codes: Cryptograms](../cryptograms/index.html)
+  - [Codes: Binary numbers](../binary-numbers/index.html)
+  - [Codes: ASCII and ASCII art](../ascii/index.html)
+  - [Practice submission requirements](../codes-practice-submission/index.html)
+- Practice #4 - Web 1.0: read, write, and alter web pages/interfaces expressed in HTML and CSS
+- Practice #5 - JavaScript: read, write, and call simple JavaScript functions
+- Practice #6 - Web APIs: read and write JavaScript for the web browser
+- Practice #7 - "Chat": use JavaScript to parse text input and generate text output
+- Practice #8 - Libraries: use specific JavaScript libraries to engage with additional visual possibilities and/or database-driven websites 
+
 # Course Description
 
 From the McMaster Calendar: "A hands-on exploration of the role of interfaces, code, and data in Media Arts practice. Students will explore the possibilities of formats such as visualizations, websites, mobile apps, databases, games, live coding performances and generative art. Lecture, web module, tutorial (three hours); one term Prerequisite(s): Registration in Level III or above of a Multimedia, Media Arts or Communication Studies program Antirequisite(s): MEDIAART 2A06, MMEDIA 2A06"
@@ -23,17 +41,6 @@ I strongly encourage each of you to visit me during my drop-in hours (Monday to 
 
 Our overarching learning outcome is to imagine alternative presents and futures for the web, informed by an understanding of the web's past and present. Our pursuit of that overarching learning outcome will be structured around eight specific "practices" (see Course Learning Outcomes below for further details), which we will develop through both in-class activities and a larger web art term project.
 
-# Course Learning Outcomes
-
-- To imagine alternative presents and futures for the web, informed by an understanding of the web's past and present
-- Practice #1 - Terminals: navigate UNIX terminals/filesystems to make/change web projects
-- Practice #2 - Servers: run and interact with local/self-configured web servers
-- Practice #3 - Codes: translate and do creative things with everyday computing/web codes (e.g. binary, ASCII, Unicode, QR codes)
-- Practice #4 - Web 1.0: read, write, and alter web pages/interfaces expressed in HTML and CSS
-- Practice #5 - JavaScript: read, write, and call simple JavaScript functions
-- Practice #6 - Web APIs: read and write JavaScript for the web browser
-- Practice #7 - "Chat": use JavaScript to parse text input and generate text output
-- Practice #8 - Libraries: use specific JavaScript libraries to engage with additional visual possibilities and/or database-driven websites 
 
 # Required Materials and Texts
 
