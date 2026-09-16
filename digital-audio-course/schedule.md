@@ -14,7 +14,8 @@ Week of Mon 14 Sept: focus on Practice #1 (Qualities/Projects)
 - [Tutorial and Practice #1 submission](../tutorial-reaper-projects/index.html) due Thu 17 Sept, 10 PM, on Avenue 
 
 Week of Mon 21 Sept: focus on Practice #2 (Field Recording)
-- Practice #2 submission due Thu 24 Sept, 10 PM, on Avenue
+- full-class meeting on Mon 21 Sept
+- [Tutorial and Practice #2 submission](../tutorial-field-recording/index.html) due Thu 24 Sept, 10 PM, on Avenue
 
 Week of Mon 28 Sept: focus on Practice #3 (Voice Recording)
 - No regular tutorials this week (National Day For Truth and Reconciliation)

@@ -19,6 +19,7 @@ Note: This is the "fluid syllabus" for the course MEDIAART 2G03: Digital Audio a
     - [reading: Modes of Listening](../modes-of-listening/index.html)
     - [tutorial and submission instructions](../tutorial-reaper-projects/index.html)
 - Practice #2: make high-quality close and distant perspective field recordings with a field recorder
+    - [tutorial and submission instructions](../tutorial-field-recording/index.html)
 - Practice #3: make high-quality, low-noise voice recordings in a controlled environment
 - Practice #4: apply editing, effects, and mixing to assemble sounds in iteratively improved compositions/designs
 - Practice #5: normalize and render completed digital audio projects in appropriate delivery formats
