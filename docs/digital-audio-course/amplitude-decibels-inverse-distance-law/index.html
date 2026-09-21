@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>index</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="styleSheet" href="/style.css" type="text/css" media="screen">
+</head>
+<body>
+
+<center>
+<div class="outer">
+<div class="header">
+
+<div class="name"><a href="/index.html">David Ogborn (dktr0)</a></div>
+
+<div class="contact">
+<a href="mailto:ogbornd@mcmaster.ca">email</a>
+<a href="https://social.toplap.org/@dktr0">fediverse</a>
+<a href="https://www.youtube.com/@dktr0">youtube</a>
+<a href="https://orcid.org/0000-0002-5898-1660">orcid</a>
+</div> <!-- contact -->
+
+</div> <!-- header -->
+<div class="content">
+    <h1><a href="../outline/index.html">MEDIAART 2G03</a>: Amplitude, Decibels, Inverse Distance Law</h1>
+<h2>Amplitude</h2>
+<p>“Amplitude” is a technical term for how far a signal moves away from the middle, resting point. When a signal moves further away from the middle, resting point than another, we could call it a “higher amplitude” signal (and we would call the other one a “lower amplitude” signal). Another way to think about amplitude is to think of it as the “size” of the signal. Another way to think about amplitude, using the typical visualization of sound waves that we’ve been looking at in other modules, is that it is the vertical axis of the visualization, the “Y axis”. Amplitude is related to our perceptions of loudness (our perceptions of how loud things are) but the relationship is not straightforward.</p>
+<h2>Decibels</h2>
+<p>When we talk about the amplitude of sound signals, it is very common (and helpful) to use a special unit of measurement: decibels (abbreviated “dB”). In general, decibels are a unit that express relative size in linear terms. If we double something in size (or if we comparing two things, one of which is twice as big as another), we can express that by saying that the doubled thing is 6 decibels bigger than the undoubled thing. And if we take something and we reduce it to fifty percent of what it was before, we can express that by saying that “we made the thing six decibels smaller”. Another way of saying the same thing would be to say that “we apply minus six decibels of gain to the thing” because “gain” is a way of saying “make a signal bigger or smaller”.</p>
+<p>In both of the preceding examples, something that was about multiplication/division (doubling, halving) was expressed in terms of addition/subtraction. This is really helpful in the case of audio signals, where listeners might be sensitive to a really wide range of differences in amplitude. It’s possible that the quietest someone can hear might be a million times smaller than the loudest things they can tolerate. Decibels make it easier to talk and think about this very wide range of differences in amplitude, and although the relationship to perceived loudness is not straightforward, when we describe signals using decibels, it is at least “somewhat closer” to describing our perceptions.</p>
+<p>Let’s look at a few more examples. As we saw, every time we double something, it's an increase of six decibels. If instead we make something four times as big, or 400 percent, that's like doubling something twice. In terms of decibels, we would say that is 12 decibels more, or “+12 dB”. And if we were to make something eight times as big, that's like doubling something three times, so that’s +18 dB (two times two is four, and then that times two is eight).</p>
+<p>And one more, special, example: What if we have a signal that has no / zero amplitude? The only way we can express the size of that in decibels is as “minus infinity dB”. Why? When we express things in negative decibels, that represents a reduction in the size of something – it represents multiplying or dividing things by some factor to make them smaller. Any number in decibels that is greater than minus infinity would represent a reduction/comparison in size where the second thing is smaller but not yet nothing/zero.</p>
+<p>This about as much of the math of decibels as you need to know for what we do in this course. If you’re interested you can look up the precise formula for how to express any comparison of relative amplitude to decibels. However, that formula is not often useful in everyday audio work – most people doing audio work get by fine with rules of thumb like “twice as big = +6 db; half as big = -6 db”.</p>
+<h2>Inverse Distance Law</h2>
+<p>There are two closely related laws of acoustics called the inverse square law and the inverse distance law. In everyday audio work, what we usually care about is the inverse distance law, but because they are closely related, you’ll encounter people that refer to both, informally, as the inverse square law. The unit decibels, and the examples above, give us a convenient way of understanding and remembering this physical phenomenon: if we move a sound receiver to being twice as far away from a sound source, the amplitude received from that sound source will be 6 dB less (-6 dB); if we move a sound receiver to being twice as close to a sound source, then the amplitude received from that sound source will be 6 db more (+6dB). In practice, that’s an approximation (for example, because sound energy tends to bounce around spaces in complicated ways) but it’s a very useful approximation. When things are already very close together, very small changes in position can amount to big changes in the energy transmitted! As we’ll see later and elsewhere, this rule will help us make low noise recordings, and it also helps to understand other important sound phenomena.</p>
+<h2>dB SPL and dBFS</h2>
+<p>The unit decibels (dB) is sometimes used in two specific “variations” in audio work: decibels sound-pressure-level (dB SPL) and decibels full-scale (dBFS).</p>
+<h3>dB SPL</h3>
+<p>Decibels sound-pressure-level (abbreviated: dB SPL) is a unit used to measure acoustic energy in the world. 0 dB SPL is a “reference level” of sound pressure (in actual, vibrating air) that is supposed to be the threshold of perception for an average person... or something like that: I’m pretty skeptical about everything that purports to represent supposedly average/normal people... in any case, the reference level of 0 dB SPL does represent vibrating air that is extremely, extremely quiet. In other words, 0 dB SPL is a (supposed) “threshold of silence”.</p>
+<p>A “quiet dishwasher” might be 44 dB SPL. Speaking very roughly, between 50 and 80 dB SPL might be thought of as a normal range for sound pressure levels in everyday life. Approximately 80 dB SPL is a typical level to listen to things at during audio production. Between 80 db SPL and 120 dB SPL is a range of sound pressure levels where there is increasing concern about the possibility for damage that can lead to some loss of hearing. While there are other ways to lose hearing, including but not limited to the effects of aging, exposure to higher sound pressure levels is a widely appreciated cause of hearing loss. Sound pressure levels in the 80s (dB SPL) over longer periods of time, are associated with accelerated hearing loss. Higher pressure levels are associated with more rapid hearing loss, and you’ll encounter a rule of thumb that says at 120 dB SPL permanent (partial) hearing loss happens right away. These are definitely simplifications but they do point to the possibility of taking care of one’s hearing by being careful with exposure (particularly, frequent exposure) to very high sound pressure levels. They are also the kinds of numbers one might find in legislation about noise in cities and workplaces, because they are connected to issues of workplace health and safety.</p>
+<p>At the top of the “everyday scale” of sound pressure levels, measured in dB SPL, is 130 dB SPL, the supposed threshold of immediate pain. In practice, many people will experience pain in response to much lower levels of sound pressure than that, so I guess the idea behind this figure is to say “almost everyone is guaranteed to be in a lot of pain if exposed to 130 dB SPL”. Notice that this figure is higher than the figure given for the threshold of immediate damage. While the numbers may be imprecise, the relationship between them does communicate the idea that hearing damage (due to high sound pressure level exposure) can occur without someone being aware that it is happening.</p>
+<h3>dBFS</h3>
+<p>So now let's talk about decibels full-scale (abbreviated: dBFS). dBFS is a unit that is used to describe sound signals as they exist in digital audio software. If were to look around Reaper, or any other digital audio workstation (DAW), we would find many places where there are measurements of audio signals in dB, for example the dancing metres that show the levels from audio tracks – these are almost always decibels full-scale (dBFS).</p>
+<p>With dBFS, 0 dBFS represents the maximum amplitude (the maximum distance from the middle) that can be accurately recorded or represented in a conventional digital audio file. Unless we’ve somehow zoomed in, visually, it’s also usually the visual maximum on the typical visualization of a sound wave. If 0 dBFS is the maximum, that means that most of the uses of this unit that we’ll see (especially if we are avoiding clipping, which we should be!) will be numbers below 0. As the amplitude of an audio signal, in software, gets lower and lower, it’s less likely than anyone will be able to hear it. Typical thresholds for where things, in digital audio projects, in software, are going to start to be deemed “inaudible” might be somewhere between –60 and –100 dBFS – most of the signals we work with will have overall amplitudes far above (higher than) these levels, but still below 0 dBFS (the maximum). In other words, in digital audio projects, in software, most of the amplitudes we measure (when things are going okay) will be somewhere between –100 dBFS and 0 dBFS.</p>
+<p>Notice how in the examples for both units, dB SPL and dBFS, the ranges of the examples are very roughly about 100 dB. This is a very wide range of different amplitudes! Something that is 100 dB bigger than something else is 100,000 times larger (a range of 120 dB would represent 1,000,000 times larger/smaller). In practice, audio producers are often managing amplitudes over a much narrower range than this, though, which helps to produce audio signals that can be heard by more people, in more different circumstances. 100 dB could be seen as something like a rough, theoretical maximum for the range of differences some might be able to hear. In practice, a lot of the actual choices that people make about amplitudes have to do with differences over a range of 20-50 dB or so.</p>
+
+</div> <!-- content -->
+</div> <!-- outer -->
+</center>
+
+</body>
+</html>
