@@ -22,7 +22,7 @@ Note: This is the "fluid syllabus" for the course MEDIAART 2G03: Digital Audio a
 - Practice #2: make high-quality close and distant perspective field recordings with a field recorder
     - [reading: Sound as Signal, Clipping, Noise](../sound-as-signal-clipping-noise/index.html)
     - [reading: Amplitude, Decibels, Inverse Distance Law](../amplitude-decibels-inverse-distance-law/index.html)
-    - [reading: The digital recording chain](../digital-recording-chain/index.html)
+    - [reading: The digital recording chain and headroom](../digital-recording-chain/index.html)
     - [tutorial and submission instructions](../tutorial-field-recording/index.html)
 - Practice #3: make high-quality, low-noise voice recordings in a controlled environment
 - Practice #4: apply editing, effects, and mixing to assemble sounds in iteratively improved compositions/designs

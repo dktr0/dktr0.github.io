@@ -17,7 +17,7 @@ Week of Mon 21 Sept: focus on Practice #2 (Field Recording)
 - full-class meeting on Mon 21 Sept, including listening discussion of "Kits Beach Soundwalk", Hildegard Westerkamp.
 - [reading: Sound as Signal, Clipping, Noise](../sound-as-signal-clipping-noise/index.html)
 - [reading: Amplitude, Decibels, Inverse Distance Law](../amplitude-decibels-inverse-distance-law/index.html)
-- [reading: The digital recording chain](../digital-recording-chain/index.html)
+- [reading: The digital recording chain and headroom](../digital-recording-chain/index.html)
 - [Tutorial and Practice #2 submission](../tutorial-field-recording/index.html) due Thu 24 Sept, 10 PM, on Avenue
 
 Week of Mon 28 Sept: focus on Practice #3 (Voice Recording)
