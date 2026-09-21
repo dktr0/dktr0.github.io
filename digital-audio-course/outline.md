@@ -11,6 +11,7 @@ Note: This is the "fluid syllabus" for the course MEDIAART 2G03: Digital Audio a
 
 - [detailed schedule/diary](../schedule/index.html)
 - [the less detailed Simple Syllabus version of this outline](https://mcmaster.simplesyllabusca.com/en-US/doc/zzjcenlep/Fall-2026-MEDIAART-2G03-C01-OGBORND-Digital-Audio?mode=view)
+- [sound art term project](../sound-art-term-project/index.html)
 
 # Course Learning Outcomes (Practices)
 

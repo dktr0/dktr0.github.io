@@ -21,6 +21,7 @@ Week of Mon 21 Sept: focus on Practice #2 (Field Recording)
 - [Tutorial and Practice #2 submission](../tutorial-field-recording/index.html) due Thu 24 Sept, 10 PM, on Avenue
 
 Week of Mon 28 Sept: focus on Practice #3 (Voice Recording)
+- full-class meeting on Mon 28 Sept
 - No regular tutorials this week (National Day For Truth and Reconciliation)
 - Note: There is no submission folder for Practice #3; it can be demonstrated/achieved by signing up for and attending a studio orientation session between Tue 29 Sept and Fri 6 Nov (sign-up will open Mon 28 Sept).
 
@@ -54,7 +55,7 @@ Week of Mon 30 Nov
 - full-class meetings: introducing diffusion; lines of flight (audio study and career possibilities)
 - tutorials: assistance with projects and practice resubmissions
 
-*Final Audio Project due Thu 3 Dec, 10 PM, on Avenue*
+*[Final Audio Project/Sound Art Term Project](../sound-art-term-project/index.html) due Thu 3 Dec, 10 PM, on Avenue*
 
 Week of Mon 7 Dec
 - full-class meetings: practice for final exam
