@@ -67,7 +67,7 @@ Assessment in this course works in a different way than what you might be used t
 
 Your grade in this course will be based on the following evaluations:
 
-- [final audio project/sound art term project](../sound-art-term-project/index.html), due Thu 4 Dec at 10 PM, possibly presented in course-adjacent concerts
+- [final audio project/sound art term project](../sound-art-term-project/index.html), due Thu 3 Dec at 10 PM, possibly presented in course-adjacent concerts
 - weekly practice submissions, worked on in tutorials and due most Thursdays at 10 PM
 - in-term multiple-choice exam #1, Sat 24 Oct - Fri 30 Oct, completed in flexible testing centre
 - in-term multiple-choice exam #2, Sat 21 Nov - Fri 27 Nov, completed in flexible testing centre
