@@ -21,16 +21,18 @@ title: "MEDIAART 3D03: Detailed Schedule/Diary"
 - [Cryptograms](../cryptograms/index.html)
 - [Binary numbers](../binary-numbers/index.html)
 
-### Fri Sept 18: Before/outside
-- Before/outside (ARPANET, BBSes, Usenet, Gopher, el paquete, etc)
+Fri Sept 18 (cancelled due to illness)
+
+[Practice #3 (Codes)](../codes-practice-submission/index.html) submission due Mon <s>21</s>28 Sep at 10 PM on Avenue 
+
+Wed Sept 23: 
+- [Before/outside (ARPANET, BBSes, Usenet, Gopher, el paquete, etc)](../bbses-usenet-gopher/index.html)
 - [ASCII and ASCII art](../ascii/index.html)
 - work on [Practice #3 (Codes)](../codes-practice-submission/index.html)
 
-[Practice #3 (Codes)](../codes-practice-submission/index.html) submission due Mon 21 Sep at 10 PM on Avenue
-
-Wed Sept 23: Partying like its 1999 (The web of the 1990s and early 2000s)
-
-Fri Sept 25: work on practice #4 (Web 1.0)
+Fri Sept 25: Partying like its 1999 (The web of the 1990s and early 2000s)
+- The web of the 1990s and early 2000s
+- work on practice #4 (Web 1.0)
 
 Practice #4 (Web 1.0) submission due Mon 28 Sep at 10 PM on Avenue
 
