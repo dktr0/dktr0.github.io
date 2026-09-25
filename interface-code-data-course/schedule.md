@@ -31,8 +31,10 @@ Wed Sept 23:
 - work on [Practice #3 (Codes)](../codes-practice-submission/index.html)
 
 Fri Sept 25: Partying like its 1999 (The web of the 1990s and early 2000s)
-- The web of the 1990s and early 2000s
-- work on practice #4 (Web 1.0)
+- [The web of the 1990s](../the-web-of-the-1990s/index.html)
+- [Web Interfaces: HTML basics](../html-basics/index.html)
+- [Web Interfaces: CSS basics](../css-basics/index.html)
+- work on [Practice #4 (Web 1.0)](../web-1.0-practice-submission/index.html)
 
 Practice #4 (Web 1.0) submission due Mon 28 Sep at 10 PM on Avenue
 

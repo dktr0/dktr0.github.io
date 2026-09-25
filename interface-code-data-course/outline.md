@@ -26,6 +26,10 @@ Note: This is the "fluid syllabus" for the course MEDIAART 3D03: Interface, Code
   - [Codes: ASCII and ASCII art](../ascii/index.html)
   - [Practice submission requirements](../codes-practice-submission/index.html)
 - Practice #4 - Web 1.0: read, write, and alter web pages/interfaces expressed in HTML and CSS
+  - [The web of the 1990s](../the-web-of-the-1990s/index.html)
+  - [Web Interfaces: HTML basics](../html-basics/index.html)
+  - [Web Interfaces: CSS basics](../css-basics/index.html)
+  - [Practice submission requirements](../web-1.0-practice-submission/index.html)
 - Practice #5 - JavaScript: read, write, and call simple JavaScript functions
 - Practice #6 - Web APIs: read and write JavaScript for the web browser
 - Practice #7 - "Chat": use JavaScript to parse text input and generate text output
