@@ -16,17 +16,18 @@ Note: This is the "fluid syllabus" for the course MEDIAART 3D03: Interface, Code
 # Course Learning Outcomes
 
 - To imagine alternative presents and futures for the web, informed by an understanding of the web's past and present
+  - [Before/outside (ARPANET, BBSes, Usenet, Gopher, el paquete, etc)](../bbses-usenet-gopher/index.html)
+  - [The web of the 1990s](../the-web-of-the-1990s/index.html)
 - Practice #1 - Terminals: navigate UNIX terminals/filesystems to make/change web projects
   - [Terminal basics](../terminal-basics/index.html)
 - Practice #2 - Servers: run and interact with local/self-configured web servers
   - [Using node to run a webserver](../node-webserver/index.html)
 - Practice #3 - Codes: translate and do creative things with everyday computing/web codes (e.g. binary, ASCII, Unicode, QR codes)
-  - [Codes: Cryptograms](../cryptograms/index.html)
-  - [Codes: Binary numbers](../binary-numbers/index.html)
-  - [Codes: ASCII and ASCII art](../ascii/index.html)
+  - [Cryptograms](../cryptograms/index.html)
+  - [Binary numbers](../binary-numbers/index.html)
+  - [ASCII and ASCII art](../ascii/index.html)
   - [Practice submission requirements](../codes-practice-submission/index.html)
 - Practice #4 - Web 1.0: read, write, and alter web pages/interfaces expressed in HTML and CSS
-  - [The web of the 1990s](../the-web-of-the-1990s/index.html)
   - [Web Interfaces: HTML basics](../html-basics/index.html)
   - [Web Interfaces: CSS basics](../css-basics/index.html)
   - [Practice submission requirements](../web-1.0-practice-submission/index.html)
