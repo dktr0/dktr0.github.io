@@ -8,22 +8,24 @@ title: "MEDIAART 2G03: Detailed Schedule/Diary"
 No tutorials or full-class meetings the week of Mon 7 Sept. Before the first full-class meeting (or as soon as possible), please (1) review the course outline closely, (2) read ["Headphones” on the course website](../headphones/index.html) and acquire studio-grade headphones, and (3) please complete the self-introduction survey on Avenue to introduce yourself to the teaching team.
 
 Week of Mon 14 Sept: focus on Practice #1 (Qualities/Projects)
-- full-class meeting on Mon 14 Sept, including listening discussion of "The Virus", A Tribe Called Red with Saul Williams and the Chippewa Travellers.
+- full-class meeting on Mon 14 Sept, including listening discussion of A Tribe Called Red, with Saul Williams, and the Chippewa Travellers, “The Virus” from We Are The Halluci Nation (2016).
 - [reading: Forms of Sound](../forms-of-sound/index.html)
 - [reading: Modes of Listening](../modes-of-listening/index.html)
 - [Tutorial and Practice #1 submission](../tutorial-reaper-projects/index.html) due Thu 17 Sept, 10 PM, on Avenue 
 
 Week of Mon 21 Sept: focus on Practice #2 (Field Recording)
-- full-class meeting on Mon 21 Sept, including listening discussion of "Kits Beach Soundwalk", Hildegard Westerkamp.
+- full-class meeting on Mon 21 Sept, including listening discussion of Hildegard Westerkamp. "kits beach soundwalk" (1989) from Transformations (1996).
 - [reading: Sound as Signal, Clipping, Noise](../sound-as-signal-clipping-noise/index.html)
 - [reading: Amplitude, Decibels, Inverse Distance Law](../amplitude-decibels-inverse-distance-law/index.html)
 - [reading: The digital recording chain and headroom](../digital-recording-chain/index.html)
 - [Tutorial and Practice #2 submission](../tutorial-field-recording/index.html) due Thu 24 Sept, 10 PM, on Avenue
 
 Week of Mon 28 Sept: focus on Practice #3 (Voice Recording)
-- full-class meeting on Mon 28 Sept
+- full-class meeting on Mon 28 Sept, including listening discussion of excerpts from André Alexis. Metamorphosis: A Viral Trilogy (2020, music and sound design: Debashis Sinha).
+- [reading: Microphones](../microphones/index.html)
+- [reading: Noise Strategies](../noise-strategies/index.html)
 - No regular tutorials this week (National Day For Truth and Reconciliation)
-- Note: There is no submission folder for Practice #3; it can be demonstrated/achieved by signing up for and attending a studio orientation session between Tue 29 Sept and Fri 6 Nov (sign-up will open Mon 28 Sept).
+- Note: There is no submission folder for Practice #3; it can be demonstrated/achieved by signing up for and attending a studio orientation session between Tue 29 Sept and Fri 6 Nov (sign-up will open Mon 28 Sept, see links on Avenue).
 
 Week of Mon 5 Oct: focus on Practice #4 (Edit/Transform/Mix)
 - Practice #4 submission due Thu 8 Oct, 10 PM, on Avenue

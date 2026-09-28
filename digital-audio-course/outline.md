@@ -25,6 +25,8 @@ Note: This is the "fluid syllabus" for the course MEDIAART 2G03: Digital Audio a
     - [reading: The digital recording chain and headroom](../digital-recording-chain/index.html)
     - [tutorial and submission instructions](../tutorial-field-recording/index.html)
 - Practice #3: make high-quality, low-noise voice recordings in a controlled environment
+    - [reading: Microphones](../microphones/index.html)
+    - [reading: Noise Strategies](../noise-strategies/index.html)
 - Practice #4: apply editing, effects, and mixing to assemble sounds in iteratively improved compositions/designs
 - Practice #5: normalize and render completed digital audio projects in appropriate delivery formats
 - Practice #6: make new sounds via exploratory transformations of your own original recordings
