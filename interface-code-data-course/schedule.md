@@ -15,6 +15,7 @@ title: "MEDIAART 3D03: Detailed Schedule/Diary"
 
 ### Fri 11 Sept: Jurassic Park: Experiments with a disaster-proof web
 - [Terminal basics](../terminal-basics/index.html)
+- [Installing node.js](../installing-node/index.html)
 - [Using node to run a webserver](../node-webserver/index.html)
 
 ### Wed Sept 16: The Imitation Game: Work on practice #3 (Codes)
@@ -36,13 +37,19 @@ Fri Sept 25: Partying like its 1999 (The web of the 1990s and early 2000s)
 - [Web Interfaces: CSS basics](../css-basics/index.html)
 - work on [Practice #4 (Web 1.0)](../web-1.0-practice-submission/index.html)
 
-Practice #4 (Web 1.0) submission due Mon 28 Sep at 10 PM on Avenue
+[Practice #4 (Web 1.0)](../web-1.0-practice-submission/index.html) submission due Mon 28 Sep at 10 PM on Avenue
 
 Wed Sept 30: No class meeting - National Day for Truth and Reconciliation
 
-Fri Oct 2: work on practice #5 (JavaScript)
+Fri Oct 2:
+- [Installing node.js](../installing-node/index.html)
+- [JavaScript: JavaScript basics](../javascript-basics/index.html)
+- [JavaScript: JavaScript functions](../javascript-functions/index.html)
+- [JavaScript: Javascript arrays and loops](../javascript-arrays-loops/index.html)
+- work on [Practice #5 (JavaScript)](../javascript-practice-submission/index.html)
+- recommended reading (on Avenue): Nick Montfort, Patsy Baudoin, John Bell, Ian Bogost, Jeremy Douglass, Mark C. Marino, Michael Mateas, Casey Reas, Mark Sample, and Noah Vawter (2013). "Randomness." ch. 40 in *10 PRINT CHR$(205.5+RND(1)); : GOTO 10*. Cambridge, MA: MIT Press. pp. 119-46.
 
-Practice #5 (JavaScript) submission due Mon 5 Oct at 10 PM on Avenue
+[Practice #5 (JavaScript)](../javascript-practice-submission/index.html) submission due Mon 5 Oct at 10 PM on Avenue
 
 Wed Oct 7: The calm before the storm (net.art, live coding, generative art)
 

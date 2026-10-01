@@ -21,6 +21,7 @@ Note: This is the "fluid syllabus" for the course MEDIAART 3D03: Interface, Code
 - Practice #1 - Terminals: navigate UNIX terminals/filesystems to make/change web projects
   - [Terminal basics](../terminal-basics/index.html)
 - Practice #2 - Servers: run and interact with local/self-configured web servers
+  - [Installing node.js](../installing-node/index.html)
   - [Using node to run a webserver](../node-webserver/index.html)
 - Practice #3 - Codes: translate and do creative things with everyday computing/web codes (e.g. binary, ASCII, Unicode, QR codes)
   - [Cryptograms](../cryptograms/index.html)
@@ -32,6 +33,11 @@ Note: This is the "fluid syllabus" for the course MEDIAART 3D03: Interface, Code
   - [Web Interfaces: CSS basics](../css-basics/index.html)
   - [Practice submission requirements](../web-1.0-practice-submission/index.html)
 - Practice #5 - JavaScript: read, write, and call simple JavaScript functions
+  - [Installing node.js](../installing-node/index.html)
+  - [JavaScript: JavaScript basics](../javascript-basics/index.html)
+  - [JavaScript: JavaScript functions](../javascript-functions/index.html)
+  - [JavaScript: Javascript arrays and loops](../javascript-arrays-loops/index.html)
+  - [Practice submission requirements](../javascript-practice-submission/index.html)
 - Practice #6 - Web APIs: read and write JavaScript for the web browser
 - Practice #7 - "Chat": use JavaScript to parse text input and generate text output
 - Practice #8 - Libraries: use specific JavaScript libraries to engage with additional visual possibilities and/or database-driven websites 

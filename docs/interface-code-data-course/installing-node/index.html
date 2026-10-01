@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>index</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="styleSheet" href="/style.css" type="text/css" media="screen">
+</head>
+<body>
+
+<center>
+<div class="outer">
+<div class="header">
+
+<div class="name"><a href="/index.html">David Ogborn (dktr0)</a></div>
+
+<div class="contact">
+<a href="mailto:ogbornd@mcmaster.ca">email</a>
+<a href="https://social.toplap.org/@dktr0">fediverse</a>
+<a href="https://www.youtube.com/@dktr0">youtube</a>
+<a href="https://orcid.org/0000-0002-5898-1660">orcid</a>
+</div> <!-- contact -->
+
+</div> <!-- header -->
+<div class="content">
+    <h1><a href="../outline/index.html">MEDIAART 3D03</a>: Installing node.js (and verifying it is installed)</h1>
+<p>To install node.js on MacOS, go to <a href="https://nodejs.org/en/download">https://nodejs.org/en/download</a>, scroll down to where it says &quot;get a prebuilt Node.js&quot; change the OS to MacOS, set the architecture to x64 (older Macs) or ARM (newer Macs, i.e. M1 etc)and then click just below that to download the macOS Installer (.pkg).</p>
+<p>To install node.js on Windows (Debian virtual machine via WSL) or ChromeBook (Debian virtual machine) we'll use apt:</p>
+<pre><code>sudo apt update
+sudo apt install nodejs
+sudo apt install npm
+</code></pre>
+<p>Whatever method you use, you should be able to verify that node and npm (an adjacent program used to install libraries/plugins/addons to nodejs) by entering the following at your terminal:</p>
+<pre><code>node --version
+npm --version
+</code></pre>
+<p>For example, the above commands tell me I am using v20.19.2 of node an version 9.2.0 of npm. If you get an error message instead of a nice clean version number, you either haven't installed node/npm or there's something wrong with your installation.</p>
+<p>JavaScript is a language that grew up inside of (and with) web browsers. node.js is a special variation of JavaScript that runs by itself, outside of a web browser. It's useful for learning, and (later) for creating web servers and other things that have something to do with the web but don't belong in a web browser. It's a more &quot;generic&quot; JavaScript, I guess.</p>
+
+</div> <!-- content -->
+</div> <!-- outer -->
+</center>
+
+</body>
+</html>
