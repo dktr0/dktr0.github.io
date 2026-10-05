@@ -31,6 +31,7 @@ Note: This is the "fluid syllabus" for the course MEDIAART 2G03: Digital Audio a
 - Practice #4: apply editing, effects, and mixing to assemble sounds in iteratively improved compositions/designs
   - [reading: The spectrum (sound as mixed frequencies) and filters](../spectrum-sound-as-mixed-frequencies/index.html)
   - [reading: Reverberation and Aural Architecture](../reverberation-aural-architecture/index.html)
+  - [tutorial and submission instructions](../tutorial-edit-transform/index.html)
 - Practice #5: normalize and render completed digital audio projects in appropriate delivery formats
 - Practice #6: make new sounds via exploratory transformations of your own original recordings
 - Practice #7: use multiple techniques to create and record original synthesized sounds
