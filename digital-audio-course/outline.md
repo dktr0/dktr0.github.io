@@ -16,18 +16,21 @@ Note: This is the "fluid syllabus" for the course MEDIAART 2G03: Digital Audio a
 # Course Learning Outcomes (Practices)
 
 - Practice #1: assess the qualities of audio files/recordings and import them into fully portable digital audio workstation (DAW) project folders
-    - [reading: Forms of Sound](../forms-of-sound/index.html)
-    - [reading: Modes of Listening](../modes-of-listening/index.html)
-    - [tutorial and submission instructions](../tutorial-reaper-projects/index.html)
+  - [reading: Forms of Sound](../forms-of-sound/index.html)
+  - [reading: Modes of Listening](../modes-of-listening/index.html)
+  - [tutorial and submission instructions](../tutorial-reaper-projects/index.html)
 - Practice #2: make high-quality close and distant perspective field recordings with a field recorder
-    - [reading: Sound as Signal, Clipping, Noise](../sound-as-signal-clipping-noise/index.html)
-    - [reading: Amplitude, Decibels, Inverse Distance Law](../amplitude-decibels-inverse-distance-law/index.html)
-    - [reading: The digital recording chain and headroom](../digital-recording-chain/index.html)
-    - [tutorial and submission instructions](../tutorial-field-recording/index.html)
+  - [reading: Sound as Signal, Clipping, Noise](../sound-as-signal-clipping-noise/index.html)
+  - [reading: Amplitude, Decibels, Inverse Distance Law](../amplitude-decibels-inverse-distance-law/index.html)
+  - [reading: The digital recording chain and headroom](../digital-recording-chain/index.html)
+  - [tutorial and submission instructions](../tutorial-field-recording/index.html)
 - Practice #3: make high-quality, low-noise voice recordings in a controlled environment
-    - [reading: Microphones](../microphones/index.html)
-    - [reading: Noise Strategies](../noise-strategies/index.html)
+  - [reading: Microphones](../microphones/index.html)
+  - [reading: Noise Strategies](../noise-strategies/index.html)
+  - Note: There is no practice submission for practice #3. To demonstrate this practice outside of the final project, sign-up for and show up for an open studio session to orient you to recording in McMaster's surround sound studio.
 - Practice #4: apply editing, effects, and mixing to assemble sounds in iteratively improved compositions/designs
+  - [reading: The spectrum (sound as mixed frequencies) and filters](../spectrum-sound-as-mixed-frequencies/index.html)
+  - [reading: Reverberation and Aural Architecture](../reverberation-aural-architecture/index.html)
 - Practice #5: normalize and render completed digital audio projects in appropriate delivery formats
 - Practice #6: make new sounds via exploratory transformations of your own original recordings
 - Practice #7: use multiple techniques to create and record original synthesized sounds

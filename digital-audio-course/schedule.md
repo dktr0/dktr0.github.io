@@ -28,6 +28,9 @@ Week of Mon 28 Sept: focus on Practice #3 (Voice Recording)
 - Note: There is no submission folder for Practice #3; it can be demonstrated/achieved by signing up for and attending a studio orientation session between Tue 29 Sept and Fri 6 Nov (sign-up will open Mon 28 Sept, see links on Avenue).
 
 Week of Mon 5 Oct: focus on Practice #4 (Edit/Transform/Mix)
+- full-class meeting on Mon 5 Oct, including listening discussion of Ryoji Ikeda, datamatic and Gilles Gobeil/René Lussier, La cathédrale (from Le contrat)
+- [reading: The spectrum (sound as mixed frequencies) and filters](../spectrum-sound-as-mixed-frequencies/index.html)
+- [reading: Reverberation and Aural Architecture](../reverberation-aural-architecture/index.html)
 - Practice #4 submission due Thu 8 Oct, 10 PM, on Avenue
 
 Mid-term recess, Mon 12 Oct - Sun 18 Oct
