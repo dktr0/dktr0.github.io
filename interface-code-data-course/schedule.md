@@ -51,7 +51,10 @@ Fri Oct 2:
 
 [Practice #5 (JavaScript)](../javascript-practice-submission/index.html) submission due Mon 5 Oct at 10 PM on Avenue
 
-Wed Oct 7: The calm before the storm (net.art, live coding, generative art)
+Wed Oct 7:
+- [net.art](../net-art/index.html)
+- [Javascript dictionaries](../javascript-dictionaries/index.html)
+- possibly some initial experiments with JavaScript in the browser
 
 Fri Oct 9: work on practice #6 (Web APIs)
 

@@ -18,6 +18,7 @@ Note: This is the "fluid syllabus" for the course MEDIAART 3D03: Interface, Code
 - To imagine alternative presents and futures for the web, informed by an understanding of the web's past and present
   - [Before/outside (ARPANET, BBSes, Usenet, Gopher, el paquete, etc)](../bbses-usenet-gopher/index.html)
   - [The web of the 1990s](../the-web-of-the-1990s/index.html)
+  - [net.art](../net-art/index.html)
 - Practice #1 - Terminals: navigate UNIX terminals/filesystems to make/change web projects
   - [Terminal basics](../terminal-basics/index.html)
 - Practice #2 - Servers: run and interact with local/self-configured web servers
@@ -39,6 +40,7 @@ Note: This is the "fluid syllabus" for the course MEDIAART 3D03: Interface, Code
   - [JavaScript: Javascript arrays and loops](../javascript-arrays-loops/index.html)
   - [Practice submission requirements](../javascript-practice-submission/index.html)
 - Practice #6 - Web APIs: read and write JavaScript for the web browser
+  - [Javascript dictionaries](../javascript-dictionaries/index.html)
 - Practice #7 - "Chat": use JavaScript to parse text input and generate text output
 - Practice #8 - Libraries: use specific JavaScript libraries to engage with additional visual possibilities and/or database-driven websites 
 
