@@ -57,6 +57,7 @@ Wed Oct 7:
 
 Fri Oct 9: work on practice #6 (Web APIs)
 - [JavaScript in the browser](../javascript-in-the-browser/index.html)
+- a little bit more about [ASCII art](../ascii/index.html)
 - work on [Practice #6 (Web APIs)](../javascript-in-the-browser-submission/index.html)
 
 (mid-term recess Oct 12 -16)

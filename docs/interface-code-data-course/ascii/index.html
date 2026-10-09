@@ -64,6 +64,18 @@
 -   -
 &lt;/pre&gt;
 </code></pre>
+<h2>Adding/setting ASCII art to HTML web pages with JavaScript</h2>
+<p>Here's a simple example of that. Probably the most important thing to note here is the use of multiline literal strings in JavaScript - the ASCII art itself is in the JavaScript on multiple lines which amount to one string that contains line breaks. Assuming your HTML document has a pre element in it with the id mypre, this is a JavaScript function that, when called, would set the contents of the pre element to the specified ASCII art:</p>
+<pre><code>function setAsciiArt() {
+  var mypre = document.getElementById(&quot;mypre&quot;);
+  mypre.innerText =
+`++++++
+------
+------
+......
+MMMMMM`;
+}
+</code></pre>
 
 </div> <!-- content -->
 </div> <!-- outer -->
