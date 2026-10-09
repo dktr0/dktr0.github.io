@@ -54,13 +54,14 @@ Fri Oct 2:
 Wed Oct 7:
 - [net.art](../net-art/index.html)
 - [Javascript dictionaries](../javascript-dictionaries/index.html)
-- possibly some initial experiments with JavaScript in the browser
 
 Fri Oct 9: work on practice #6 (Web APIs)
+- [JavaScript in the browser](../javascript-in-the-browser/index.html)
+- work on [Practice #6 (Web APIs)](../javascript-in-the-browser-submission/index.html)
 
 (mid-term recess Oct 12 -16)
 
-Practice #6 (Web APIs) submission due Mon 19 Oct at 10 PM on Avenue
+[Practice #6 (Web APIs)](../javascript-in-the-browser-submission/index.html) submission due Mon 19 Oct at 10 PM on Avenue
 
 Wed 21 Oct: Cunning chatbots and deadly dungeons
 
