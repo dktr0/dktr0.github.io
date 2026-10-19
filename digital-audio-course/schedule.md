@@ -36,9 +36,14 @@ Week of Mon 5 Oct: focus on Practice #4 (Edit/Transform/Mix)
 Mid-term recess, Mon 12 Oct - Sun 18 Oct
 
 Week of Mon 19 Oct: focus on Practice #5 (Normalize/Render)
-- Practice #5 submission due Thu 22 Oct, 10 PM, on Avenue
+- full-class meeting: review for in-term exam #1
+- [reading: sampling theory](../sampling-theory/index.html)
+- [reading: levels during recording, mixing, and delivery](../levels-recording-mixing-delivery/index.html)
+- [Video demonstration of normalizing to -0.3 dBFS without intermediate files](https://www.macvideo.ca/media/20251006-normalization-demo/1_oa0x0kfa)
+- [Tutorial and Practice #5 submission](../tutorial-normalizing-without-intermediate-files/index.html) due Thu 22 Oct, 10 PM, on Avenue
 
 *In-term exam #1 (practices #1-5) in flexible testing centre, Sat 24 Oct - Fri 30 Oct*
+- [Study guide](../study-guide/index.html)
 
 Week of Mon 26 Oct: focus on Practice #6 (Exploratory Transformations)
 - Practice #6 submission due Thu 29 Oct, 10 PM, on Avenue

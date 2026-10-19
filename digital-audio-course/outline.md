@@ -33,6 +33,10 @@ Note: This is the "fluid syllabus" for the course MEDIAART 2G03: Digital Audio a
   - [reading: Reverberation and Aural Architecture](../reverberation-aural-architecture/index.html)
   - [tutorial and submission instructions](../tutorial-edit-transform/index.html)
 - Practice #5: normalize and render completed digital audio projects in appropriate delivery formats
+  - [reading: sampling theory](../sampling-theory/index.html)
+  - [reading: levels during recording, mixing, and delivery](../levels-recording-mixing-delivery/index.html)
+  - [Video demonstration of normalizing to -0.3 dBFS without intermediate files](https://www.macvideo.ca/media/20251006-normalization-demo/1_oa0x0kfa)
+  - [tutorial and submission instructions](../tutorial-normalizing-without-intermediate-files/index.html)
 - Practice #6: make new sounds via exploratory transformations of your own original recordings
 - Practice #7: use multiple techniques to create and record original synthesized sounds
 - Practice #8: engage stereo audio possibilities via panning, recording, pseudo-stereo, and stereo transformations
