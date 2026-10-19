@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>index</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="styleSheet" href="/style.css" type="text/css" media="screen">
+</head>
+<body>
+
+<center>
+<div class="outer">
+<div class="header">
+
+<div class="name"><a href="/index.html">David Ogborn (dktr0)</a></div>
+
+<div class="contact">
+<a href="mailto:ogbornd@mcmaster.ca">email</a>
+<a href="https://social.toplap.org/@dktr0">fediverse</a>
+<a href="https://www.youtube.com/@dktr0">youtube</a>
+<a href="https://orcid.org/0000-0002-5898-1660">orcid</a>
+</div> <!-- contact -->
+
+</div> <!-- header -->
+<div class="content">
+    <h1><a href="../outline/index.html">MEDIAART 2G03</a>: Practice #5</h1>
+<p><strong>Practice #5: normalize and render completed digital audio projects in appropriate delivery formats</strong></p>
+<p><strong>Goal</strong>: normalize a DAW project to -0.3 dBFS without using intermediate files</p>
+<p><strong>Purpose</strong>: Normalizing audio projects without intermediate files ensures that when we render projects we are using all of the possibility for detail that the output format has, and is a key requirement for submitting complete works of sound art in this course.</p>
+<p><strong>Specifications</strong>: You will receive credit for a tutorial/practice submission in this folder that meets ALL of the following specifications (more detailed instructions are found below):</p>
+<ul>
+<li>The submission contains a ZIP archive containing ONLY a rendered WAV file (not source files, not a Reaper project folder or file)</li>
+<li>The WAV file has a peak amplitude of exactly -0.3 dBFS</li>
+</ul>
+<p>In most cases, the most efficient way to complete this will be during your assigned tutorial section. Don't hesitate to ask the instructor or teaching assistant for help if anything is unclear to you - but also don't hesitate to explore the software, try things out, and teach yourself!</p>
+<p><strong>Demonstration</strong>: <a href="https://www.macvideo.ca/media/20251006-normalization-demo/1_oa0x0kfa">Here is a video demonstration of the technique</a> discussed below.</p>
+<h2>Detailed instructions: Normalizing without intermediate files</h2>
+<p>A key skill for finishing or finalizing our creative projects is ensuring that the peak sample (audio level) is at -0.3 dBFS, BEFORE rendering any digital audio file from the project. Each stage of rendering introduces a small amount of digital noise, so if we can control peak levels without introducing that digital noise, so much the better. To follow these instructions, you'll need some kind of Reaper project: you could either (a) make a renamed copy of another Reaper project from an earlier area of technical practice, or (b) quickly create a fake project by creating a new project, importing some sources and doing some random things to them.</p>
+<ol>
+<li>Once you have a complete &quot;fake&quot; project to work with, you can start the normalizing procedure, which is something you would do only when you are ready to render and submit a real project. Make sure that you can see the Master fader in Reaper's mixer (hint: it says Master on it).  The peak level meters (&quot;historical peak levels meters&quot;) are the ones in the image that say &quot;-inf&quot; in the image below (of course, they may something different at the moment in your Reaper project window). Click on them to reset them.</li>
+</ol>
+<img src="../reaper-master-fader.png" alt="Reaper's Master Fader area" style="width: 25%"/>
+<p>After you reset it will say -inf (for &quot;infinite&quot;) in both channels. Now press play and let the whole project run through while watching that peak level measurement on the Master output. Let the playback of the sound complete - what is the final peak reading in dBFS when the playback has completed? (These metres show the highest sample level since the last time they were reset.)</p>
+<ol start="2">
+<li>Now we want to adjust the project so that the peak sample (the highest output level to occur anywhere in the project, as monitored by you and as, eventually, rendered to a new file) is at exactly -0.3 dBFS. Why would we want to do this? There are two considerations that interact to motivate this particular standard: (1) We want the desired signals in our rendered file to be very far away from the digital noise floor, and -0.3 dBFS is very close to the maximum possible amplitude and so very close to as far away as we can get; (2) at the same time, we want it to be clear to anyone who finds this file that there was no clipping as the file was produced/rendered, and -0.3 dBFS is just below the point at which we might suspect clipping.</li>
+</ol>
+<p>So.... The next step is to answer the question: What is the difference between your peak reading from the previous question and -0.3 dBFS? i.e. how much extra gain (in dB) will we need?</p>
+<p>A few examples - if the highest peak (of the 2 channels, left and right) on your peak meter was:</p>
+<ul>
+<li>-6 dBFS: you would need +5.7 dB of gain to bring that up to -0.3 dBFS</li>
+<li>-2 dBFS: you would need +1.3 dB of gain to bring that up to -0.3 dBFS</li>
+<li>-4.5 dBFS: you would need +4.2 dB of gain to bring that up to -0.3 dBFS</li>
+<li>-21 dBFS: you would need +20.7 dB of gain to bring that up to -0.3 dBFS</li>
+<li>+3 dBFS: you would need -3.3 dB of gain to bring that down to -0.3 dBFS</li>
+</ul>
+<p>You can apply this extra digital amplification to your project in two ways.</p>
+<p>(1) If the total amount of gain required is less than 12 dB you can apply it by moving the Master fader up/down by the required amount of gain. However this method can be quite awkward with the small sliders on the screen, so you may prefer the next, more general, method...</p>
+<p>(2) If the amount of gain required is more than 12 dB - or even if it isn't - you can apply a specific amount of gain by clicking where it says &quot;Routing&quot; above the Master fader, and then entering a value in the upper left of the window that pops up (where the label &quot;dB&quot; appears).</p>
+<p><strong>IMPORTANT</strong>: To add a specific amount of gain you have to <strong>CHANGE</strong> the gain that is already applied <strong>BY THAT MUCH</strong>. For example, if the master gain is already at +3.0 dB, and you need it to be 1 db higher, you would change it to +4.0 dB (i.e. you would NOT set the master gain to +1 dB...).</p>
+<p>You can test your work within Reaper by resetting the historical metre reading (click on it) and playing through again from the beginning. If you've done it right, you should see a peak of -0.3 dBFS this time. Don't hesitate to ask for help if you are having trouble achieving this result, or are unclear if you have achieved this result - this is an absolute requirement of the first project you will submit not too long from now, so do take advantage of the in-person tutorial environment to make sure you can do it!</p>
+<p>Note: You can ALSO test your work by rendering in Reaper and selecting &quot;Dry run&quot; from the rendering dialogue. This method displays the peak levels to you relatively quickly, without listening through. Both methods (the one where you listen through and the one where you don't) are useful - in general, the method of listening through should always be applied as part of delivering a project, because it gives you an extra check that everything sounds as it should. Meanwhile, quickly getting a measurement of the peak with the &quot;Dry run&quot; functionality is useful when you are only fixing a problem with the peak sample.</p>
+<ol start="3">
+<li>Export/render the resulting audio using Reaper's Render dialog (render &quot;for real&quot; that is). Note that Reaper's render process gives you some useful feedback about the peak levels. You wouldn't want that feedback to show levels above 0 dBFS!</li>
+</ol>
+<p>That's it - but it does take some practice! Please don't hesitate to reach out to Dr. 0 or your teaching assistants for assistance (particularly during your in-person tutorials, which are certainly the most efficient place to practice this skill).</p>
+<p>After rendering, please take a moment to verify that your practice submission meets ALL of the specifications at the top of this page, before uploading to a weekly submission folder on Avenue. Be sure to keep your Reaper complete project folder on a removable hard drive, USB key, or cloud folder (but don't submit it here on Avenue - just submit your ZIPped WAV file this time) in case you need to return to these materials for any reason.</p>
+
+</div> <!-- content -->
+</div> <!-- outer -->
+</center>
+
+</body>
+</html>
