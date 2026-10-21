@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>index</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="styleSheet" href="/style.css" type="text/css" media="screen">
+</head>
+<body>
+
+<center>
+<div class="outer">
+<div class="header">
+
+<div class="name"><a href="/index.html">David Ogborn (dktr0)</a></div>
+
+<div class="contact">
+<a href="mailto:ogbornd@mcmaster.ca">email</a>
+<a href="https://social.toplap.org/@dktr0">fediverse</a>
+<a href="https://www.youtube.com/@dktr0">youtube</a>
+<a href="https://orcid.org/0000-0002-5898-1660">orcid</a>
+</div> <!-- contact -->
+
+</div> <!-- header -->
+<div class="content">
+    <h1><a href="../outline/index.html">MEDIAART 3D03</a>: Separating HTML CSS and JavaScript into separate files</h1>
+<p>As projects get larger and &quot;messier&quot;, keeping them organized and &quot;cleaner&quot; becomes more important for managing the cognitive load of working on them. One small strategy that can help is to separate the different parts of a web project into separate files, for example, the HTML and &quot;content&quot; in one or more HTML files, the visual aesthetics and &quot;style&quot; in one or more CSS files, and the custom interactive logic in one or more JS (JavaScript) files.</p>
+<p>Here's a stripped down model of a simple web page that has been divided into three files - with exactly the same functionality as example 5 from the <a href="../javascript-in-the-browser/index.html">JavaScript in the browser page</a>:</p>
+<h3>index.html</h3>
+<pre><code>&lt;html&gt;
+  &lt;head&gt;
+    &lt;script src=&quot;index.js&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;styleSheet&quot; href=&quot;style.css&quot; type=&quot;text/css&quot; media=&quot;screen&quot;/&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id=&quot;thediv&quot; class=&quot;myclass&quot; onclick=&quot;doSomething()&quot;&gt;This is a div with some text in it.&lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>Note in the above the line with the 'link' element and how it references another file called style.css. This is how the browser knows to also look for and respond to the file called style.css. And note also in the 'script' element the 'src' attribute that references index.js - this is how the browser knows to look for and execute the JavaScript contained in the separate file called index.js.</p>
+<h3>style.css:</h3>
+<pre><code>.myclass {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+}
+</code></pre>
+<h3>index.js:</h3>
+<pre><code>function doSomething() {
+  var left = Math.random()*98;
+  var top = Math.random()*98;
+  var style = &quot;left: &quot; + left + &quot;%; top: &quot; + top + &quot;%;&quot;;
+  var thediv = document.getElementById(&quot;thediv&quot;);
+  thediv.setAttribute(&quot;style&quot;,style);
+}
+</code></pre>
+
+</div> <!-- content -->
+</div> <!-- outer -->
+</center>
+
+</body>
+</html>

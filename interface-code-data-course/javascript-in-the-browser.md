@@ -117,43 +117,4 @@ function doSomething() {
 </html>
 ```
 
-### Example 6
-
-This is exactly the same functionality as example 5a but split into three separate text files. This is the recommended minimum of separation/modularity for your projects (more complex projects might have multiple separated HTML CSS and JavaScript files).
-
-One of them called index.html:
-
-```
-<html>
-  <head>
-    <script src="index.js"></script>
-    <link rel="styleSheet" href="style.css" type="text/css" media="screen"/>
-  </head>
-  <body>
-    <div id="thediv" class="myclass" onclick="doSomething()">This is a div with some text in it.</div>
-  </body>
-</html>
-```
-
-One of them called style.css:
-
-```
-.myclass {
-  position: absolute;
-  left: 0%;
-  top: 0%;
-}
-```
-
-One of them called index.js:
-
-```
-function doSomething() {
-  var left = Math.random()*98;
-  var top = Math.random()*98;
-  var style = "left: " + left + "%; top: " + top + "%;";
-  var thediv = document.getElementById("thediv");
-  thediv.setAttribute("style",style);
-}
-```
-
+Note that in more highly scaled projects (even a little bit more highly scaled), it is common to [separate the HTML CSS and JavaScript into separate files](separating-html-css-js-files/index.html).

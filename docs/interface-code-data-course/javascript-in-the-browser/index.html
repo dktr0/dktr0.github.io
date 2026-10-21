@@ -119,35 +119,7 @@ function doSomething() {
   &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-<h3>Example 6</h3>
-<p>This is exactly the same functionality as example 5a but split into three separate text files. This is the recommended minimum of separation/modularity for your projects (more complex projects might have multiple separated HTML CSS and JavaScript files).</p>
-<p>One of them called index.html:</p>
-<pre><code>&lt;html&gt;
-  &lt;head&gt;
-    &lt;script src=&quot;index.js&quot;&gt;&lt;/script&gt;
-    &lt;link rel=&quot;styleSheet&quot; href=&quot;style.css&quot; type=&quot;text/css&quot; media=&quot;screen&quot;/&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;div id=&quot;thediv&quot; class=&quot;myclass&quot; onclick=&quot;doSomething()&quot;&gt;This is a div with some text in it.&lt;/div&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-<p>One of them called style.css:</p>
-<pre><code>.myclass {
-  position: absolute;
-  left: 0%;
-  top: 0%;
-}
-</code></pre>
-<p>One of them called index.js:</p>
-<pre><code>function doSomething() {
-  var left = Math.random()*98;
-  var top = Math.random()*98;
-  var style = &quot;left: &quot; + left + &quot;%; top: &quot; + top + &quot;%;&quot;;
-  var thediv = document.getElementById(&quot;thediv&quot;);
-  thediv.setAttribute(&quot;style&quot;,style);
-}
-</code></pre>
+<p>Note that in more highly scaled projects (even a little bit more highly scaled), it is common to <a href="separating-html-css-js-files/index.html">separate the HTML CSS and JavaScript into separate files</a>.</p>
 
 </div> <!-- content -->
 </div> <!-- outer -->

@@ -65,10 +65,15 @@ Fri Oct 9: work on practice #6 (Web APIs)
 [Practice #6 (Web APIs)](../javascript-in-the-browser-submission/index.html) submission due Mon 19 Oct at 10 PM on Avenue
 
 Wed 21 Oct: Cunning chatbots and deadly dungeons
+- [Separating HTML CSS and JavaScript into separate files](../separating-html-css-js-files/index.html)
+- ELIZA (1966): [Wikipedia article](https://en.wikipedia.org/wiki/ELIZA), [playable browser remake](https://www.masswerk.at/elizabot/eliza.html)
+- Colossal Cave Adventure (1976): [Wikipedia article](https://en.wikipedia.org/wiki/Colossal_Cave_Adventure), [playable browser remake](https://grack.com/demos/adventure)
+- [Making a REPL with node.js at the terminal](../node-repl/index.html)
+- [Making a REPL in the browser](../browser-repl/index.html)
 
 Fri 23 Oct 23: work on practice #7 (Chat)
 
-Practice #7 (Chat) submission due Mon 26 Oct at 10 PM on Avenue
+[Practice #7 (Chat)](../chat-practice-submission/index.html) submission due Mon 26 Oct at 10 PM on Avenue
 
 Wed 28 Oct: The Beginning Of The End (Web 2.0)
 
