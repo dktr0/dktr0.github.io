@@ -48,8 +48,10 @@ Note: This is the "fluid syllabus" for the course MEDIAART 3D03: Interface, Code
   - ELIZA (1966): [Wikipedia article](https://en.wikipedia.org/wiki/ELIZA), [playable browser remake](https://www.masswerk.at/elizabot/eliza.html)
   - Colossal Cave Adventure (1976): [Wikipedia article](https://en.wikipedia.org/wiki/Colossal_Cave_Adventure), [playable browser remake](https://grack.com/demos/adventure)
   - [Making a REPL with node.js at the terminal](../node-repl/index.html)
-  - [Making a REPL in the browser](../browser-repl/index.html)
+  - cf. [w3schools complete string reference](https://www.w3schools.com/jsref/jsref_obj_string.asp)
+  - cf. [w3schools complete array reference](https://www.w3schools.com/jsref/jsref_obj_array.asp)
   - [Model for an 'adventure' game](../adventure-game-model/index.html)
+  - [Making a REPL in the browser](../browser-repl/index.html)
   - [Practice submission requirements](../chat-practice-submission/index.html)
 - Practice #8 - Libraries: use specific JavaScript libraries to engage with additional visual possibilities and/or database-driven websites 
 

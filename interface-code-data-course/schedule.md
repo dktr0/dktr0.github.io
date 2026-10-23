@@ -69,9 +69,13 @@ Wed 21 Oct: Cunning chatbots and deadly dungeons
 - ELIZA (1966): [Wikipedia article](https://en.wikipedia.org/wiki/ELIZA), [playable browser remake](https://www.masswerk.at/elizabot/eliza.html)
 - Colossal Cave Adventure (1976): [Wikipedia article](https://en.wikipedia.org/wiki/Colossal_Cave_Adventure), [playable browser remake](https://grack.com/demos/adventure)
 - [Making a REPL with node.js at the terminal](../node-repl/index.html)
-- [Making a REPL in the browser](../browser-repl/index.html)
 
 Fri 23 Oct 23: work on practice #7 (Chat)
+- what can you do with a JavaScript string? cf. [w3schools complete string reference](https://www.w3schools.com/jsref/jsref_obj_string.asp)
+- what can you do with a JavaScript array? cf. [w3schools complete array reference](https://www.w3schools.com/jsref/jsref_obj_array.asp)
+- [a model for a text adventure game](../adventure-game-model/index.html)
+- [Making a REPL in the browser](../browser-repl/index.html)
+- work on [Practice #7 (Chat)](../chat-practice-submission/index.html)
 
 [Practice #7 (Chat)](../chat-practice-submission/index.html) submission due Mon 26 Oct at 10 PM on Avenue
 
