@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>index</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="styleSheet" href="/style.css" type="text/css" media="screen">
+</head>
+<body>
+
+<center>
+<div class="outer">
+<div class="header">
+
+<div class="name"><a href="/index.html">David Ogborn (dktr0)</a></div>
+
+<div class="contact">
+<a href="mailto:ogbornd@mcmaster.ca">email</a>
+<a href="https://social.toplap.org/@dktr0">fediverse</a>
+<a href="https://www.youtube.com/@dktr0">youtube</a>
+<a href="https://orcid.org/0000-0002-5898-1660">orcid</a>
+</div> <!-- contact -->
+
+</div> <!-- header -->
+<div class="content">
+    <h1><a href="../outline/index.html">MEDIAART 2G03</a>: Practice #6</h1>
+<p><strong>Practice #6: make new sounds via exploratory transformations of your own original recordings</strong></p>
+<p><strong>Goal</strong>: To transform one of your own original source recordings using (a) classical speed change, (b) spectral time/pitch shift, and (c) granular synthesis.</p>
+<p><strong>Purpose</strong>: These are three of the most common &quot;exploratory&quot; transformations of sound - that is to say, transformations that produce a relatively (or even completely) different sound (unlike the gentle tweaks of &quot;corrective&quot; transformations of sound). Making new sounds in these kind of ways is a possibility that is somewhat distinctive of electronic and digital approaches to audio.</p>
+<p><strong>Specifications</strong>: You will receive credit for a tutorial/practice submission in this folder that meets ALL of the following specifications (more detailed instructions are found below):</p>
+<ul>
+<li>The submission contains a ZIP archive containing ONLY a rendered WAV file (not source files, not a Reaper project folder or file)</li>
+<li>The WAV file demonstrates, in sequence, all three of the following techniques applied to a common source recording: classical speed change, spectral time/pitch shift, granular synthesis.</li>
+</ul>
+<p>In most cases, the most efficient way to complete this will be during your assigned tutorial section. Don't hesitate to ask the instructor or teaching assistant for help if anything is unclear to you - but also don't hesitate to explore the software, try things out, and teach yourself!</p>
+<h2>Detailed Instructions</h2>
+<p>This tutorial/milestone covers a key set of techniques from the larger domain of &quot;exploratory sound transformations&quot; as discussed in the full class meeting and online modules. The text here does not fully explain the purpose and other considerations around the techniques, as it is assumed you are also attending the full-class meetings and completing the online modules where these things have been unpacked more amply. Rather, the text here simply presents a way of going about each of these techniques that have already been discussed elsewhere.</p>
+<p>You'll need a short, clear original recording of your own. It could be something from your first project in the class, for example. You'll want something less than ten seconds long, as a separate sound file. You could pick a source from your project, for example, and render just ten seconds or less of it to a separate file that you can then work with during this milestone. Although any clearly recorded sound will work, you will likely get more interesting results with a recording that is very focused on one sound source (with a high signal to noise ratio) - such as a voice recording where the voice is overwhelmingly the main thing we hear. Once you have that source file all ready to &quot;transform in an exploratory way&quot;, create a new Reaper project and import the source file into that Reaper project.</p>
+<h3>1. Classical speed change</h3>
+<p>Classical speed change can be achieved through Reaper's Media Item Properties dialog. Right click on an audio region and select Item Properties to bring up this dialog. To do classical speed change (in which frequency/pitch change as length in time changes) be sure to UNSELECT &quot;Preserve pitch when changing rate&quot;. Now entering a number other than 1 in Playback Rate will be doing classical speed change - numbers between 0 and 1 will being slowing down the playback rate, and numbers greater than 1 will increase it. Note that there is often more to explore in terms of slowing down than speeding up, so in your explorations, you may want to spend more time trying out numbers between 0 and 1 than numbers greater than 1. For example, 0.5 would play things back at half the normal speed. Reaper doesn't automatically change the length of the audio region when you do this, so as you put in lower numbers you'll have to change the size of the audio region by grabbing on its right edge and extending it, also (and this works better with &quot;snap&quot; off, as discussed in the first tutorials).</p>
+<img src="../reaper-playback-rate-preserve-pitch.png" alt="Screenshot of part of Reaper's Item Properties dialog, showing the Playback rate and Preserve Pitch When Changing Rate settings" style="width: 80%"/>
+<h3>2. Spectral time/pitch change</h3>
+<p>Spectral time/pitch change (as discussed in more detail in the full-class meetings and online modules) is also accessed through the Media Item Properties dialog. The key thing is to SELECT &quot;Preserve pitch when changing rate&quot;. Now what you can do is work with both the playback rate setting and the Pitch adjust setting (right above Preserve pitch when changing rate).</p>
+<p>Playback rate still works more or less as it did for classical speed change - for example, a playback rate of 0.25 (ie. 1/4) would play back things 4 times slower and so it would take 4 times longer to get through the same material. But now, using spectral time/pitch change, Reaper will attempt to keep things at the same frequency (and thus, perceived pitch) as they are stretched. The pitch adjustment is in &quot;semitones&quot; - this is a unit for expressing changes of frequency where +12 equals twice as fast (one &quot;octave&quot; up in pitch) and -12 equals half as fast (one &quot;octave&quot; down in pitch), and 0 = no change in frequency/pitch.</p>
+<p>As an example, a playback rate of 0.1 with a pitch adjust of -5 would give us a resulting sound that is ten times longer than the original (once we adjust the region by dragging on its right edge) with all of the frequencies/pitches somewhat lower. Try out different settings, being sure to try both playback rates that are close to 1 and those that are close to 0, and being sure to try pitch adjusts across the broad range between -60 and +24 or so (5 octaves down, 2 octaves up).</p>
+<h3>3. Granular synthesis</h3>
+<p>Granular synthesis (as discussed in the full-class meetings and online modules) is, for better or for worse, achieved with a wide variety of different software approaches, none of which are built into Reaper. For this, we'll use another piece of software (free and open source), called emissioncontrol2, instead.</p>
+<p>It's installed on the Media Arts Wing computers, but you could also choose to install it on your own computer if you prefer. If so, you would download version 1.2 of emissioncontrol2 from https://github.com/EmissionControl2/EmissionControl2/releases - make sure you get 1.2 not an earlier version! Note: On the Media Arts Wing Windows computers (not the Macs) emissioncontrol2 is installed but you have to find it by using File Explorer to navigate to C:\ProgramFiles (x86)\EmissionsControl2 (it won't come up on the menu but it is there).</p>
+<p>One emissioncontrol2 has launched,  click Remove Current Sound File, then Load Sound File and select your own sound file you wish to granulate. You should see a visual rendition of the sound file in the area labeled &quot;Scan Display&quot;:</p>
+<img src="../emission-control-scan-display.png" alt="emissioncontrol2's scan display area, showing a typical rendition of a waveforms" style="width: 100%"/>
+<p>Press Engine Start and you should probably hear something, like an individual grain of sound intermittently. If it looks like the levels in your source sound file are a bit low, you may need to move the slider labelled &quot;15. Amplitude&quot; further to the right until you hear something.</p>
+<p>The controls labeled &quot;9. Scan Begin&quot; and &quot;10. Scan Range&quot; will determine the &quot;window&quot; that the software will scan through to select  grains from. Move these controls to focus that window in on a segment of the sound you wish to granulate/stretch. You can use the &quot;Scan Display&quot; area of the interface for a visual depiction of what you currently have &quot;windowed&quot;.</p>
+<p>To really get the effect of granular synthesis you probably want parameters in &quot;Granulation Controls&quot; to be something like this:</p>
+<ol>
+<li>Grain Rate: 10-20 Hz (10-20 times per second)</li>
+<li>Asynchronicity: Around 0.1</li>
+<li>Streams: 12 (or more)</li>
+<li>Playback Rate: Works just fine at 1 (no change in playback rate), but just as with classical speed change, lower playback rates that stretch the grains and lower their pitch are always fun.</li>
+<li>Grain Duration: Probably somewhere between 10 and 100 ms. Shorter grains will work &quot;smoother&quot; with a higher grain rate and vice verse (longer grains will work &quot;smoother&quot; with a somewhat lower grain rate).</li>
+</ol>
+<img src="../emission-control-granulation-controls.png" alt="emissioncontrol2's granulation controls display, a big series of sliders to control different parameters of the granular synthesis process" style="width: 100%"/>
+<p>When you're getting sounds you want to save for later use (e.g. importing into Reaper for further processing, editing, transformation, etc) you can click the button labeled &quot;Change Output Path&quot; to select a folder on the computer where a WAV file will be created, then enter a specific and thoughtfully chosen name for the recording in &quot;Output File Name&quot;. Pressing &quot;Record&quot; will make it start recording to that file and pressing it again will finish/finalize the recording:</p>
+<img src="../emission-control-recorder.png" alt="emissioncontrol2's recording interface with interfaces for choosing output folder, output file name, and starting/stopping recording" style="width: 100%"/>
+<p>Once you've explored all three techniques above, arrange them in sequence in time in your Reaper project, render, zip the rendered file, and submit!</p>
+
+</div> <!-- content -->
+</div> <!-- outer -->
+</center>
+
+</body>
+</html>
