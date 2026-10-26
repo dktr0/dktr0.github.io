@@ -38,6 +38,11 @@ Note: This is the "fluid syllabus" for the course MEDIAART 2G03: Digital Audio a
   - [Video demonstration of normalizing to -0.3 dBFS without intermediate files](https://www.macvideo.ca/media/20251006-normalization-demo/1_oa0x0kfa)
   - [tutorial and submission instructions](../tutorial-normalizing-without-intermediate-files/index.html)
 - Practice #6: make new sounds via exploratory transformations of your own original recordings
+  - [reading: Corrective vs Exploratory transformations](../corrective-vs-exploratory-transformations/index.html)
+  - [video: classical speed change](https://www.macvideo.ca/media/Classical+Speed+Change/1_cd453tka)
+  - [video: spectral time/pitch shifts and artifacts](https://www.macvideo.ca/media/Spectral+Time+Pitch+Shifts+and+Artifacts/1_tq51f7vq)
+  - [video: granular synthesis](https://www.macvideo.ca/media/Granular+Synthesis/1_ick0przb)
+  - [tutorial and submission instructions](../tutorial-exploratory-transformations/index.html)
 - Practice #7: use multiple techniques to create and record original synthesized sounds
 - Practice #8: engage stereo audio possibilities via panning, recording, pseudo-stereo, and stereo transformations
 - Practice #9: gently compress/finalize a DAW project in order to reduce overall dynamic range in genre/context appropriate ways 

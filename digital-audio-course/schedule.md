@@ -46,7 +46,12 @@ Week of Mon 19 Oct: focus on Practice #5 (Normalize/Render)
 - [Study guide](../study-guide/index.html)
 
 Week of Mon 26 Oct: focus on Practice #6 (Exploratory Transformations)
-- Practice #6 submission due Thu 29 Oct, 10 PM, on Avenue
+- full class meeting, including listening discussion of Marcelle Deschênes, Big Bang III (1992)
+- [reading: Corrective vs Exploratory transformations](../corrective-vs-exploratory-transformations/index.html)
+- [video: classical speed change](https://www.macvideo.ca/media/Classical+Speed+Change/1_cd453tka)
+- [video: spectral time/pitch shifts and artifacts](https://www.macvideo.ca/media/Spectral+Time+Pitch+Shifts+and+Artifacts/1_tq51f7vq)
+- [video: granular synthesis](https://www.macvideo.ca/media/Granular+Synthesis/1_ick0przb)
+- [Tutorial and Practice #6 submission](../tutorial-exploratory-transformations/index.html) due Thu 29 Oct, 10 PM, on Avenue
 
 Week of Mon 2 Nov: focus on Practice #7 (Synthesis)
 - Practice #7 submission due Thu 5 Nov, 10 PM, on Avenue
