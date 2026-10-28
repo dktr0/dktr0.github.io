@@ -74,24 +74,27 @@ Fri 23 Oct 23: work on practice #7 (Chat)
 - what can you do with a JavaScript string? cf. [w3schools complete string reference](https://www.w3schools.com/jsref/jsref_obj_string.asp)
 - what can you do with a JavaScript array? cf. [w3schools complete array reference](https://www.w3schools.com/jsref/jsref_obj_array.asp)
 - [a model for a text adventure game](../adventure-game-model/index.html)
-- [Making a REPL in the browser](../browser-repl/index.html)
 - work on [Practice #7 (Chat)](../chat-practice-submission/index.html)
 
 [Practice #7 (Chat)](../chat-practice-submission/index.html) submission due Mon 26 Oct at 10 PM on Avenue
 
-Wed 28 Oct: The Beginning Of The End (Web 2.0)
+Wed 28 Oct: 
+- [Making a REPL in the browser](../browser-repl/index.html)
+- further experiments with text interactions
 
 Fri 30 Oct: work on practice #8 (Libraries)
 
-Practice #8 (Libraries) submission due Mon 2 Nov at 10 PM on Avenue
+Wed Nov 4: work on practice #8 (Libraries)
 
-Wed Nov 4: Living in the ruins (local knowledge, digital gardening, solar computing, etc)
+Fri Nov 6: The Beginning Of The End (Web 2.0)
+- and further work on practice #8 (Libraries)
 
-Fri Nov 6: Experiments with markdown and static-site generation; Term project ideation activities
+Practice #8 (Libraries) submission due Tue 10 Nov at 10 PM on Avenue
 
-Wed Nov 11: TBD / practice / assistance
+Wed Nov 11: Living in the ruins (local knowledge, digital gardening, solar computing, etc)
+- Experiments with markdown and static-site generation
 
-Fri Nov 13: TBD / practice / assistance
+Fri Nov 13: Term project ideation activities
 
 Wed Nov 18: TBD / practice / assistance
 
