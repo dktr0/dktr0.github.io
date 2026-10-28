@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>index</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="styleSheet" href="/style.css" type="text/css" media="screen">
+</head>
+<body>
+
+<center>
+<div class="outer">
+<div class="header">
+
+<div class="name"><a href="/index.html">David Ogborn (dktr0)</a></div>
+
+<div class="contact">
+<a href="mailto:ogbornd@mcmaster.ca">email</a>
+<a href="https://social.toplap.org/@dktr0">fediverse</a>
+<a href="https://www.youtube.com/@dktr0">youtube</a>
+<a href="https://orcid.org/0000-0002-5898-1660">orcid</a>
+</div> <!-- contact -->
+
+</div> <!-- header -->
+<div class="content">
+    <h1><a href="../outline/index.html">MEDIAART 3D03</a>: A simple text adventure game</h1>
+<p>Here's a model for a simple text adventure game in the form of a function respondToInput() that accepts user input and returns text to display. Note that this is not a complete example - to actually use it you would likely need to combine it with some kind of model for a REPL, e.g. <a href="../node-repl/index.html">creating a REPL with node</a> or <a href="../browser-repl/index.html">creating a REPL in the browser</a>. For a more complex model of an approach to an adventure game, see <a href="../adventure-game-model/index.html">here</a>.</p>
+<pre><code>var playersName;
+var stage = &quot;start&quot;;
+var hasSword = false;
+
+function respondToInput(i) {
+  // this is our main entry point
+  // it receives text from the user (i)
+  // it will give back text to display
+
+  if(stage == &quot;start&quot;) {
+    playersName = i;
+    stage = &quot;swordChoice&quot;;
+    return &quot;great, hi. There's a sword here, do you take it or not?&quot; + i;
+  }
+
+  if(stage == &quot;swordChoice&quot;) {
+    if(i == &quot;yes&quot;) {
+      hasSword = true;
+      stage = &quot;doorChoice&quot;;
+      return &quot;you take the sword and notice the two doors, one on the left, one on the right. Which door will you take, &quot; + playersName + &quot;?&quot;;
+    }
+    else if(i == &quot;no&quot;) {
+      return &quot;are you sure? I really think you should take the sword, &quot; + playersName;
+    }
+    return &quot;yes or no?&quot;;
+  }
+
+  if(stage == &quot;doorChoice&quot;) {
+    if(i == &quot;left&quot; || i == &quot;go left&quot; || i == &quot;left door&quot;) {
+      stage = &quot;end&quot;;
+      return &quot;you fall down a hole and die.&quot;
+    }
+    else if(i == &quot;right&quot; || i == &quot;go right&quot; || i == &quot;right door&quot;) {
+      stage = &quot;end&quot;;
+      return &quot;a piano falls on you and you die.&quot;
+    }
+    return &quot;left door or right door, &quot; + playersName;
+  }
+
+  if(stage == &quot;end&quot;) {
+    return &quot;you can't do anything you are dead&quot;
+  }
+
+  return &quot;Uhoh I think there was a problem.&quot;
+}
+</code></pre>
+
+</div> <!-- content -->
+</div> <!-- outer -->
+</center>
+
+</body>
+</html>

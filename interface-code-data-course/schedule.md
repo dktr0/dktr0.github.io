@@ -73,14 +73,14 @@ Wed 21 Oct: Cunning chatbots and deadly dungeons
 Fri 23 Oct 23: work on practice #7 (Chat)
 - what can you do with a JavaScript string? cf. [w3schools complete string reference](https://www.w3schools.com/jsref/jsref_obj_string.asp)
 - what can you do with a JavaScript array? cf. [w3schools complete array reference](https://www.w3schools.com/jsref/jsref_obj_array.asp)
-- [a model for a text adventure game](../adventure-game-model/index.html)
 - work on [Practice #7 (Chat)](../chat-practice-submission/index.html)
 
 [Practice #7 (Chat)](../chat-practice-submission/index.html) submission due Mon 26 Oct at 10 PM on Avenue
 
 Wed 28 Oct: 
 - [Making a REPL in the browser](../browser-repl/index.html)
-- further experiments with text interactions
+- [a simple model for a text adventure game](../simple-text-adventure-model/index.html)
+- see also, if interested: [a less simple model for a text adventure game](../adventure-game-model/index.html)
 
 Fri 30 Oct: work on practice #8 (Libraries)
 

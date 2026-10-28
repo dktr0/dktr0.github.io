@@ -50,10 +50,11 @@ Note: This is the "fluid syllabus" for the course MEDIAART 3D03: Interface, Code
   - [Making a REPL with node.js at the terminal](../node-repl/index.html)
   - cf. [w3schools complete string reference](https://www.w3schools.com/jsref/jsref_obj_string.asp)
   - cf. [w3schools complete array reference](https://www.w3schools.com/jsref/jsref_obj_array.asp)
-  - [Model for an 'adventure' game](../adventure-game-model/index.html)
   - [Making a REPL in the browser](../browser-repl/index.html)
+  - [a simple model for a text adventure game](../simple-text-adventure-model/index.html)
   - [Practice submission requirements](../chat-practice-submission/index.html)
-- Practice #8 - Libraries: use specific JavaScript libraries to engage with additional visual possibilities and/or database-driven websites 
+  - see also, if interested: [a less simple model for a text adventure game](../adventure-game-model/index.html)
+  - Practice #8 - Libraries: use specific JavaScript libraries to engage with additional visual possibilities and/or database-driven websites 
 
 # Course Description
 
