@@ -105,3 +105,4 @@ This is a list (in progress, still quite incomplete) of every game I can remembe
 - *The World Game* (boardgame; 4 Jan 2021)
 - [*Carve Snowboarding* (Quest; 27 May 2021)](https://www.ign.com/games/carve-snowboarding)
 - *Far Cry 6* (PS5; 7 Oct 2021)
+- *Battlefield 6* (PS5; 10 Oct 2025)
