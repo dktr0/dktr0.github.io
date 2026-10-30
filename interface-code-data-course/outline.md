@@ -54,7 +54,11 @@ Note: This is the "fluid syllabus" for the course MEDIAART 3D03: Interface, Code
   - [a simple model for a text adventure game](../simple-text-adventure-model/index.html)
   - [Practice submission requirements](../chat-practice-submission/index.html)
   - see also, if interested: [a less simple model for a text adventure game](../adventure-game-model/index.html)
-  - Practice #8 - Libraries: use specific JavaScript libraries to engage with additional visual possibilities and/or database-driven websites 
+- Practice #8 - Libraries: use specific JavaScript libraries to engage with additional visual possibilities and/or database-driven websites 
+  - Live coding visuals in Punctual
+    - cf. [dktr0's brief tutorial examples about Punctual](../../punctual/index.html) 
+    - and [Juan Queralt Molina's excellent guide to live coding visuals in Punctual](https://punctual.savamala.top/)
+  - [Incorporating Punctual into a website](../punctual-in-a-website/index.html)
 
 # Course Description
 

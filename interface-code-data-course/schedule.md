@@ -83,6 +83,10 @@ Wed 28 Oct:
 - see also, if interested: [a less simple model for a text adventure game](../adventure-game-model/index.html)
 
 Fri 30 Oct: work on practice #8 (Libraries)
+- Live coding visuals in Punctual
+  - cf. [dktr0's brief tutorial examples about Punctual](../../punctual/index.html) 
+  - and [Juan Queralt Molina's excellent guide to live coding visuals in Punctual](https://punctual.savamala.top/)
+- [Incorporating Punctual into a website](../punctual-in-a-website/index.html)
 
 Wed Nov 4: work on practice #8 (Libraries)
 
@@ -100,7 +104,7 @@ Wed Nov 18: TBD / practice / assistance
 
 Fri Nov 20: work-in-progress mini-showcase
 
-In-term exam in flexible testing centre, Sat Nov 21 - Fri Nov 27
+In-term exam in flexible testing centre, Sat Nov 21 - Tue Nov 24
 
 No class meetings the week of Wed 25 Nov and Fri 27 Nov (please come to drop-in hours for assistance with your web art term projects in progress!)
 
