@@ -54,7 +54,17 @@ Week of Mon 26 Oct: focus on Practice #6 (Exploratory Transformations)
 - [Tutorial and Practice #6 submission](../tutorial-exploratory-transformations/index.html) due Thu 29 Oct, 10 PM, on Avenue
 
 Week of Mon 2 Nov: focus on Practice #7 (Synthesis)
-- Practice #7 submission due Thu 5 Nov, 10 PM, on Avenue
+- full class meeting, including synthesis circus (group experiments and improvisation with modular synthesizers)
+- [reading: Synthesis overview](../synthesis-overview/index.html)
+- [video: The Unit Generator](https://www.macvideo.ca/media/The+Unit+Generator/1_1ybkphqq)
+- [video: Oscillators](https://www.macvideo.ca/media/Oscillators/1_fbjojwcl)
+- [video: Noise Generators](https://www.macvideo.ca/media/Noise+Generators/1_7urjuko8)
+- [video: Filters (Synthesis)](https://www.macvideo.ca/media/Filters+%28Synthesis%29/1_4euvq4ao)
+- [video: Envelopes](https://www.macvideo.ca/media/Envelopes/1_k0lrath3)
+- [video: Modulation](https://www.macvideo.ca/media/Modulation/1_4eyhd5x7)
+- [video: Sequencers](https://www.macvideo.ca/media/Sequencers/1_p045d3k9)
+- [Tutorial and Practice #7 submission](../tutorial-synthesis/index.html) due Thu 5 Nov, 10 PM, on Avenue
+- [optional reading: Representing frequency with MIDI or V/OCT](../representing-frequency-midi-voct/index.html)
 
 Week of Mon 9 Nov: focus on Practice #8 (Stereo)
 - Practice #8 submission due Thu 12 Nov, 10 PM, on Avenue

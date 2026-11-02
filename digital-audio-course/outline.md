@@ -44,6 +44,16 @@ Note: This is the "fluid syllabus" for the course MEDIAART 2G03: Digital Audio a
   - [video: granular synthesis](https://www.macvideo.ca/media/Granular+Synthesis/1_ick0przb)
   - [tutorial and submission instructions](../tutorial-exploratory-transformations/index.html)
 - Practice #7: use multiple techniques to create and record original synthesized sounds
+  - [reading: Synthesis overview](../synthesis-overview/index.html)
+  - [video: The Unit Generator](https://www.macvideo.ca/media/The+Unit+Generator/1_1ybkphqq)
+  - [video: Oscillators](https://www.macvideo.ca/media/Oscillators/1_fbjojwcl)
+  - [video: Noise Generators](https://www.macvideo.ca/media/Noise+Generators/1_7urjuko8)
+  - [video: Filters (Synthesis)](https://www.macvideo.ca/media/Filters+%28Synthesis%29/1_4euvq4ao)
+  - [video: Envelopes](https://www.macvideo.ca/media/Envelopes/1_k0lrath3)
+  - [video: Modulation](https://www.macvideo.ca/media/Modulation/1_4eyhd5x7)
+  - [video: Sequencers](https://www.macvideo.ca/media/Sequencers/1_p045d3k9)
+  - [tutorial and submission instructions](../tutorial-synthesis/index.html)
+  - [optional reading: Representing frequency with MIDI or V/OCT](../representing-frequency-midi-voct/index.html)
 - Practice #8: engage stereo audio possibilities via panning, recording, pseudo-stereo, and stereo transformations
 - Practice #9: gently compress/finalize a DAW project in order to reduce overall dynamic range in genre/context appropriate ways 
 

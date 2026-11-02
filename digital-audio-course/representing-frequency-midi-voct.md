@@ -1,0 +1,18 @@
+---
+layout: layout.njk
+title: "MEDIAART 2G03: Representing Frequency with MIDI or V/OCT"
+---
+
+# [MEDIAART 2G03](../outline/index.html): Representing Frequency with MIDI or V/OCT
+
+A common task in synthesis environments (whether modular synthesis, simulated modular synthesis, or programming/live coding environments) is needing to represent (control) frequency. There are lots of ways this can be done, but two particular systems for representing frequency are especially common and so useful to be familiar with: MIDI note numbers (used in many many places), and the V/OCT scheme (used almost exclusively in modular synthesis, whether in hardware or software).  
+
+MIDI note numbers are a part of the much larger MIDI (Musical Instrument Digital Interface) standard that has been around since the 1980s. MIDI note numbers represent frequency in units of “semitones”. To understand what a semitone is it is useful to understand the concept of an “octave” first... An octave is a doubling or halving of the frequency. For example, the frequency 880 Hz is one octave above the frequency 440 Hz. The frequency 220 Hz would be one octave below 440 Hz.  
+
+A semitone is the frequency change you would get if you were to divide an octave into twelve equal parts. To put it another way: a semitone is the proportional change in frequency you would need to apply (by multiplying) so that if you did it twelve times you would get to an octave of difference in total. A single semitone (upwards) is an increase in frequency of about 5.94%.  
+
+Getting back to MIDI note numbers... In the MIDI standard, the frequency that musicians sometimes call “middle C” (about 256 Hz) is represented with the number 60, and each semitone up or down is represented with an increase/decrease of 1 in the number. The note/frequency one semitone directly above middle C is represented with the number 61. The note/frequency one semitone directly below middle C is represented with the number 59, and so on. You can sometimes see evidence of this system in software that works with MIDI data (such as Reaper) and synthesis systems (such as VCV rack or live coding environments) will have things in them that can convert these MIDI note numbers to other units (such as Hertz, with which we might be most familiar by now, or V/OCT, which we are about to talk about). 
+
+V/OCT is a system for representing (controlling) frequency that is particularly useful in modular synthesis environments. Like MIDI note numbers, the concept of the octave is fundamental. With the V/OCT system, a voltage of 0 represents “no change in frequency” - a voltage of +1 V represents “an octave higher” - a voltage of –1 V represents “an octave lower”, and we can represent (for example) an increase of one semitone with a voltage of +1/12 V (a twelfth of a volt). Frequently, an oscillator in a modular synthesis system will have a primary frequency that is set by a user control (eg. a dial) and then a V/OCT input that can be used to change the frequency relative to that primary frequency. (This is the case, for example, in VCV rack’s, VCO and LFO unit generators.)  
+
+Modular synthesis systems may have other ways of changing/controlling/representing frequency; for example, some unit generators/modules may have inputs where +1 volts represents “maximum possible change over some range of possibilities”, 0 volts represents “no change”, and –1 volts represents maximum possible change in the other direction. As is always the case with synthesis elements / unit generators, much experimentation with specific components is typically required to figure out how they work! 
