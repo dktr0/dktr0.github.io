@@ -89,16 +89,20 @@ Fri 30 Oct: work on practice #8 (Libraries)
 - [Incorporating Punctual into a website](../punctual-in-a-website/index.html)
 
 Wed Nov 4: work on practice #8 (Libraries)
+- Experiments with [textmode.js](../textmode.js/index.html)
 
-Fri Nov 6: The Beginning Of The End (Web 2.0)
-- and further work on practice #8 (Libraries)
+Fri Nov 6: 
+- Experiments with [three.js](../three.js/index.html)  
+- Guided work on practice #8 submission
 
-Practice #8 (Libraries) submission due Tue 10 Nov at 10 PM on Avenue
+[Practice #8 (Libraries) submission](../libraries-practice-submission/index.html) due Tue 10 Nov at 10 PM on Avenue
 
-Wed Nov 11: Living in the ruins (local knowledge, digital gardening, solar computing, etc)
+Wed Nov 11: The Beginning Of The End (Web 2.0)
+ 
+Fri Nov 13:
+- Living in the ruins (local knowledge, digital gardening, solar computing, etc)
 - Experiments with markdown and static-site generation
-
-Fri Nov 13: Term project ideation activities
+- Term project ideation activities
 
 Wed Nov 18: TBD / practice / assistance
 

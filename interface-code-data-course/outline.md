@@ -59,6 +59,10 @@ Note: This is the "fluid syllabus" for the course MEDIAART 3D03: Interface, Code
     - cf. [dktr0's brief tutorial examples about Punctual](../../punctual/index.html) 
     - and [Juan Queralt Molina's excellent guide to live coding visuals in Punctual](https://punctual.savamala.top/)
   - [Incorporating Punctual into a website](../punctual-in-a-website/index.html)
+  - [Notes on textmode.js](../textmode.js/index.html)
+  - [Notes on three.js](../three.js/index.html)
+  - [Practice submission requirements](../libraries-practice-submission/index.html)
+
 
 # Course Description
 
