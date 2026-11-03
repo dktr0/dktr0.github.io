@@ -5,7 +5,7 @@ title: "MEDIAART 3D03: Notes on three.js"
 
 # [MEDIAART 3D03](../outline/index.html): Notes on three.js
 
-three.js is a library for accelerated 3D graphics in the browser. it is a substantial JavaScript library built on top of an API (a set of JavaScript features) built-in to the browser called WebGL. WebGL programming is very nitpicky and low-leve - ThreeJS builds on top of this to provide a simpler interface oriented to conventional 3D tasks, such as the things commonly done in programming video games and virtual environments.
+three.js is a library for accelerated 3D graphics in the browser. it is a substantial JavaScript library built on top of an API (a set of JavaScript features) built-in to the browser called WebGL. WebGL programming is very nitpicky and low-level - ThreeJS builds on top of this to provide a simpler interface oriented to conventional 3D tasks, such as the things commonly done in programming video games and virtual environments.
 
 There are lots of fancy three.js examples on [the official examples page at threejs.org](https://threejs.org/examples/).
 
