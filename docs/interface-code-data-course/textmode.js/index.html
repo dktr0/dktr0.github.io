@@ -37,8 +37,7 @@ npm install --save-dev vite
 npx vite
 </code></pre>
 <p>After that last step, you'll be running the &quot;vite&quot; web server (an alternative to the simple http-server we've been running earlier in the course). vite will automatically take care of some things to do with using libraries/modules in JavaScript, so it's definitely the way to go for these experiments with textmode.js (and also three.js).</p>
-<p>I suggest leaving that vite server running in one terminal window, while editing files using nano in another terminal window that you open. Here's an all-in-one example index.html that</p>
-<p>If we poke around now with cd/ls etc we'll find a file called textmode.esm.js in the folder node_modules/textmode.js/dist/ under our project folder. We can then load that JavaScript module into any JavaScript module we make in our project. Here's an example (all in one file) index.html - it will draw a dark grey background that fills the screen (not very exciting, but getting this working before doing anything else will make it easier to troubleshoot):</p>
+<p>I suggest leaving that vite server running in one terminal window, while editing files using nano in another terminal window that you open. Here's an all-in-one example index.html that loads the textmode.js library and uses it to do one simple thing (drawing a grey background) as a test that everything is setup, ready for further work:</p>
 <pre><code>&lt;html&gt;
   &lt;body&gt;
     &lt;script type=&quot;module&quot;&gt;
