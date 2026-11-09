@@ -67,7 +67,12 @@ Week of Mon 2 Nov: focus on Practice #7 (Synthesis)
 - [optional reading: Representing frequency with MIDI or V/OCT](../representing-frequency-midi-voct/index.html)
 
 Week of Mon 9 Nov: focus on Practice #8 (Stereo)
-- Practice #8 submission due Thu 12 Nov, 10 PM, on Avenue
+- full class meeting, including stereo listening and recording experiments and listening discussion of Yves Daoust, mi bemol
+- [reading: Stereo Basics](../stereo-basics/index.html)
+- [video: Panning](https://www.macvideo.ca/media/Panning/1_bw17lf0l)
+- [video: Pseudo-stereo](https://www.macvideo.ca/media/Pseudo-Stereo/1_0jg9nmlf)
+- [reading: Stereo Recording](../stereo-recording/index.html)
+- [Tutorial and Practice #8 submission](../tutorial-stereo-automation/index.html) due Thu 12 Nov, 10 PM, on Avenue
 
 Week of Mon 16 Nov: focus on Practice #9 (Dynamic Range)
 - Practice #9 submission due Thu 19 Nov, 10 PM, on Avenue

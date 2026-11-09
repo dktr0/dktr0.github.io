@@ -55,6 +55,11 @@ Note: This is the "fluid syllabus" for the course MEDIAART 2G03: Digital Audio a
   - [tutorial and submission instructions](../tutorial-synthesis/index.html)
   - [optional reading: Representing frequency with MIDI or V/OCT](../representing-frequency-midi-voct/index.html)
 - Practice #8: engage stereo audio possibilities via panning, recording, pseudo-stereo, and stereo transformations
+  - [reading: Stereo Basics](../stereo-basics/index.html)
+  - [video: Panning](https://www.macvideo.ca/media/Panning/1_bw17lf0l)
+  - [video: Pseudo-stereo](https://www.macvideo.ca/media/Pseudo-Stereo/1_0jg9nmlf)
+  - [reading: Stereo Recording](../stereo-recording/index.html)
+  - [tutorial and submission instructions](../tutorial-stereo-automation/index.html)
 - Practice #9: gently compress/finalize a DAW project in order to reduce overall dynamic range in genre/context appropriate ways 
 
 # Course Description
