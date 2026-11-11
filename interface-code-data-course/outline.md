@@ -21,9 +21,11 @@ Note: This is the "fluid syllabus" for the course MEDIAART 3D03: Interface, Code
   - [net.art](../net-art/index.html)
 - Practice #1 - Terminals: navigate UNIX terminals/filesystems to make/change web projects
   - [Terminal basics](../terminal-basics/index.html)
+  - [Relative and absolute filepaths, and copying, moving, renaming files](../filepaths/index.html)
 - Practice #2 - Servers: run and interact with local/self-configured web servers
   - [Installing node.js](../installing-node/index.html)
   - [Using node to run a webserver](../node-webserver/index.html)
+  - [IP addresses, URLs, and host/domain names](../ip-addresses-urls-host-domain-names/index.html)
 - Practice #3 - Codes: translate and do creative things with everyday computing/web codes (e.g. binary, ASCII, Unicode, QR codes)
   - [Cryptograms](../cryptograms/index.html)
   - [Binary numbers](../binary-numbers/index.html)

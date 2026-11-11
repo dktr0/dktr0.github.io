@@ -97,14 +97,19 @@ Fri Nov 6:
 
 [Practice #8 (Libraries) submission](../libraries-practice-submission/index.html) due Tue 10 Nov at 10 PM on Avenue
 
-Wed Nov 11: The Beginning Of The End (Web 2.0)
- 
+Wed Nov 11:
+- sign up for in-term exam in flexible testing centre ASAP!
+- [Relative and absolute filepaths, and copying, moving, renaming files](../filepaths/index.html)
+- [IP addresses, URLs, and host/domain names](../ip-addresses-urls-host-domain-names/index.html)
+
 Fri Nov 13:
+- The Beginning Of The End (Web 2.0)
 - Living in the ruins (local knowledge, digital gardening, solar computing, etc)
-- Experiments with markdown and static-site generation
+- Experiments with [web 2.0 technique](../web-2.0-technique/index.html), including writing custom web-servers, working with databases, and asynchronous update of webpages (AJAX)
+- Experiments with markdown/static-site generation, [eleventy as a static site generator](../eleventy-static-site-generator/index.html)
 - Term project ideation activities
 
-Wed Nov 18: TBD / practice / assistance
+Wed Nov 18: TBD
 
 Fri Nov 20: work-in-progress mini-showcase
 
@@ -123,114 +128,10 @@ Wed Dec 9: After the End (final exam review)
 Final multiple-choice exam during examination period to be scheduled by registrar
 
 
-# Schedule from the previous offering of the course (Winter 2026)
+# Topics from the previous offering of the course not yet incorporated in above schedule
 
-## Part A
-
-In Weeks One through Six (Mon Jan 5 - Fri Feb 13), we'll work through fundamental content and activities in each of the six areas/learning outcomes, while completing a first project (project #1) that engages with those learning outcomes. The last day of class in Week Six (Wed Feb 11) will be devoted to last minute peer and instructor assistance with project #1, which will be submitted by 10 PM on Fri Feb 13 (and will be showcased during the first day back after the Winter recess, Mon 23 Feb).
-
-### Mon 5 Jan
-
-- discussion of the prehistory of this class
-- big question: what is the web as a technology and what can we make with it?
-- big question(s): digital gardens and local first computing
-- big question: how improvisational engagement with the web and programming lets us learn and explore these questions
-- how I've come to these topics, personally
-- review of course outline and assessment
-- [Devops: terminal basics](../terminal-basics/index.html)
-- [JavaScript: JavaScript basics](../javascript-basics/index.html)
-- [Codes: Cryptograms](../cryptograms/index.html)
-
-### Wed 7 Jan
-
-- introduction of [project #1](../project-1/index.html)
-- [Codes: ASCII and ASCII art](../ascii/index.html)
-
-### Mon 12 Jan
-
-- [Web Interfaces: HTML basics](../html-basics/index.html)
-- [Web Interfaces: CSS basics](../css-basics/index.html)
-- [JavaScript: JavaScript functions](../javascript-functions/index.html)
-
-### Wed 14 Jan
-- [Devops: Relative and absolute filepaths, and copying, moving, renaming files](../filepaths/index.html)
-- [Codes: Binary numbers](../binary-numbers/index.html)
-
-### Mon 19 Jan
-- [Web Pasts, Presents, Futures: BBSes, Usenet newsgroups, and Gopher](../bbses-usenet-gopher/index.html)
-- [JavaScript: Javascript arrays and loops](../javascript-arrays-loops/index.html)
-
-### Wed 21 Jan
-- [JavaScript in the browser](../javascript-in-the-browser/index.html)
-
-### Mon 26 Jan
-(snow day)
-
-### Wed 28 Jan
-- [The web of the 1990s](../the-web-of-the-1990s/index.html)
-- [net.art](../net-art/index.html)
-- Project ideation questions/discussion for [Project #1](../project-1/index.html)
-
-### Mon 2 Feb
 - [Hexadecimal numbers](../hexadecimal/index.html)
-- [IP addresses, URLs, and host/domain names](../ip-addresses-urls-host-domain-names/index.html)
-- [Javascript dictionaries](../javascript-dictionaries/index.html)
-
-### Wed 4 Feb
-- Live coding visuals in Punctual
-- [Incorporating Punctual into a website](../punctual-in-a-website/index.html)
-
-### Mon 9 Feb
 - [CSS flexbox and grid](../flexbox-grid/index.html)
 - Experiments with styling images via css, c.f. [this w3schools reference](https://www.w3schools.com/css/css3_images.asp)
 - Further demonstration of what I mean by a "self-contained" website (including e.g. with respect to images)
-- Further experiments with both Punctual-in-a-website and example 7 from "javascript in the browser"
-
-### Wed 11 Feb
-- "dress rehearsal" for project showcase (serving your own site on our local network) and other assistance with project #1
-- see especially: [Using node to run a webserver](../node-webserver/index.html)
-
-### Project #1 is submitted on Avenue by 10 PM on Fri Feb 13
-
-## Part B
-
-In Weeks Seven through Nine (Mon 23 Feb - Fri 13 Mar), we'll work through some more advanced content and activities in each of the six areas/learning outcomes, while also conceiving, planning, and proposing a second project (project #2) that must be more ambitious/scaled than project #1 was. The last class meeting (Wed 11 Mar) will be devoted to last minute peer and instructor assistance with the full proposal for project #2, which is due by 10 PM on Fri 13 Mar. 
-
-There will be no scheduled class meetings on Mon 16 Mar and Wed 18 Mar, while I inspect and approve all of the proposals. You are strongly encouraged to begin working in earnest on the execution of project #2 immediately, prior to receiving my feedback on your proposal.
-
-During both part B and most of part C, you'll be able to complete the six asynchronous (on your own time), open-book, re-doable tests on each area/learning outcome, repeating each test as many time as necessary to receive the necessary 80% (between Mon 23 Feb and 10 PM on Mon 30 Mar, after which point the tests will become no longer available to complete, strictly). You are strongly encouraged to start attempting these tests early in the window in which they are available, to complete them without assistance or collaboration, and to use the possibility of repeated attempts as a way of learning and preparing for the final exam.
-
-### Mon 23 Feb
-- Project showcase! 
-- see especially: [Using node to run a webserver](../node-webserver/index.html)
-
-### Wed 25 Feb
 - SSH demonstration
-- Discussion question: What's the most important thing you think you learned in this course up to and including Monday's showcase?
-- Discussion question: What is something you think you should have learned (or learned better) in this course up to and including Monday's showcase?
-- Discussion question: What is something (more or less related to our discussion so far) you'd be particularly excited to explore in the last half of the course?
-- Introduction of [project #2](../project-2/index.html)
-
-### Mon 2 Mar
-- Experiments with [textmode.js, a JavaScript library for ASCII art in the browser](../textmode.js/index.html)
-
-### Wed 4 Mar
-- Experiments with [three.js, a JavaScript library for 3D graphics in the browser](../three.js/index.html)
-
-### Mon 9 Mar
-- Experiments with [web 2.0 technique](../web-2.0-technique/index.html), including writing custom web-servers, working with databases, and asynchronous update of webpages (AJAX)
-
-### Wed 11 Mar
-- Experiments with [eleventy as a static site generator](../eleventy-static-site-generator/index.html)
-- [Project #2](../project-2/index.html) ideation activity
-
-## Part C
-
-The last three weeks of class (Mon 23 Mar to Mon 6 Apr) are devoted to the execution, completion, and showcasing of project #2, which is due by the end of day on Thu 2 Apr, and will be exhibited during a public showcase during the last class meeting (Mon 6 Apr).
-
-### Mon 23 Mar
-- Experiments with [a model for a text adventure game](../adventure-game-model/index.html)
-
-## Final Examination
-
-A final multiple choice exam will be scheduled during the exam period (Apr 9-22). The exam represents a final chance to earn a higher grade through demonstrating objective comprehension of each of the six areas/learning outcomes touched on by the course. The exam consists of 5 questions in each of the six areas, and to receive credit (a grade higher by one point on the McMaster 12-point scale) for each area at least 4 out of 5 of the questions must be answered correctly (80%). The 30-question exam will be scheduled by the registrar's office and will be completed in 90 minutes.
