@@ -34,12 +34,24 @@ consisted of four 8-bit numbers (i.e. numbers between 0 and 255). In this system
 <p>Don't worry if the concept of the netmask is a bit unclear though - the important point is really just that it is very common for devices on networks to be identified by an &quot;IPv4 address&quot; that consists of 4 8-bit numbers.</p>
 <h2>URLs</h2>
 <p>We're probably already familar with the basic use of a &quot;URL&quot; - as an &quot;address&quot; that we stick into a web browser to identify some unique place on the web.</p>
-<p>URL is short for &quot;uniform resource locator&quot; and it is a more specific example of a more general class of things known as URIs (uniform resource identifier). These notes focus on the more specific web URLs.</p>
+<p>URL is short for &quot;uniform resource locator&quot; and it is a more specific example of a more general class of things known as URIs (uniform resource identifier). These notes focus on the more specific web URLs, which basically have five parts, some of which are optional/can be omitted:</p>
+<ol>
+<li>
 <p>A web URL will start with a &quot;protocol&quot; that will be either &quot;http:&quot; or &quot;https:&quot;. That will tell, for example, a web browser how it needs to go about sending the detailed request that follows, since http and https are gone about in very different ways.</p>
-<p>Usually (there are some exceptions) the next part is the &quot;host&quot; which identifies the computer/web server from which a web file should be requested. This can be an IP address but it's much more common for it to be a &quot;hostname&quot; that gets decoded by the &quot;domain name&quot; system into the actual IP address (more about that below). The host normally starts with two slashes.
-The next part, after a single slash / is the path, which is a series of names separated by slashes that is conceptually similar to a filepath in an operating system (such as those we're starting to get used to in our <a href="../filepaths/index.html">devops practice about filepaths</a>.</p>
+</li>
+<li>
+<p>Usually (there are some exceptions) the next part is the &quot;host&quot; which identifies the computer/web server from which a web file should be requested. This can be an IP address but it's much more common for it to be a &quot;hostname&quot; that gets decoded by the &quot;domain name&quot; system into the actual IP address (more about that below). The host normally starts with two slashes.</p>
+</li>
+<li>
+<p>The next part, after a single slash / is the path, which is a series of names separated by slashes that is conceptually similar to a filepath in an operating system (such as those we're starting to get used to in our <a href="../filepaths/index.html">practice with filepaths</a>.</p>
+</li>
+<li>
 <p>The next part (not always present) is the &quot;query&quot; - which starts with a ? and then consists of a series of pairs of keys and values, e.g. <code>?mode=display&amp;columns=40</code>. These might be &quot;options&quot; that change the nature of the response from the web server, or they might be options that are interpreted and used by the interactive JavaScript in a page.</p>
+</li>
+<li>
 <p>The last part (also not always present) is the &quot;fragment&quot; which is a way of telling the browser to jump to a specific marked section of a web document. This fragment: <code>#sectionA</code> at the end of a web URL would tell the browser to jump to the section identified in the web document as sectionA (by giving some HTML element the id sectionA).</p>
+</li>
+</ol>
 <p>In practice some of the elements of a URL can be omitted. Browsers will assume http (or sometimes https) if the protocol is omitted. If there's no host (preceded by //) browsers will assume that whatever you are requesting comes from the same place as the thing you are currently looking at.</p>
 <p>So a URL like this means get the file called &quot;myOtherFile.html&quot; from wherever the thing I am currently looking at is: <code>myOtherFile.html</code>.</p>
 <p>And a URL like this means get the file called &quot;yetAnotherFile.html&quot; from a folder below wherever the thing I am currently looking at is: <code>myFolder/myOtherFile.html</code></p>
@@ -51,6 +63,39 @@ These addresses are managed by a series of &quot;authorities&quot;. When our com
 <p>Then we can issue this at the terminal to get some information about a particular host: <code>dig www.mcmaster.ca</code>
 Note: If we enter the IP address of a webserver directly into a web browser we'll sometimes get a different website than we expect, because many large web servers serve different websites from exactly the same address - basically they give a different response depending on the &quot;name&quot; one uses to make a request of them.</p>
 <p>As a final note, on many systems the name &quot;localhost&quot; is set up to be the name of &quot;this computer itself&quot; so a URL like this &quot;http://localhost/myFile.html&quot; is a request for the file myFile.html being served by a web server running on this computer itself and not somewhere else on the Internet. On many systems the IP address 127.0.0.1 is also a way of pointing to this computer itself (but note that all of this depends on how the machine is configured: some won't respond to 127.0.0.1 and some won't respond to localhost...).</p>
+<h2>Accessing URL query parameters with JavaScript</h2>
+<p>Here's a minimal example of using JavaScript to access query parameters from a URL, in order to do something different depending on whether the query is provided and/or what it is. If the following page is accessed with (for example) <code>http://127.0.0.1:8080/index.html?type=blah</code> then it will set the contents of that div to &quot;value of type query was: blah&quot;, but if the query part of the URL <code>?type=blah</code> isn't present, it will set the contents of the div to &quot;no type query was provided&quot; instead.</p>
+<pre><code>&lt;html&gt;
+  &lt;body&gt;
+    &lt;div id=&quot;myDiv&quot;&gt;&lt;/div&gt;
+    &lt;script&gt;
+
+const myDiv = document.getElementById('myDiv');
+
+const query = new URLSearchParams(window.location.search);
+
+if(query.has('type')) {
+    myDiv.innerText = &quot;value of type query was: &quot; + query.get('type');
+  }
+  else {
+    myDiv.innerText = &quot;no type query was provided.&quot;
+  }
+
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h2>Requesting (GETting) a new page with JavaScript (without and with queries)</h2>
+<p>You can use JavaScript to trigger a navigation to a new page. Here's a function that (when called) will navigate the browser to a specific web page:</p>
+<pre><code>function goToMcMaster() {
+  window.location.href = &quot;http://www.mcmaster.ca&quot;;
+}
+</code></pre>
+<p>We could use this to load a page (or attach queries to page), by &quot;composing&quot; the string that is assigned to window.location.href:</p>
+<pre><code>function goHomeWithQuery(x) { // whatever x is, will be the value of the query 'type'
+  window.location.href = &quot;index.html&quot; + &quot;?type=&quot; + x;
+}
+</code></pre>
 
 </div> <!-- content -->
 </div> <!-- outer -->

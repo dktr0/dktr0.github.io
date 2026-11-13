@@ -10,7 +10,7 @@ Note: This is the "fluid syllabus" for the course MEDIAART 3D03: Interface, Code
 # Quick Links
 
 - [detailed schedule/diary](../schedule/index.html)
-- [web art term projects](../project-1/index.html)
+- [web art term project](../project-1/index.html)
 - [the less detailed Simple Syllabus version of this outline](https://mcmaster.simplesyllabusca.com/en-US/doc/byj1tbuz4/Fall-2026-MEDIAART-3D03-C01-OGBORND-Interface,-Code,-Data?mode=view)
 
 # Course Learning Outcomes
@@ -19,6 +19,7 @@ Note: This is the "fluid syllabus" for the course MEDIAART 3D03: Interface, Code
   - [Before/outside (ARPANET, BBSes, Usenet, Gopher, el paquete, etc)](../bbses-usenet-gopher/index.html)
   - [The web of the 1990s](../the-web-of-the-1990s/index.html)
   - [net.art](../net-art/index.html)
+  - Living in the ruins (local knowledge, [digital/web gardening](../../web-gardening/index.html), etc)
 - Practice #1 - Terminals: navigate UNIX terminals/filesystems to make/change web projects
   - [Terminal basics](../terminal-basics/index.html)
   - [Relative and absolute filepaths, and copying, moving, renaming files](../filepaths/index.html)
@@ -26,6 +27,7 @@ Note: This is the "fluid syllabus" for the course MEDIAART 3D03: Interface, Code
   - [Installing node.js](../installing-node/index.html)
   - [Using node to run a webserver](../node-webserver/index.html)
   - [IP addresses, URLs, and host/domain names](../ip-addresses-urls-host-domain-names/index.html)
+  - [Eleventy as a static site generator](../eleventy-static-site-generator/index.html)
 - Practice #3 - Codes: translate and do creative things with everyday computing/web codes (e.g. binary, ASCII, Unicode, QR codes)
   - [Cryptograms](../cryptograms/index.html)
   - [Binary numbers](../binary-numbers/index.html)
@@ -34,6 +36,7 @@ Note: This is the "fluid syllabus" for the course MEDIAART 3D03: Interface, Code
 - Practice #4 - Web 1.0: read, write, and alter web pages/interfaces expressed in HTML and CSS
   - [Web Interfaces: HTML basics](../html-basics/index.html)
   - [Web Interfaces: CSS basics](../css-basics/index.html)
+  - [CSS flexbox and grid](../flexbox-grid/index.html)
   - [Practice submission requirements](../web-1.0-practice-submission/index.html)
 - Practice #5 - JavaScript: read, write, and call simple JavaScript functions
   - [Installing node.js](../installing-node/index.html)
