@@ -61,6 +61,11 @@ Note: This is the "fluid syllabus" for the course MEDIAART 2G03: Digital Audio a
   - [reading: Stereo Recording](../stereo-recording/index.html)
   - [tutorial and submission instructions](../tutorial-stereo-automation/index.html)
 - Practice #9: gently compress/finalize a DAW project in order to reduce overall dynamic range in genre/context appropriate ways 
+  - [reading: Dynamic Range and Loudness](../dynamic-range-loudness/index.html)
+  - [video: Demonstration of Loudness Metres](https://www.macvideo.ca/media/Demonstration+of+Loudness+Metres/1_jxmvmlek)
+  - [reading: Compression](../compression/index.html)
+  - [video: Demonstration of Compression](https://www.macvideo.ca/media/Demonstration+of+Compression/1_65tkuxyu)
+  - [tutorial and submission instructions](../tutorial-gentle-reduction-of-dynamic-range/index.html)
 
 # Course Description
 

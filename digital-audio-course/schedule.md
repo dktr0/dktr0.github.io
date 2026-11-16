@@ -75,14 +75,22 @@ Week of Mon 9 Nov: focus on Practice #8 (Stereo)
 - [Tutorial and Practice #8 submission](../tutorial-stereo-automation/index.html) due Thu 12 Nov, 10 PM, on Avenue
 
 Week of Mon 16 Nov: focus on Practice #9 (Dynamic Range)
-- Practice #9 submission due Thu 19 Nov, 10 PM, on Avenue
+- full class meeting, including dynamic range discussion and guest sound artist Stephanie Moore
+- popup concert in the NIL (TSH-B108) Mon 16 Nov 4:30 PM, with Stephanie Moore and "Studio Alchemy"
+- [reading: Dynamic Range and Loudness](../dynamic-range-loudness/index.html)
+- [video: Demonstration of Loudness Metres](https://www.macvideo.ca/media/Demonstration+of+Loudness+Metres/1_jxmvmlek)
+- [reading: Compression](../compression/index.html)
+- [video: Demonstration of Compression](https://www.macvideo.ca/media/Demonstration+of+Compression/1_65tkuxyu)
+- [Tutorial and Practice #9 submission](../tutorial-gentle-reduction-of-dynamic-range/index.html) due Thu 19 Nov, 10 PM, on Avenue
 
 *In-term exam #2 (practices #6-9) in flexible testing centre, Sat 21 Nov - Fri 27 Nov*
 
-Week of Mon 23 Nov: focus on completion of final audio projects, including sharing almost complete drafts with peers during the week's tutorial sessions
+Week of Mon 23 Nov: 
+- no full-class meeting on Mon 23 Nov (use time to make progress on your sound art term projects!)
+- share work in progress with peers during the week's tutorial sessions
 
 Week of Mon 30 Nov
-- full-class meetings: introducing diffusion; lines of flight (audio study and career possibilities)
+- full-class meeting: introducing diffusion; lines of flight (audio study and career possibilities)
 - tutorials: assistance with projects and practice resubmissions
 
 *[Final Audio Project/Sound Art Term Project](../sound-art-term-project/index.html) due Thu 3 Dec, 10 PM, on Avenue*

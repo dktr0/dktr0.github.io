@@ -36,4 +36,28 @@ title: "MEDIAART 2G03: In-term and Final Exam Study Guide"
 - Levels during mixing 
 - Why normalize without intermediate files and why to minus 0.3?
 
+## Practice 6
+- corrective vs. exploratory transformations
+- classical speed change
+- spectral time/pitch shifts, and the concept of "artifacts"
+- granular synthesis (what is it/how does it work/why might people use it)
+
+## Practice 7
+- what is synthesis (in the context of audio)
+- what is a unit generator?
+- different types of basic oscillators (sine, triangle, sawtooth, square)
+- what are "envelopes" used for?
+- what is "modulation"?
+
+## Practice 8
+- stereo cues to perception (i.e. ILD and ITD)
+- panning and stereo instability
+- how to create pseudo-stereo signals
+- stereo recording techniques (how to do the standard ones, their tradeoffs)
+
+## Practice 9
+- dynamic range (meaning; what concrete problems does it help us address?)
+- different strategies for reducing/managing dynamic range
+- what are "loudness units full scale (LUFS)"
+- effect of different compression parameters, compression calculations
 
