@@ -104,21 +104,24 @@ Wed Nov 11:
 Fri Nov 13:
 - [IP addresses, URLs, and host/domain names](../ip-addresses-urls-host-domain-names/index.html)
 - Another experiment with a disaster-proof local web
-- The Beginning Of The End (Web 2.0)
-- Living in the ruins (local knowledge, [digital/web gardening](../../web-gardening/index.html), solar computing, etc)
-- Experiments with markdown/static-site generation, [eleventy as a static site generator](../eleventy-static-site-generator/index.html)
-- [CSS flexbox and grid](../flexbox-grid/index.html)
 - [web art term project](../project-1/index.html) ideation activities
 
-Wed Nov 18: review
+Wed Nov 18:
+- The Beginning Of The End (Web 2.0), including brief discussion of [web 2.0 technique](../web-2.0-technique/index.html)
+- Living in the ruins (local knowledge and [digital/web gardening](../../web-gardening/index.html))
+- Experiments with markdown/static-site generation, [eleventy as a static site generator](../eleventy-static-site-generator/index.html)
+- [CSS flexbox and grid](../flexbox-grid/index.html)
 
-Fri Nov 20: work-in-progress mini-showcase [bring whatever you have so far, ready to serve!]
+Fri Nov 20: 
+- work-in-progress mini-showcase [bring whatever you have so far, ready to serve!] and review
+- exam review session #1, see also the [study guide](../study-guide/index.html)
 
 In-term exam in flexible testing centre, Sat Nov 21 - Tue Nov 24
 
 No class meetings the week of Wed 25 Nov and Fri 27 Nov (please come to drop-in hours for assistance with your web art term projects in progress!)
 
 Wed Dec 2: Dress Rehearsal for the Apocalypse
+- last chance to practice the technique of serving and connecting our websites to each other on the local network before the showcase where support will be much more limited: bring nearly finished web art term projects in progress ready to serve!
 
 Web Art Term Project due Thu Dec 3 at 10 PM on Avenue
 
@@ -131,8 +134,6 @@ Final multiple-choice exam during examination period to be scheduled by registra
 
 # Topics from the previous offering of the course not incorporated in above schedule
 
-- Experiments with [web 2.0 technique](../web-2.0-technique/index.html), including writing custom web-servers, working with databases, and asynchronous update of webpages (AJAX)
 - [Hexadecimal numbers](../hexadecimal/index.html)
 - Experiments with styling images via css, c.f. [this w3schools reference](https://www.w3schools.com/css/css3_images.asp)
-- Further demonstration of what I mean by a "self-contained" website (including e.g. with respect to images)
 - SSH demonstration

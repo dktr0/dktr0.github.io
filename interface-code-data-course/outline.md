@@ -11,6 +11,7 @@ Note: This is the "fluid syllabus" for the course MEDIAART 3D03: Interface, Code
 
 - [detailed schedule/diary](../schedule/index.html)
 - [web art term project](../project-1/index.html)
+- [study guide](../study-guide/index.html)
 - [the less detailed Simple Syllabus version of this outline](https://mcmaster.simplesyllabusca.com/en-US/doc/byj1tbuz4/Fall-2026-MEDIAART-3D03-C01-OGBORND-Interface,-Code,-Data?mode=view)
 
 # Course Learning Outcomes
